@@ -23,19 +23,19 @@
       "tag": "Immersive Theatre & Dining",
       "title": "Mamma Mia! The Party",
       "description": "London & Stockholm. An immersive ABBA-themed theatrical dining experience that redefined the genre.",
-      "image": "www.hotmail.com"
+      "image": "/images/mmtp.jpg"
     },
     {
       "tag": "Musical Theatre",
       "title": "Rent The Musical",
       "description": "20th anniversary UK tour. Multi-award-winning rock musical returning to the West End.",
-      "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+      "image": "/images/rent.avif"
     },
     {
       "tag": "Exhibition",
       "title": "ABBA: Super Troupers The Exhibition",
       "description": "The official ABBA exhibition, presented in London.",
-      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+      "image": "/images/abba-super-troupers-7.jpg"
     },
     {
       "tag": "Opera & Classical",
