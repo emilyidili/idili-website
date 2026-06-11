@@ -22,7 +22,7 @@ collections:
               - { label: "Title (first part)", name: "title", widget: "string" }
               - { label: "Title (italic part)", name: "title_em", widget: "string" }
               - { label: "Subtitle Paragraph", name: "subtitle", widget: "text" }
-              - { label: "Hero Image URL", name: "image", widget: "string" }
+              - { label: "Hero Image", name: "image", widget: "image" }
 
           - label: "Intro Section"
             name: "intro"
@@ -48,7 +48,7 @@ collections:
               - { label: "Category Tag", name: "tag", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image URL", name: "image", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
 
           - label: "About Section"
             name: "about"
@@ -60,7 +60,7 @@ collections:
               - { label: "Paragraph 2", name: "body2", widget: "text" }
               - { label: "Pull Quote", name: "quote", widget: "text" }
               - { label: "Paragraph 3", name: "body3", widget: "text" }
-              - { label: "Photo URL", name: "image", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image" }
 
           - label: "Team"
             name: "team"
@@ -70,7 +70,7 @@ collections:
             fields:
               - { label: "Full Name", name: "name", widget: "string" }
               - { label: "Job Title", name: "role", widget: "string" }
-              - { label: "Photo URL", name: "photo", widget: "string" }
+              - { label: "Photo", name: "photo", widget: "image" }
 
           - label: "Venues & Partners"
             name: "venues"
