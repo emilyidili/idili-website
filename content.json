@@ -59,7 +59,7 @@
   "about": {
     "heading": "A boutique studio with",
     "heading_em": "global reach.",
-    "body1": "IDILI was founded in 2016 by Ingrid Sutej and Miguel Esteban, two of the live events industry's most respected figures. Between them, they bring three decades of experience spanning almost every genre of entertainment imaginable.",
+    "body1": "IDILI Live was founded in 2016 by Ingrid Sutej and Miguel Esteban, two of the live events industry's most respected figures. Between them, they bring three decades of experience spanning almost every genre of entertainment imaginable.",
     "body2": "Ingrid has produced and promoted hit West End musicals and concert tours across Europe with world-renowned opera stars. Miguel co-founded the Verbier Festival and manages leading artists including soprano Anna Netrebko.",
     "quote": "We believe every performance is a once-in-a-lifetime event — and we produce accordingly.",
     "body3": "Our close-knit but extensive team works across immersive theatre, classical music, exhibitions and large-scale musicals, always with the same commitment to exceptional production values and unforgettable audience experiences.",
@@ -69,22 +69,22 @@
     {
       "name": "Ingrid Sutej",
       "role": "Co-Founder & Chief Executive",
-      "photo": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+      "photo": "/images/screenshot-2026-06-11-at-15.15.52.png"
     },
     {
       "name": "Miguel Esteban",
       "role": "Co-Founder & Chief Operating Officer",
-      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+      "photo": "/images/screenshot-2026-06-11-at-15.16.06.png"
     },
     {
       "name": "Frédérique Gerbelle",
       "role": "Producer / MD Les Grandes Voix",
-      "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+      "photo": "/images/screenshot-2026-06-11-at-15.16.22.png"
     },
     {
       "name": "Suzi Arkley",
-      "role": "Marketing & Commercial Director",
-      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+      "role": "Group Managing Director",
+      "photo": "/images/screenshot-2026-06-11-at-15.16.13.png"
     }
   ],
   "venues": [
