@@ -54,6 +54,18 @@
       "title": "Elf The Musical",
       "description": "The beloved festive spectacular, bringing seasonal magic to stages across the UK.",
       "image": "/images/elf_mattcrockett_mc2_3711_rt3-1-.jpeg"
+    },
+    {
+      "tag": "Exhibition",
+      "title": "Monet's Garden",
+      "description": "An immersive art experience that give visitors a 360-degree journey through the history and works of one of the greatest artists of the past century, Claude Monet.",
+      "image": "/images/screenshot-2026-06-11-at-15.40.24.png"
+    },
+    {
+      "tag": "Exhibition",
+      "title": "Viva Frida Khalo!",
+      "description": "A sensory journey through Frida’s world and art.",
+      "image": "/images/frida_5_1080x1080.webp"
     }
   ],
   "about": {
@@ -63,7 +75,7 @@
     "body2": "Ingrid has produced and promoted hit West End musicals and concert tours across Europe with world-renowned opera stars. Miguel co-founded the Verbier Festival and manages leading artists including soprano Anna Netrebko.",
     "quote": "We believe every performance is a once-in-a-lifetime event — and we produce accordingly.",
     "body3": "Our close-knit but extensive team works across immersive theatre, classical music, exhibitions and large-scale musicals, always with the same commitment to exceptional production values and unforgettable audience experiences.",
-    "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=1000&fit=crop&crop=center&auto=format&q=80"
+    "image": "/images/pealight-tunnel.jpg"
   },
   "team": [
     {
@@ -97,7 +109,7 @@
   ],
   "contact": {
     "email": "hello@idili.com",
-    "based": "London, United Kingdom",
+    "based": "London & Paris",
     "active": "UK, Europe & internationally",
     "specialisms": "Musical Theatre, Immersive, Opera, Exhibitions"
   }
