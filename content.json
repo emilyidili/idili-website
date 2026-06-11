@@ -1,0 +1,104 @@
+{
+  "hero": {
+    "eyebrow": "Boutique Live Events & Theatricals",
+    "title": "Every night is",
+    "title_em": "opening night.",
+    "subtitle": "IDILI is a global producer, promoter and presenter of extraordinary live experiences — from West End musicals to immersive dining theatre, world-class opera to landmark exhibitions.",
+    "image": "https://images.unsplash.com/photo-1516307365426-bea591f05011?w=2400&h=1400&fit=crop&crop=center&auto=format&q=85"
+  },
+  "intro": {
+    "heading": "Where craft meets",
+    "heading_em": "spectacle.",
+    "body1": "Founded in 2016 by Ingrid Sutej and Miguel Esteban, IDILI Live and Theatricals brings together decades of combined experience across virtually every genre of live entertainment.",
+    "body2": "From the West End to Stockholm, from London opera houses to European concert halls, we specialise in experiences that linger long after the curtain falls.",
+    "stat1_num": "10+",
+    "stat1_label": "Years in production",
+    "stat2_num": "4",
+    "stat2_label": "Disciplines",
+    "stat3_num": "∞",
+    "stat3_label": "Memorable nights"
+  },
+  "productions": [
+    {
+      "tag": "Immersive Theatre & Dining",
+      "title": "Mamma Mia! The Party",
+      "description": "London & Stockholm. An immersive ABBA-themed theatrical dining experience that redefined the genre.",
+      "image": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+    },
+    {
+      "tag": "Musical Theatre",
+      "title": "Rent The Musical",
+      "description": "20th anniversary UK tour. Multi-award-winning rock musical returning to the West End.",
+      "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+    },
+    {
+      "tag": "Exhibition",
+      "title": "ABBA: Super Troupers The Exhibition",
+      "description": "The official ABBA exhibition, presented in London.",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+    },
+    {
+      "tag": "Opera & Classical",
+      "title": "Cecilia Bartoli — Norma",
+      "description": "Salzburg Festival production, UK & European tour.",
+      "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+    },
+    {
+      "tag": "Classical Concerts",
+      "title": "Les Grandes Voix",
+      "description": "World-class operatic stars including Anna Netrebko, Angela Gheorghiu and Rolando Villazón.",
+      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+    },
+    {
+      "tag": "Musical Theatre",
+      "title": "Elf The Musical",
+      "description": "The beloved festive spectacular, bringing seasonal magic to stages across the UK.",
+      "image": "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+    }
+  ],
+  "about": {
+    "heading": "A boutique studio with",
+    "heading_em": "global reach.",
+    "body1": "IDILI was founded in 2016 by Ingrid Sutej and Miguel Esteban, two of the live events industry's most respected figures. Between them, they bring three decades of experience spanning almost every genre of entertainment imaginable.",
+    "body2": "Ingrid has produced and promoted hit West End musicals and concert tours across Europe with world-renowned opera stars. Miguel co-founded the Verbier Festival and manages leading artists including soprano Anna Netrebko.",
+    "quote": "We believe every performance is a once-in-a-lifetime event — and we produce accordingly.",
+    "body3": "Our close-knit but extensive team works across immersive theatre, classical music, exhibitions and large-scale musicals, always with the same commitment to exceptional production values and unforgettable audience experiences.",
+    "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=1000&fit=crop&crop=center&auto=format&q=80"
+  },
+  "team": [
+    {
+      "name": "Ingrid Sutej",
+      "role": "Co-Founder & Chief Executive",
+      "photo": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+    },
+    {
+      "name": "Miguel Esteban",
+      "role": "Co-Founder & Chief Operating Officer",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+    },
+    {
+      "name": "Frédérique Gerbelle",
+      "role": "Producer / MD Les Grandes Voix",
+      "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+    },
+    {
+      "name": "Suzi Arkley",
+      "role": "Marketing & Commercial Director",
+      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+    }
+  ],
+  "venues": [
+    "The Dominion",
+    "St. James Theatre",
+    "The Aldwych",
+    "Covent Garden",
+    "Verbier Festival",
+    "Salzburg Festival"
+  ],
+  "contact": {
+    "email": "hello@idili.com",
+    "based": "London, United Kingdom",
+    "active": "UK, Europe & internationally",
+    "specialisms": "Musical Theatre, Immersive, Opera, Exhibitions"
+  }
+}
