@@ -1,0 +1,87 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - name: "main"
+        label: "Main Page"
+        file: "content.json"
+        fields:
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow Text", name: "eyebrow", widget: "string" }
+              - { label: "Title (first part)", name: "title", widget: "string" }
+              - { label: "Title (italic part)", name: "title_em", widget: "string" }
+              - { label: "Subtitle Paragraph", name: "subtitle", widget: "text" }
+              - { label: "Hero Image URL", name: "image", widget: "string" }
+
+          - label: "Intro Section"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Heading (first part)", name: "heading", widget: "string" }
+              - { label: "Heading (italic part)", name: "heading_em", widget: "string" }
+              - { label: "Paragraph 1", name: "body1", widget: "text" }
+              - { label: "Paragraph 2", name: "body2", widget: "text" }
+              - { label: "Stat 1 Number", name: "stat1_num", widget: "string" }
+              - { label: "Stat 1 Label", name: "stat1_label", widget: "string" }
+              - { label: "Stat 2 Number", name: "stat2_num", widget: "string" }
+              - { label: "Stat 2 Label", name: "stat2_label", widget: "string" }
+              - { label: "Stat 3 Number", name: "stat3_num", widget: "string" }
+              - { label: "Stat 3 Label", name: "stat3_label", widget: "string" }
+
+          - label: "Productions"
+            name: "productions"
+            widget: "list"
+            label_singular: "Production"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Category Tag", name: "tag", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image URL", name: "image", widget: "string" }
+
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Heading (first part)", name: "heading", widget: "string" }
+              - { label: "Heading (italic part)", name: "heading_em", widget: "string" }
+              - { label: "Paragraph 1", name: "body1", widget: "text" }
+              - { label: "Paragraph 2", name: "body2", widget: "text" }
+              - { label: "Pull Quote", name: "quote", widget: "text" }
+              - { label: "Paragraph 3", name: "body3", widget: "text" }
+              - { label: "Photo URL", name: "image", widget: "string" }
+
+          - label: "Team"
+            name: "team"
+            widget: "list"
+            label_singular: "Team Member"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Full Name", name: "name", widget: "string" }
+              - { label: "Job Title", name: "role", widget: "string" }
+              - { label: "Photo URL", name: "photo", widget: "string" }
+
+          - label: "Venues & Partners"
+            name: "venues"
+            widget: "list"
+            field: { label: "Name", name: "item", widget: "string" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Based In", name: "based", widget: "string" }
+              - { label: "Active In", name: "active", widget: "string" }
+              - { label: "Specialisms", name: "specialisms", widget: "string" }
