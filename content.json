@@ -39,9 +39,9 @@
     },
     {
       "tag": "Opera & Classical",
-      "title": "Cecilia Bartoli — Norma",
+      "title": "Cecilia Bartoli ",
       "description": "Salzburg Festival production, UK & European tour.",
-      "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+      "image": "/images/cecilia-bartoli.jpeg"
     },
     {
       "tag": "Classical Concerts",
@@ -53,7 +53,7 @@
       "tag": "Musical Theatre",
       "title": "Elf The Musical",
       "description": "The beloved festive spectacular, bringing seasonal magic to stages across the UK.",
-      "image": "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&h=760&fit=crop&crop=center&auto=format&q=80"
+      "image": "/images/elf_mattcrockett_mc2_3711_rt3-1-.jpeg"
     }
   ],
   "about": {
