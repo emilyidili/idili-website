@@ -3,13 +3,13 @@
     "eyebrow": "Boutique Live Events & Theatricals",
     "title": "Every night is",
     "title_em": "opening night.",
-    "subtitle": "IDILI is a global producer, promoter and presenter of extraordinary live experiences — from West End musicals to immersive dining theatre, world-class opera to landmark exhibitions.",
+    "subtitle": "IDILI Live is a global producer, promoter and presenter of extraordinary live experiences — from West End musicals to immersive dining theatre, world-class opera to landmark exhibitions.",
     "image": "https://images.unsplash.com/photo-1516307365426-bea591f05011?w=2400&h=1400&fit=crop&crop=center&auto=format&q=85"
   },
   "intro": {
     "heading": "Where craft meets",
     "heading_em": "spectacle.",
-    "body1": "Founded in 2016 by Ingrid Sutej and Miguel Esteban, IDILI Live and Theatricals brings together decades of combined experience across virtually every genre of live entertainment.",
+    "body1": "Founded in 2016 by Ingrid Sutej and Miguel Esteban, IDILI Live brings together decades of combined experience across virtually every genre of live entertainment.",
     "body2": "From the West End to Stockholm, from London opera houses to European concert halls, we specialise in experiences that linger long after the curtain falls.",
     "stat1_num": "10+",
     "stat1_label": "Years in production",
@@ -23,7 +23,7 @@
       "tag": "Immersive Theatre & Dining",
       "title": "Mamma Mia! The Party",
       "description": "London & Stockholm. An immersive ABBA-themed theatrical dining experience that redefined the genre.",
-      "image": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&h=760&fit=crop&crop=center&auto=format&q=80",
+      "image": "/images/mmtp.jpg",
       "slug": "mamma-mia-the-party",
       "long_description": "",
       "gallery": []
@@ -32,7 +32,7 @@
       "tag": "Musical Theatre",
       "title": "Rent The Musical",
       "description": "20th anniversary UK tour. Multi-award-winning rock musical returning to the West End.",
-      "image": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=800&h=760&fit=crop&crop=center&auto=format&q=80",
+      "image": "/images/rent.avif",
       "slug": "rent-the-musical",
       "long_description": "",
       "gallery": []
@@ -41,17 +41,17 @@
       "tag": "Exhibition",
       "title": "ABBA: Super Troupers The Exhibition",
       "description": "The official ABBA exhibition, presented in London.",
-      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=760&fit=crop&crop=center&auto=format&q=80",
+      "image": "/images/abba-super-troupers-7.jpg",
       "slug": "abba-super-troupers-the-exhibition",
       "long_description": "",
       "gallery": []
     },
     {
       "tag": "Opera & Classical",
-      "title": "Cecilia Bartoli — Norma",
+      "title": "Cecilia Bartoli",
       "description": "Salzburg Festival production, UK & European tour.",
-      "image": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=800&h=760&fit=crop&crop=center&auto=format&q=80",
-      "slug": "cecilia-bartoli-norma",
+      "image": "/images/cecilia-bartoli.jpeg",
+      "slug": "cecilia-bartoli",
       "long_description": "",
       "gallery": []
     },
@@ -68,8 +68,26 @@
       "tag": "Musical Theatre",
       "title": "Elf The Musical",
       "description": "The beloved festive spectacular, bringing seasonal magic to stages across the UK.",
-      "image": "https://images.unsplash.com/photo-1544928147-79a2dbc1f389?w=800&h=760&fit=crop&crop=center&auto=format&q=80",
+      "image": "/images/elf_mattcrockett_mc2_3711_rt3-1-.jpeg",
       "slug": "elf-the-musical",
+      "long_description": "",
+      "gallery": []
+    },
+    {
+      "tag": "Exhibition",
+      "title": "Monet's Garden",
+      "description": "A 360-degree journey immersive art experience through the history and works of Claude Monet.",
+      "image": "/images/screenshot-2026-06-11-at-15.40.24.png",
+      "slug": "monets-garden",
+      "long_description": "",
+      "gallery": []
+    },
+    {
+      "tag": "Exhibition",
+      "title": "Viva Frida Kahlo!",
+      "description": "A sensory journey through Frida's world and art.",
+      "image": "/images/frida_5_1080x1080.webp",
+      "slug": "viva-frida-kahlo",
       "long_description": "",
       "gallery": []
     }
@@ -77,32 +95,47 @@
   "about": {
     "heading": "A boutique studio with",
     "heading_em": "global reach.",
-    "body1": "IDILI was founded in 2016 by Ingrid Sutej and Miguel Esteban, two of the live events industry's most respected figures. Between them, they bring three decades of experience spanning almost every genre of entertainment imaginable.",
+    "body1": "IDILI Live was founded in 2016 by Ingrid Sutej and Miguel Esteban, two of the live events industry's most respected figures. Between them, they bring three decades of experience spanning almost every genre of entertainment imaginable.",
     "body2": "Ingrid has produced and promoted hit West End musicals and concert tours across Europe with world-renowned opera stars. Miguel co-founded the Verbier Festival and manages leading artists including soprano Anna Netrebko.",
     "quote": "We believe every performance is a once-in-a-lifetime event — and we produce accordingly.",
     "body3": "Our close-knit but extensive team works across immersive theatre, classical music, exhibitions and large-scale musicals, always with the same commitment to exceptional production values and unforgettable audience experiences.",
-    "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=1000&fit=crop&crop=center&auto=format&q=80"
+    "image": "/images/pealight-tunnel.jpg"
   },
   "team": [
     {
       "name": "Ingrid Sutej",
       "role": "Co-Founder & Chief Executive",
-      "photo": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+      "photo": "/images/screenshot-2026-06-11-at-15.15.52.png"
     },
     {
       "name": "Miguel Esteban",
       "role": "Co-Founder & Chief Operating Officer",
-      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+      "photo": "/images/screenshot-2026-06-11-at-15.16.06.png"
+    },
+    {
+      "name": "Suzi Arkley",
+      "role": "Group Managing Director",
+      "photo": "/images/screenshot-2026-06-11-at-15.16.13.png"
+    },
+    {
+      "name": "Emily Brett",
+      "role": "Marketing Director",
+      "photo": "/images/screenshot-2026-06-22-at-12.01.18.png"
     },
     {
       "name": "Frédérique Gerbelle",
       "role": "Producer / MD Les Grandes Voix",
-      "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+      "photo": "/images/screenshot-2026-06-11-at-15.16.22.png"
     },
     {
-      "name": "Suzi Arkley",
-      "role": "Marketing & Commercial Director",
-      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
+      "name": "Jonathan Fleming",
+      "role": "Projects Director",
+      "photo": "/images/screenshot-2026-06-22-at-12.04.24.png"
+    },
+    {
+      "name": "Alice Binick",
+      "role": "Project Manager",
+      "photo": "/images/screenshot-2026-06-22-at-12.02.22.png"
     }
   ],
   "venues": [
@@ -115,7 +148,7 @@
   ],
   "contact": {
     "email": "hello@idili.com",
-    "based": "London, United Kingdom",
+    "based": "London & Paris",
     "active": "UK, Europe & internationally",
     "specialisms": "Musical Theatre, Immersive, Opera, Exhibitions"
   }
