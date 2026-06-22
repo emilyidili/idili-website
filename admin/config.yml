@@ -19,8 +19,8 @@ collections:
             widget: "object"
             fields:
               - { label: "Eyebrow Text", name: "eyebrow", widget: "string" }
-              - { label: "Title (first part)", name: "title", widget: "string" }
-              - { label: "Title (italic part)", name: "title_em", widget: "string" }
+              - { label: "Title (first part)", name: "title", widget: "string", hint: "e.g. Every night is" }
+              - { label: "Title (italic part)", name: "title_em", widget: "string", hint: "e.g. opening night." }
               - { label: "Subtitle Paragraph", name: "subtitle", widget: "text" }
               - { label: "Hero Image", name: "image", widget: "image" }
 
@@ -32,12 +32,12 @@ collections:
               - { label: "Heading (italic part)", name: "heading_em", widget: "string" }
               - { label: "Paragraph 1", name: "body1", widget: "text" }
               - { label: "Paragraph 2", name: "body2", widget: "text" }
-              - { label: "Stat 1 Number", name: "stat1_num", widget: "string" }
-              - { label: "Stat 1 Label", name: "stat1_label", widget: "string" }
-              - { label: "Stat 2 Number", name: "stat2_num", widget: "string" }
-              - { label: "Stat 2 Label", name: "stat2_label", widget: "string" }
-              - { label: "Stat 3 Number", name: "stat3_num", widget: "string" }
-              - { label: "Stat 3 Label", name: "stat3_label", widget: "string" }
+              - { label: "Stat 1 — Number", name: "stat1_num", widget: "string" }
+              - { label: "Stat 1 — Label", name: "stat1_label", widget: "string" }
+              - { label: "Stat 2 — Number", name: "stat2_num", widget: "string" }
+              - { label: "Stat 2 — Label", name: "stat2_label", widget: "string" }
+              - { label: "Stat 3 — Number", name: "stat3_num", widget: "string" }
+              - { label: "Stat 3 — Label", name: "stat3_label", widget: "string" }
 
           - label: "Productions"
             name: "productions"
@@ -45,10 +45,19 @@ collections:
             label_singular: "Production"
             summary: "{{fields.title}}"
             fields:
-              - { label: "Category Tag", name: "tag", widget: "string" }
+              - { label: "Category Tag", name: "tag", widget: "string", hint: "e.g. Musical Theatre, Opera & Classical" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Short Description", name: "description", widget: "text", hint: "One or two lines shown on the card on the home page" }
+              - { label: "Card Image", name: "image", widget: "image", hint: "Image shown on the home page grid" }
+              - { label: "URL Slug", name: "slug", widget: "string", hint: "URL-friendly name — lowercase, hyphens only. e.g. mamma-mia-the-party" }
+              - { label: "Full Story", name: "long_description", widget: "text", required: false, hint: "Longer write-up shown on the production's own page" }
+              - label: "Gallery"
+                name: "gallery"
+                widget: "list"
+                label_singular: "Photo"
+                required: false
+                hint: "Upload photos for the production's gallery page"
+                field: { label: "Photo", name: "image", widget: "image" }
 
           - label: "About Section"
             name: "about"
@@ -66,7 +75,7 @@ collections:
             name: "team"
             widget: "list"
             label_singular: "Team Member"
-            summary: "{{fields.name}}"
+            summary: "{{fields.name}} — {{fields.role}}"
             fields:
               - { label: "Full Name", name: "name", widget: "string" }
               - { label: "Job Title", name: "role", widget: "string" }
@@ -75,6 +84,7 @@ collections:
           - label: "Venues & Partners"
             name: "venues"
             widget: "list"
+            label_singular: "Venue or Partner"
             field: { label: "Name", name: "item", widget: "string" }
 
           - label: "Contact"
