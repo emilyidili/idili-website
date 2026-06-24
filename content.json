@@ -8,14 +8,14 @@
   },
   "intro": {
     "heading": "Where craft meets",
+    "stat1_num": "10+",
     "heading_em": "spectacle.",
+    "stat2_num": "4",
+    "stat3_num": "∞",
     "body1": "Founded in 2016 by Ingrid Sutej and Miguel Esteban, IDILI Live brings together decades of combined experience across virtually every genre of live entertainment.",
     "body2": "From the West End to Stockholm, from London opera houses to European concert halls, we specialise in experiences that linger long after the curtain falls.",
-    "stat1_num": "10+",
     "stat1_label": "Years in production",
-    "stat2_num": "4",
     "stat2_label": "Disciplines",
-    "stat3_num": "∞",
     "stat3_label": "Memorable nights"
   },
   "productions": [
@@ -58,11 +58,13 @@
     {
       "tag": "Classical Concerts",
       "title": "Les Grandes Voix",
-      "description": "World-class operatic stars including Anna Netrebko, Angela Gheorghiu and Rolando Villazón.",
-      "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=760&fit=crop&crop=center&auto=format&q=80",
+      "description": "Well-established series featuring world-class operatic stars",
+      "image": "/images/dscf0702.jpg",
       "slug": "les-grandes-voix",
-      "long_description": "",
-      "gallery": []
+      "long_description": "Established in 1993, Les Grandes Voix began as recitals with singers and piano, then quickly grew and broadened its horizons: more concerts, more partnerships with other venues, more artists from different parts of the world, a wider repertoire spanning from baroque to Bel Canto and chamber music.\n\nRegarded as a leading and benchmark series for operatic concerts in the French and European musical landscape, Les Grandes Voix has contributed to the artistic recognition in France of major artists such as Benjamin Bernheim, Roberto Alagna, Juan Diego Flórez, Cecilia Bartoli, Anna Netrebko, Joyce DiDonato, Elina Garança, Jakub Orlinski, Sabine Devieilhe, Pretty Yende and the Capuçon brothers — by organising their first solo recitals in France.\n",
+      "gallery": [
+        "/images/lgv.jpg"
+      ]
     },
     {
       "tag": "Musical Theatre",
