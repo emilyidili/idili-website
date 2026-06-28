@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productions — IDILI Live &amp; Theatricals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream:#F5F0E8; --warm:#EDE6D6; --sand:#C9B99A; --taupe:#8B7B6B;
+      --charcoal:#2C2826; --black:#1A1714; --white:#FAFAF8;
+      --serif:'Playfair Display',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+      --logo-red:#E82020; --logo-orange:#F07020; --logo-amber:#F5A800;
+      --logo-teal:#009990; --logo-blue:#0075BC;
+    }
+    html { scroll-behavior: smooth; }
+    body { background:var(--black); color:var(--cream); font-family:var(--sans); font-weight:300; font-size:15px; line-height:1.7; -webkit-font-smoothing:antialiased; }
+    img { display:block; width:100%; object-fit:cover; }
+    a { color:inherit; text-decoration:none; }
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:18px 48px; background:rgba(26,23,20,0.97); backdrop-filter:blur(12px); }
+    .nav-logo img { height:64px; width:auto; display:block; }
+    .nav-links { display:flex; gap:36px; list-style:none; }
+    .nav-links a { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--cream); opacity:0.8; transition:opacity 0.2s; }
+    .nav-links a:hover { opacity:1; }
+    .nav-cta { font-size:11px; letter-spacing:0.12em; text-transform:uppercase; border:1px solid rgba(245,240,232,0.4); padding:10px 22px; color:var(--cream); transition:background 0.25s,color 0.25s; }
+    .nav-cta:hover { background:var(--cream); color:var(--black); }
+    .cat-header { background:var(--black); padding:160px 48px 72px; border-bottom:1px solid rgba(201,185,154,0.1); }
+    .cat-header-inner { max-width:900px; margin:0 auto; }
+    .cat-back { display:inline-flex; align-items:center; gap:8px; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--sand); opacity:0.75; margin-bottom:48px; transition:opacity 0.2s; }
+    .cat-back:hover { opacity:1; }
+    .cat-back svg { width:14px; height:14px; }
+    .cat-num-display { font-size:10px; letter-spacing:0.24em; text-transform:uppercase; color:var(--taupe); margin-bottom:16px; }
+    .cat-bar-display { width:36px; height:2px; border-radius:2px; margin-bottom:24px; }
+    .cat-title { font-size:clamp(40px,6vw,80px); font-weight:700; color:var(--white); line-height:1.0; letter-spacing:-0.02em; margin-bottom:20px; }
+    .cat-subtitle { font-size:15px; color:var(--sand); line-height:1.75; max-width:600px; opacity:0.85; }
+    .cat-productions { background:var(--black); padding:64px 48px 96px; }
+    .cat-productions-inner { max-width:1200px; margin:0 auto; }
+    .prod-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:3px; }
+    .prod-card { position:relative; overflow:hidden; cursor:pointer; height:380px; display:block; text-decoration:none; }
+    .prod-card img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform 0.7s ease,filter 0.4s ease; filter:brightness(0.78) saturate(0.82); }
+    .prod-card:hover img { transform:scale(1.05); filter:brightness(0.58) saturate(0.9); }
+    .prod-overlay { position:absolute; inset:0; background:linear-gradient(to top,rgba(26,23,20,0.88) 0%,transparent 55%); display:flex; flex-direction:column; justify-content:flex-end; padding:32px; }
+    .prod-tag { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:var(--sand); margin-bottom:8px; }
+    .prod-name { font-size:24px; font-weight:500; color:var(--white); line-height:1.15; letter-spacing:-0.01em; }
+    .prod-desc { font-size:12px; color:var(--sand); margin-top:8px; opacity:0; transform:translateY(8px); transition:opacity 0.35s,transform 0.35s; line-height:1.6; }
+    .prod-card:hover .prod-desc { opacity:1; transform:translateY(0); }
+    .empty-state { text-align:center; padding:80px 24px; color:var(--taupe); font-size:15px; }
+    .cat-footer {
