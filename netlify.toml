@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "/productions/category/*"
+  to = "/productions/category/index.html"
+  status = 200
+
+[[redirects]]
   from = "/productions/*"
   to = "/productions/index.html"
   status = 200
@@ -13,5 +18,10 @@
 
 [[headers]]
   for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/content.json"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
