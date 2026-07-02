@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — IDILI Live &amp; Theatricals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #F5F0E8; --warm: #EDE6D6; --sand: #C9B99A; --taupe: #8B7B6B;
+      --charcoal: #2C2826; --black: #1A1714; --white: #FAFAF8;
+      --serif: 'Playfair Display', Georgia, serif; --sans: 'Inter', system-ui, sans-serif;
+      --logo-amber: #F5A800; --logo-orange: #F07020;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--black); color: var(--cream); font-family: var(--sans); font-weight: 300; font-size: 15px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px; background: rgba(26,23,20,0.97); backdrop-filter: blur(12px);
+    }
+    .nav-logo img { height: 64px; width: auto; display: block; }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cream); opacity: 0.8; transition: opacity 0.2s; }
+    .nav-links a:hover { opacity: 1; }
+    .nav-cta { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(245,240,232,0.4); padding: 10px 22px; color: var(--cream); transition: background 0.25s, color 0.25s; }
+    .nav-cta:hover { background: var(--cream); color: var(--black); }
+
+    .policy-hero {
+      background: var(--black);
+      padding: 160px 48px 80px;
+      border-bottom: 1px solid rgba(201,185,154,0.1);
+    }
+    .policy-hero-inner { max-width: 860px; margin: 0 auto; }
+    .section-label {
+      font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--sand);
+      display: flex; align-items: center; gap: 14px; margin-bottom: 24px;
+    }
+    .section-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--sand); opacity: 0.5; }
+    .policy-title { font-family: var(--serif); font-size: clamp(36px, 5vw, 72px); font-weight: 700; color: var(--white); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 24px; }
+    .policy-date { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--taupe); opacity: 0.7; }
+
+    .policy-body-section { background: var(--white); padding: 80px 48px 96px; }
+    .policy-body-inner { max-width: 780px; margin: 0 auto; color: var(--charcoal); }
+    .policy-placeholder {
+      background: var(--warm);
+      border-left: 2px solid var(--logo-amber);
+      padding: 28px 32px;
+      margin-bottom: 40px;
+      border-radius: 0 2px 2px 0;
+    }
+    .policy-placeholder p { font-size: 15px; color: var(--charcoal); line-height: 1.75; }
+    .policy-placeholder p + p { margin-top: 12px; }
+    .policy-placeholder a { color: var(--logo-orange); border-bottom: 1px solid rgba(240,112,32,0.4); padding-bottom: 1px; transition: border-color 0.2s; }
+    .policy-placeholder a:hover { border-color: var(--logo-orange); }
+    .policy-section-heading { font-size: 13px; font-weight: 600; color: var(--black); letter-spacing: 0.06em; text-transform: uppercase; margin: 40px 0 14px; }
+    .policy-text { font-size: 15px; color: var(--taupe); line-height: 1.85; }
+    .policy-text + .policy-text { margin-top: 14px; }
+
+    .policy-footer-wrap { background: var(--black); border-top: 1px solid rgba(201,185,154,0.1); padding: 36px 48px; }
+    .policy-footer-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .footer-logo img { height: 52px; width: auto; display: block; opacity: 0.85; transition: opacity 0.3s; }
+    .footer-logo img:hover { opacity: 1; }
+    .footer-back { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sand); opacity: 0.8; transition: opacity 0.2s; }
+    .footer-back:hover { opacity: 1; }
+    .footer-copy { font-size: 10px; color: var(--sand); opacity: 0.7; }
+    .footer-legal { background: var(--black); border-top: 1px solid rgba(201,185,154,0.07); padding: 14px 48px; }
+    .footer-legal-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); opacity: 0.65; transition: opacity 0.2s, color 0.2s; }
+    .footer-legal a:hover { opacity: 1; color: var(--sand); }
+
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; } .nav-links, .nav-cta { display: none; }
+      .policy-hero { padding: 120px 24px 56px; }
+      .policy-body-section { padding: 56px 24px 72px; }
+      .policy-footer-wrap { padding: 28px 24px; }
+      .policy-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+      .footer-legal { padding: 14px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo"><img src="/idili-logo.png" alt="IDILI" /></a>
+  <ul class="nav-links">
+    <li><a href="/#productions">Work</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#team">Team</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <a href="/#contact" class="nav-cta">Get in touch</a>
+</nav>
+
+<section class="policy-hero">
+  <div class="policy-hero-inner">
+    <p class="section-label">Legal</p>
+    <h1 class="policy-title">Privacy Policy</h1>
+    <p class="policy-date">Last updated: July 2025</p>
+  </div>
+</section>
+
+<section class="policy-body-section">
+  <div class="policy-body-inner">
+    <div class="policy-placeholder">
+      <p>This document is currently being finalised by our legal team.</p>
+      <p>For any questions relating to our privacy practices in the meantime, please contact us at <a href="mailto:hello@idili.com">hello@idili.com</a>.</p>
+    </div>
+
+    <p class="policy-section-heading">What we collect</p>
+    <p class="policy-text">We may collect information you provide directly — such as your name and email address when you contact us — as well as technical data collected automatically, including your IP address, browser type, and pages visited.</p>
+
+    <p class="policy-section-heading">How we use it</p>
+    <p class="policy-text">We use your information to respond to enquiries, improve our website and services, and comply with legal obligations. We do not sell your personal data to third parties.</p>
+
+    <p class="policy-section-heading">Your rights</p>
+    <p class="policy-text">Under applicable data protection law you have the right to access, correct, or request deletion of any personal data we hold about you. To exercise these rights, please contact us at the address below.</p>
+
+    <p class="policy-section-heading">Contact</p>
+    <p class="policy-text">For queries regarding these terms, please contact <a href="mailto:hello@idili.com" style="color:var(--logo-orange);border-bottom:1px solid rgba(240,112,32,0.4);padding-bottom:1px;">hello@idili.com</a>.</p>
+  </div>
+</section>
+
+<footer class="policy-footer-wrap">
+  <div class="policy-footer-inner">
+    <a href="/" class="footer-logo"><img src="/idili-logo.png" alt="IDILI Live and Theatricals" /></a>
+    <a href="/" class="footer-back">&#8592; Back to IDILI</a>
+    <span class="footer-copy">&copy; 2025 IDILI Live &amp; Theatricals Ltd</span>
+  </div>
+</footer>
+<div class="footer-legal">
+  <div class="footer-legal-inner">
+    <a href="/terms-conditions.html">Privacy Policy</a>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/cookie-policy.html">Cookie Policy</a>
+    <a href="/compliance.html">Corporate Compliance</a>
+  </div>
+</div>
+
+</body>
+</html>
