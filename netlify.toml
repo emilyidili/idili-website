@@ -25,3 +25,8 @@
   for = "/content.json"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+    [[redirects]]
+  from = "/team/*"
+  to = "/team.html"
+  status = 200
