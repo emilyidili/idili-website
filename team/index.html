@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team — IDILI Live &amp; Theatricals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream:       #F5F0E8;
+      --warm:        #EDE6D6;
+      --sand:        #C9B99A;
+      --taupe:       #8B7B6B;
+      --charcoal:    #2C2826;
+      --black:       #1A1714;
+      --white:       #FAFAF8;
+      --serif:       'Playfair Display', Georgia, serif;
+      --sans:        'Inter', system-ui, sans-serif;
+      --logo-amber:  #F5A800;
+      --logo-orange: #F07020;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px;
+      background: rgba(26, 23, 20, 0.97);
+      backdrop-filter: blur(12px);
+    }
+    .nav-logo img { height: 64px; width: auto; display: block; }
+    .nav-links { display: flex; gap: 36px; list-style: none; }
+    .nav-links a {
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--cream); opacity: 0.8; transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 1; }
+    .nav-cta {
+      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+      border: 1px solid rgba(245,240,232,0.4); padding: 10px 22px;
+      color: var(--cream); transition: background 0.25s, color 0.25s;
+    }
+    .nav-cta:hover { background: var(--cream); color: var(--black); }
+
+    /* ── Profile layout ── */
+    .profile {
+      display: grid;
+      grid-template-columns: 44% 1fr;
+      min-height: 100vh;
+    }
+
+    /* Photo column — sticky so it stays in view while bio scrolls */
+    .profile-photo-col {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--charcoal);
+    }
+    .profile-photo-col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: brightness(0.9) saturate(0.88);
+      display: block;
+    }
+    .profile-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(160deg, #2C2826 0%, #1A1714 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-photo-placeholder svg { opacity: 0.15; }
+
+    /* Details column */
+    .profile-details {
+      background: var(--black);
+      padding: 100px 72px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .profile-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--sand);
+      opacity: 0.75;
+      margin-bottom: 60px;
+      transition: opacity 0.2s;
+    }
+    .profile-back:hover { opacity: 1; }
+    .profile-back svg { width: 14px; height: 14px; }
+
+    .profile-bar {
+      width: 36px; height: 2px;
+      background: var(--logo-amber);
+      margin-bottom: 32px;
+    }
+    .profile-name {
+      font-family: var(--serif);
+      font-size: clamp(36px, 4.5vw, 68px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .profile-role {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--logo-amber);
+      margin-bottom: 44px;
+    }
+
+    .profile-divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(201,185,154,0.15);
+      margin-bottom: 44px;
+    }
+
+    .profile-bio-label {
+      font-size: 9px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--taupe);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .profile-bio-label::before {
+      content: '';
+      display: block;
+      width: 28px; height: 1px;
+      background: var(--sand); opacity: 0.5;
+    }
+    .profile-bio {
+      font-size: clamp(15px, 1.4vw, 17px);
+      color: var(--sand);
+      line-height: 1.85;
+      max-width: 540px;
+      white-space: pre-line;
+    }
+    .profile-no-bio {
+      font-size: 14px;
+      color: var(--taupe);
+      font-style: italic;
+      opacity: 0.65;
+    }
+    .profile-cta {
+      margin-top: 48px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--cream);
+      border-bottom: 1px solid rgba(245,240,232,0.3);
+      padding-bottom: 5px;
+      transition: gap 0.3s, color 0.2s;
+    }
+    .profile-cta:hover { gap: 18px; color: var(--white); }
+    .profile-cta svg { width: 14px; height: 14px; }
+
+    /* ── Footer ── */
+    .profile-footer {
+      background: var(--black);
+      border-top: 1px solid rgba(201,185,154,0.1);
+      padding: 36px 48px;
+    }
+    .profile-footer-inner {
+      max-width: 1300px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .footer-logo img { height: 52px; width: auto; display: block; opacity: 0.85; transition: opacity 0.3s; }
+    .footer-logo img:hover { opacity: 1; }
+    .footer-copy { font-size: 10px; color: var(--sand); opacity: 0.7; }
+    .footer-back {
+      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--sand); opacity: 0.8; transition: opacity 0.2s;
+    }
+    .footer-back:hover { opacity: 1; }
+    .footer-legal {
+      background: var(--black);
+      border-top: 1px solid rgba(201,185,154,0.07);
+      padding: 14px 48px;
+    }
+    .footer-legal-inner {
+      max-width: 1300px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: center;
+      gap: 28px; flex-wrap: wrap;
+    }
+    .footer-legal a {
+      font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--taupe); opacity: 0.65; transition: opacity 0.2s, color 0.2s;
+    }
+    .footer-legal a:hover { opacity: 1; color: var(--sand); }
+
+    /* ── Mobile ── */
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; }
+      .nav-links, .nav-cta { display: none; }
+      .profile { grid-template-columns: 1fr; }
+      .profile-photo-col {
+        position: relative;
+        height: 55vw;
+        min-height: 260px;
+        max-height: 400px;
+        top: auto;
+      }
+      .profile-details {
+        padding: 48px 24px 64px;
+        min-height: auto;
+      }
+      .profile-back { margin-bottom: 36px; }
+      .profile-name { font-size: clamp(32px, 8vw, 56px); }
+      .profile-footer { padding: 28px 24px; }
+      .profile-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav>
+  <a href="/" class="nav-logo" aria-label="IDILI Live and Theatricals">
+    <img src="/idili-logo.png" alt="IDILI" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#productions">Work</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#team">Team</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <a href="/#contact" class="nav-cta">Get in touch</a>
+</nav>
+
+<!-- Profile -->
+<div class="profile" id="profile">
+
+  <!-- Photo -->
+  <div class="profile-photo-col" id="photo-col">
+    <div class="profile-photo-placeholder">
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+        <circle cx="60" cy="44" r="26" stroke="white" stroke-width="2"/>
+        <path d="M12 108c0-26.5 21.5-48 48-48s48 21.5 48 48" stroke="white" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Details -->
+  <div class="profile-details">
+    <a href="/#team" class="profile-back">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M13 8H3M7 12l-4-4 4-4"/>
+      </svg>
+      Back to team
+    </a>
+    <div class="profile-bar"></div>
+    <h1 class="profile-name" id="profile-name">Loading&hellip;</h1>
+    <p class="profile-role" id="profile-role"></p>
+    <div class="profile-divider"></div>
+    <p class="profile-bio-label">About</p>
+    <div id="profile-bio-wrap">
+      <p class="profile-bio" id="profile-bio"></p>
+    </div>
+    <a href="/#contact" class="profile-cta">
+      Work with us
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M3 8h10M9 4l4 4-4 4"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="profile-footer">
+  <div class="profile-footer-inner">
+    <a href="/" class="footer-logo">
+      <img src="/idili-logo.png" alt="IDILI Live and Theatricals" />
+    </a>
+    <a href="/#team" class="footer-back">&#8592; Back to team</a>
+    <span class="footer-copy">&copy; 2025 IDILI Live &amp; Theatricals Ltd</span>
+  </div>
+</footer>
+
+<div class="footer-legal">
+  <div class="footer-legal-inner">
+    <a href="/terms-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+    <a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>
+    <a href="/cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a>
+    <a href="/compliance.html" target="_blank" rel="noopener">Corporate Compliance</a>
+  </div>
+</div>
+
+<script>
+  // Extra team members (same list as homepage)
+  var EXTRA_TEAM = [
+    { name: 'Amanda Murray', role: 'TBC', bio: '', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&crop=faces,top&auto=format&q=80' },
+    { name: 'Jordan Taylor',  role: 'TBC', bio: '', photo: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=800&h=1000&fit=crop&crop=faces,top&auto=format&q=80' },
+    { name: 'Michael Peck',   role: 'TBC', bio: '', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop&crop=faces,top&auto=format&q=80' },
+    { name: 'Howard Earley',  role: 'TBC', bio: '', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop&crop=faces,top&auto=format&q=80' }
+  ];
+
+  function toSlug(name) {
+    return (name || '').normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().replace(/\s+/g, '-');
+  }
+
+  // Read slug from URL: /team/ingrid-sutej → "ingrid-sutej"
+  var urlSlug = window.location.pathname.replace(/^\/team\/?/, '').replace(/\/$/, '');
+
+  fetch('/content.json')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      // Build full team list (CMS + extra hardcoded)
+      var cmsTeam = d.team || [];
+      var cmsNames = cmsTeam.map(function(m) { return m.name.toLowerCase().trim(); });
+      var allTeam = cmsTeam.slice();
+      EXTRA_TEAM.forEach(function(m) {
+        if (cmsNames.indexOf(m.name.toLowerCase().trim()) === -1) allTeam.push(m);
+      });
+
+      // Find by slug match
+      var member = null;
+      for (var i = 0; i < allTeam.length; i++) {
+        if (toSlug(allTeam[i].name) === urlSlug) { member = allTeam[i]; break; }
+      }
+
+      if (!member) {
+        // Not found — go back to team section
+        window.location.href = '/#team';
+        return;
+      }
+
+      // Update page title
+      document.title = member.name + ' — IDILI Live & Theatricals';
+
+      // Populate name + role
+      document.getElementById('profile-name').textContent = member.name;
+      document.getElementById('profile-role').textContent = member.role || '';
+
+      // Photo
+      var photoCol = document.getElementById('photo-col');
+      if (member.photo) {
+        var img = document.createElement('img');
+        img.src = member.photo;
+        img.alt = member.name;
+        photoCol.innerHTML = '';
+        photoCol.appendChild(img);
+      }
+
+      // Bio
+      var bioEl = document.getElementById('profile-bio');
+      if (member.bio && member.bio.trim()) {
+        bioEl.textContent = member.bio;
+      } else {
+        bioEl.outerHTML = '<p class="profile-no-bio">Bio coming soon.</p>';
+      }
+    })
+    .catch(function() {
+      window.location.href = '/#team';
+    });
+</script>
+
+</body>
+</html>
