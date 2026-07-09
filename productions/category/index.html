@@ -94,10 +94,16 @@
     /* ── Productions grid ── */
     .cat-productions { background: var(--black); padding: 64px 48px 96px; }
     .cat-productions-inner { max-width: 1200px; margin: 0 auto; }
-    .prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+    .prod-scroll-wrap {
+      overflow-x: auto; padding-bottom: 20px;
+      scrollbar-width: thin; scrollbar-color: var(--sand) transparent;
+    }
+    .prod-scroll-wrap::-webkit-scrollbar { height: 3px; }
+    .prod-scroll-wrap::-webkit-scrollbar-thumb { background: var(--sand); border-radius: 2px; }
+    .prod-grid { display: flex; gap: 3px; }
     .prod-card {
       position: relative; overflow: hidden; cursor: pointer;
-      height: 380px; display: block; text-decoration: none;
+      flex: 0 0 360px; height: 520px; display: block; text-decoration: none;
     }
     .prod-card img {
       position: absolute; inset: 0; width: 100%; height: 100%;
@@ -169,15 +175,11 @@
       nav { padding: 16px 24px; }
       .nav-links, .nav-cta { display: none; }
       .cat-header { padding: 120px 24px 56px; }
-      .cat-productions { padding: 48px 24px 72px; }
-      .prod-grid { grid-template-columns: repeat(2, 1fr); }
-      .prod-card { height: 280px; }
+      .cat-productions { padding: 48px 0 72px; }
+      .cat-productions-inner { max-width: 100%; }
+      .prod-card { flex: 0 0 280px; height: 380px; }
       .cat-footer { padding: 28px 24px; }
       .cat-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
-    }
-    @media (max-width: 560px) {
-      .prod-grid { grid-template-columns: 1fr; }
-      .prod-card { height: 300px; }
     }
   </style>
 </head>
@@ -216,8 +218,10 @@
 <!-- Productions grid for this category -->
 <section class="cat-productions">
   <div class="cat-productions-inner">
-    <div class="prod-grid" id="prod-grid">
-      <div class="empty-state" style="grid-column:1/-1;">Loading...</div>
+    <div class="prod-scroll-wrap">
+      <div class="prod-grid" id="prod-grid">
+        <div class="empty-state">Loading...</div>
+      </div>
     </div>
   </div>
 </section>
@@ -238,36 +242,29 @@
     <a href="/terms-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>
     <a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>
     <a href="/cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a>
-    <a href="/compliance.html" target="_blank" rel="noopener">Corporate Compliance</a>
   </div>
 </div>
 
 <script>
   // Category definitions
   var CATEGORIES = {
-    'musical-theatre': {
-      num: '01', name: 'Musical Theatre',
+    'theatrical': {
+      num: '01', name: 'Theatrical',
       color: '#E82020',
-      tags: ['Musical Theatre', 'Musical'],
-      desc: 'From West End premieres to record-breaking anniversary tours, we produce musicals that define their era.'
-    },
-    'immersive-experiences': {
-      num: '02', name: 'Immersive Experiences',
-      color: '#F07020',
-      tags: ['Immersive'],
-      desc: 'Boundary-pushing productions that blend dining, theatre and spectacle into a single extraordinary event.'
+      tags: ['Theatrical', 'Musical Theatre', 'Musical'],
+      desc: 'From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.'
     },
     'classical': {
-      num: '03', name: 'Opera &amp; Classical',
+      num: '02', name: 'Opera &amp; Classical',
       color: '#009990',
       tags: ['Opera', 'Classical'],
       desc: 'International tours and concert presentations with the world\'s finest operatic voices and orchestras.'
     },
     'exhibitions': {
-      num: '04', name: 'Exhibitions',
+      num: '03', name: 'Exhibitions &amp; Other Experiences',
       color: '#0075BC',
-      tags: ['Exhibition'],
-      desc: 'Landmark cultural exhibitions that bring iconic artists and stories to life for new and existing audiences.'
+      tags: ['Exhibition', 'Immersive'],
+      desc: 'Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new and existing audiences.'
     }
   };
 
@@ -301,7 +298,7 @@
         var grid = document.getElementById('prod-grid');
 
         if (filtered.length === 0) {
-          grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1;">No productions found in this category yet.</div>';
+          grid.innerHTML = '<div class="empty-state">No productions found in this category yet.</div>';
           return;
         }
 
@@ -319,7 +316,7 @@
       })
       .catch(function() {
         document.getElementById('prod-grid').innerHTML =
-          '<div class="empty-state" style="grid-column:1/-1;">Unable to load productions. Please try again.</div>';
+          '<div class="empty-state">Unable to load productions. Please try again.</div>';
       });
   }
 </script>
