@@ -29,7 +29,7 @@
       "gallery": []
     },
     {
-      "tag": "Musical Theatre",
+      "tag": "Theatrical",
       "title": "Elf The Musical",
       "description": "The beloved festive spectacular, staged across the UK & US",
       "image": "/images/elf_mattcrockett_mc2_3711_rt3-1-.jpeg",
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "tag": "Musical Theatre",
+      "tag": "Theatrical",
       "title": "Rent The Musical",
       "description": "20th anniversary UK tour of the famous rock musical ",
       "image": "/images/rent.avif",
@@ -120,7 +120,7 @@
       ]
     },
     {
-      "tag": "Musical Theatre",
+      "tag": "Theatrical",
       "title": "CATS",
       "description": "Andrew Lloyd Webber’s record-breaking musical ",
       "image": "/images/cats1.jpg",
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "tag": "Musical Theatre",
+      "tag": "Theatrical",
       "title": "Phantom Of The Opera",
       "description": "The legendary musical in Monte Carlo",
       "slug": "phantom-of-the-opera",
