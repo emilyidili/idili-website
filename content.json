@@ -60,8 +60,12 @@
       "description": "The official ABBA exhibition, presented in London.",
       "image": "/images/abba-super-troupers-7.jpg",
       "slug": "abba-super-troupers-the-exhibition",
-      "long_description": "",
-      "gallery": []
+      "long_description": "IDILI participated in the presentation of ABBA: Super Troupers The Exhibition during its London run at The Southbank Centre in 2017/18, which was extended by popular demand.\n\nThe immersive exhibition brought to life the world of chart-topping Swedish pop sensation ABBA (Agnetha Fältskog, Björn Ulvaeus, Benny Andersson, and Anni-Frid Lyngstad) in a visitor experience that charted their music, lyrics, creative process and influence as one of the most iconic pop bands of the modern age.\n\nABBA: Super Troupers The Exhibition managed to transform the traditional exhibition experience into an insightful take on the group’s story. Incorporating lyrics, costumes, instruments, experiential backdrops of the key events and locations that defined and shaped the band, album artwork, photography, film and more, the exhibition went truly behind-the-scenes to examine the heavy-weight influence of one of the most enduring acts of all time.",
+      "gallery": [
+        "/images/06-installation-view-abba-super-troupers-on-display-at-southbank-centre-credit-victor-frankowski.webp",
+        "/images/04-installation-view-abba-super-troupers-on-display-at-southbank-centre-credit-victor-frankowski.webp",
+        "/images/03-björn-ulvaeus-opens-abba_-super-troupers-at-southbank-centre-credit-victor-frankowski.webp"
+      ]
     },
     {
       "tag": "Opera & Classical",
