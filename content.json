@@ -44,7 +44,7 @@
     {
       "tag": "Musical Theatre",
       "title": "Rent The Musical",
-      "description": "20th anniversary UK tour of the multi-award-winning rock musical ",
+      "description": "20th anniversary UK tour of the award-winning rock musical ",
       "image": "/images/rent.avif",
       "slug": "rent-the-musical",
       "long_description": "A tour of an acclaimed, 20th anniversary revival production of the multi-award-winning rock musical Rent was produced by Idili from 2016 to 2017.\n\nDescribed as an “exhilarating, landmark rock opera,” Rent returned to the London stage at Victoria’s St James Theatre, telling the thrilling story of a group of impoverished young artists struggling to survive in New York City’s East Village in the thriving days of Bohemian excess. \n\nInspired by Puccini’s classic opera La Bohème, Rent features unforgettable music and lyrics by Jonathan Larson including the much-loved songs Seasons of Love, Take Me or Leave Me and La Vie Bohème. Winner of four Tony Awards, six Drama Desk Awards and the prestigious Pulitzer Prize for Drama, it ran on Broadway for an astonishing 5,123 performances during its 12-year run. It is amongst the top 20 highest grossing Broadway musicals ever.\n\nDirected by Bruce Guthrie, Idili’s 20th anniversary production of Rent starred Ross Hunter (We Will Rock You, The Book of Mormon) as Roger Davis, Billy Cullum (Matilda, Charlie and the Chocolate Factory) as Mark Cohen, Ryan O’Gorman (Les Misérables, The Phantom of the Opera) as Tom Collins, Shanay Holmes (Thriller Live, The Bodyguard) as Joanne Jefferson, Layton Williams (Billy Elliot, Thriller Live) as Angel Schunard, Philippa Stefani (In The Heights, High Society) as Mimi Marquez and Lucie Jones (American Psycho, Les Misérables) as Maureen Johnson. Several of the cast members subsequently had feature roles in West End productions and on television shows.",
@@ -73,8 +73,12 @@
       "description": "Global superstar Italian mezzo-soprano",
       "image": "/images/cecilia-bartoli.jpeg",
       "slug": "cecilia-bartoli",
-      "long_description": "",
-      "gallery": []
+      "long_description": "The mezzo-soprano Cecilia Bartoli is one of the world’s leading classical artists with an outstanding and ongoing stage career that, so far, spans more than 35 years. Her work is inspired by her passion for re-discovering little-known music, and her profound interest in historically-informed performance practice. Her large-scale projects, which embrace various art forms, have brought her international recognition and led to prestigious managerial positions in Salzburg and Monte Carlo. ",
+      "gallery": [
+        "/images/ausschnitt-for-ariodante-decca-classics-©-uli-weber.jpg",
+        "/images/cecilia-bartoli-©fabrice-demessence.jpg",
+        "/images/orfeo_ed_euridice_cl_218-c-salzburger-festspiele-monika-rittershaus.jpg"
+      ]
     },
     {
       "tag": "Classical Concerts",
@@ -126,6 +130,19 @@
         "/images/cats2.jpg",
         "/images/cats3.jpg",
         "/images/cats1.jpg"
+      ]
+    },
+    {
+      "tag": "Opera & Classical",
+      "title": "Pretty Yende",
+      "long_description": "South African soprano Pretty Yende was born in the small town of Piet Retief and has risen to the top of the opera world at an unprecedented speed. With her magnetic charm, her internationally acclaimed opera and solo performances, and a critically acclaimed discography, she has quickly become one of the brightest stars in the classical music world. \n\nSince her professional opera debut at the Latvian National Theatre in Riga as Micaela in Carmen, she has appeared at almost all of the world's major theatres, including the Royal Opera House, Covent Garden, the Opéra National de Paris, the Metropolitan Opera, the Teatro alla Scala in Milan, the Deutsche Oper Berlin, the Staatsoper Berlin, the Bavarian State Opera in Munich, the Zurich Opera House and the Gran Teatre del Liceu in Barcelona, the Vienna State Opera and many major concert venues. \n\n\"A gracefulness that can seem decidedly divine seems to radiate from Ms. Yende.\" (New York Times)",
+      "image": "/images/pretty_2-9008.jpg",
+      "description": "Leading South African soprano",
+      "slug": "pretty-yende",
+      "gallery": [
+        "/images/pretty-yende-dior-â©-pierre-mouton.jpg",
+        "/images/pretty_2-5989.jpg",
+        "/images/pretty_2-8763.jpg"
       ]
     }
   ],
@@ -224,6 +241,8 @@
     "email": "hello@idili.com",
     "based": "London & Paris",
     "active": "UK, Europe & internationally",
-    "specialisms": "Musical Theatre, Immersive, Opera, Exhibitions"
+    "specialisms": "Musical Theatre, Immersive, Opera, Exhibitions",
+    "london_address": "10 Queen Street Place, London, United Kingdom, EC4R 1AG",
+    "paris_address": " 34 Rue de l'Échiquier, 75010 Paris, France"
   }
 }
