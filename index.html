@@ -132,7 +132,7 @@
       background: var(--sand); opacity: 0.5;
     }
 
-    /* ── About ─────────────────────────────────────────────────── */
+    /* ── About (merged intro + about) ─────────────────────────── */
     .about { background: var(--cream); color: var(--charcoal); padding: 96px 48px; }
     .about-inner {
       max-width: 1200px; margin: 0 auto;
@@ -156,11 +156,6 @@
     .about-stat-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); margin-top: 6px; }
     .about-body { color: var(--taupe); font-size: 15px; line-height: 1.85; }
     .about-body p + p { margin-top: 16px; }
-    .about-quote {
-      margin: 28px 0; padding: 22px 26px;
-      border-left: 2px solid var(--logo-orange);
-      font-size: 17px; font-weight: 400; color: var(--charcoal); line-height: 1.6;
-    }
     .about-learn {
       display: inline-flex; align-items: center; gap: 10px;
       font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
@@ -170,7 +165,7 @@
     }
     .about-learn:hover { gap: 18px; color: var(--charcoal); }
 
-    /* ── Productions ─────────────────────────────────────────── */
+    /* ── Productions — 4 category blocks ────────────────────── */
     .productions { background: var(--black); padding: 0; }
     .productions-inner { max-width: 1200px; margin: 0 auto; padding: 96px 48px 56px; }
     .productions-header { margin-bottom: 48px; }
@@ -181,7 +176,8 @@
     }
     .productions-title em { font-style: italic; color: var(--logo-teal); }
 
-    .cat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+    /* Category image cards */
+    .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
     .cat-card {
       position: relative; height: 520px; overflow: hidden;
       display: block; text-decoration: none;
@@ -230,14 +226,22 @@
       color: var(--black); line-height: 1.1; letter-spacing: -0.02em;
     }
     .team-heading em { font-style: italic; color: var(--logo-amber); }
-    .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px 20px; }
-    .team-card { display: block; color: inherit; text-decoration: none; }
-    .team-photo { width: 100%; padding-top: 120%; position: relative; overflow: hidden; margin-bottom: 16px; background: var(--warm); }
-    .team-photo img { transition: filter 0.4s, transform 0.55s ease !important; }
+    .team-grid {
+      display: flex; overflow-x: auto; gap: 16px; padding-bottom: 24px;
+      scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin; scrollbar-color: var(--sand) transparent;
+    }
+    .team-grid::-webkit-scrollbar { height: 3px; }
+    .team-grid::-webkit-scrollbar-track { background: transparent; }
+    .team-grid::-webkit-scrollbar-thumb { background: var(--sand); border-radius: 2px; }
+    .team-card { display: block; color: inherit; text-decoration: none; flex: 0 0 160px; scroll-snap-align: start; }
+    .team-photo { width: 160px; height: 192px; padding-top: 0; position: relative; overflow: hidden; margin-bottom: 12px; background: var(--warm); }
+    .team-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: filter 0.4s, transform 0.55s ease !important; }
     .team-card:hover .team-photo img { filter: grayscale(0%) !important; transform: scale(1.04); }
     .team-name { font-size: 16px; font-weight: 500; color: var(--black); margin-bottom: 4px; line-height: 1.3; transition: color 0.2s; }
     .team-card:hover .team-name { color: var(--logo-amber); }
     .team-role { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); opacity: 0.8; line-height: 1.55; }
+
     .team-link-hint { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--logo-amber); margin-top: 8px; opacity: 0; transition: opacity 0.25s; }
     .team-card:hover .team-link-hint { opacity: 1; }
 
@@ -305,9 +309,6 @@
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* ── Mobile ───────────────────────────────────────────────── */
-    @media (max-width: 1100px) {
-      .team-grid { grid-template-columns: repeat(3, 1fr); }
-    }
     @media (max-width: 900px) {
       nav { padding: 16px 24px; }
       .nav-links, .nav-cta { display: none; }
@@ -321,7 +322,6 @@
       .cat-grid { grid-template-columns: repeat(2, 1fr); }
       .cat-card { height: 360px; }
       .team { padding: 80px 24px; }
-      .team-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
       .contact { padding: 80px 24px 0; }
       .contact-inner { grid-template-columns: 1fr; gap: 48px; }
       footer { flex-direction: column; gap: 20px; text-align: center; padding: 32px 24px; }
@@ -330,12 +330,12 @@
     @media (max-width: 640px) {
       .cat-grid { grid-template-columns: 1fr; }
       .cat-card { height: 300px; }
-      .team-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
     }
   </style>
 </head>
 <body>
 
+<!-- ── Navigation ────────────────────────────────────────────── -->
 <nav id="nav">
   <a href="#" class="nav-logo" aria-label="IDILI Live and Theatricals">
     <img src="idili-logo.png" alt="IDILI" />
@@ -349,7 +349,9 @@
   <a href="#contact" class="nav-cta">Get in touch</a>
 </nav>
 
+<!-- ── Hero ──────────────────────────────────────────────────── -->
 <section class="hero" id="hero">
+  <video class="hero-img" id="hero-video" autoplay muted loop playsinline style="display:none; object-fit:cover;"></video>
   <img class="hero-img" id="hero-img"
     src="https://images.unsplash.com/photo-1516307365426-bea591f05011?w=2400&h=1400&fit=crop&crop=center&auto=format&q=85"
     alt="Theatre stage with dramatic spotlight — IDILI Live and Theatricals"
@@ -370,6 +372,7 @@
   </div>
 </section>
 
+<!-- ── About (merged intro + about) ───────────────────────────── -->
 <section class="about" id="about">
   <div class="about-inner">
     <div class="reveal">
@@ -392,14 +395,9 @@
     </div>
     <div class="reveal">
       <div class="about-body">
-        <p id="intro-body1"></p>
-        <p id="intro-body2"></p>
-        <p id="about-body1" style="margin-top:16px;">Ingrid has produced and promoted hit West End musicals and concert tours across Europe with world-renowned opera stars. Miguel co-founded the Verbier Festival and manages leading artists including soprano Anna Netrebko.</p>
-        <p id="about-body3" style="margin-top:16px;">Our close-knit but extensive team works across immersive theatre, classical music, exhibitions and large-scale musicals, always with the same commitment to exceptional production values and unforgettable audience experiences.</p>
+        <p id="about-body1"></p>
+        <p id="about-body3" style="margin-top:16px;"></p>
       </div>
-      <blockquote class="about-quote" id="about-quote">
-        "We believe every performance is a once-in-a-lifetime event — and we produce accordingly."
-      </blockquote>
       <a href="#team" class="about-learn">
         Meet the team
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
@@ -418,6 +416,7 @@
   </div>
 </section>
 
+<!-- ── Productions — 4 category blocks ───────────────────────── -->
 <section class="productions" id="productions">
   <div class="productions-inner">
     <div class="productions-header reveal">
@@ -427,30 +426,15 @@
   </div>
   <div class="cat-grid reveal" id="cat-grid">
 
-    <a class="cat-card" href="/productions/category/musical-theatre" data-category="musical-theatre">
-      <img class="cat-bg-img" id="cat-img-musical-theatre"
+    <a class="cat-card" href="/productions/category/theatrical" data-category="theatrical">
+      <img class="cat-bg-img" id="cat-img-theatrical"
         src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=700&h=1000&fit=crop&crop=center&auto=format&q=80"
-        alt="Musical Theatre" loading="lazy" />
+        alt="Theatrical" loading="lazy" />
       <div class="cat-overlay">
         <div class="cat-num">01</div>
         <div class="cat-bar" style="background: var(--logo-red);"></div>
-        <h3 class="cat-name">Musical Theatre</h3>
-        <p class="cat-desc">From West End premieres to record-breaking anniversary tours, we produce musicals that define their era.</p>
-        <span class="cat-arrow">Explore
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-        </span>
-      </div>
-    </a>
-
-    <a class="cat-card" href="/productions/category/immersive-experiences" data-category="immersive-experiences">
-      <img class="cat-bg-img" id="cat-img-immersive-experiences"
-        src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=700&h=1000&fit=crop&crop=center&auto=format&q=80"
-        alt="Immersive Experiences" loading="lazy" />
-      <div class="cat-overlay">
-        <div class="cat-num">02</div>
-        <div class="cat-bar" style="background: var(--logo-orange);"></div>
-        <h3 class="cat-name">Immersive Experiences</h3>
-        <p class="cat-desc">Boundary-pushing productions that blend dining, theatre and spectacle into a single extraordinary event.</p>
+        <h3 class="cat-name">Theatrical</h3>
+        <p class="cat-desc">From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.</p>
         <span class="cat-arrow">Explore
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </span>
@@ -462,7 +446,7 @@
         src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=700&h=1000&fit=crop&crop=center&auto=format&q=80"
         alt="Opera &amp; Classical" loading="lazy" />
       <div class="cat-overlay">
-        <div class="cat-num">03</div>
+        <div class="cat-num">02</div>
         <div class="cat-bar" style="background: var(--logo-teal);"></div>
         <h3 class="cat-name">Opera &amp; Classical</h3>
         <p class="cat-desc">International tours and concert presentations with the world's finest operatic voices and orchestras.</p>
@@ -475,12 +459,12 @@
     <a class="cat-card" href="/productions/category/exhibitions" data-category="exhibitions">
       <img class="cat-bg-img" id="cat-img-exhibitions"
         src="https://images.unsplash.com/photo-1577720643272-265f09367456?w=700&h=1000&fit=crop&crop=center&auto=format&q=80"
-        alt="Exhibitions" loading="lazy" />
+        alt="Exhibitions &amp; Other Experiences" loading="lazy" />
       <div class="cat-overlay">
-        <div class="cat-num">04</div>
+        <div class="cat-num">03</div>
         <div class="cat-bar" style="background: var(--logo-blue);"></div>
-        <h3 class="cat-name">Exhibitions</h3>
-        <p class="cat-desc">Landmark cultural exhibitions that bring iconic artists and stories to life for new and existing audiences.</p>
+        <h3 class="cat-name">Exhibitions &amp; Other Experiences</h3>
+        <p class="cat-desc">Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new audiences.</p>
         <span class="cat-arrow">Explore
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </span>
@@ -490,6 +474,7 @@
   </div>
 </section>
 
+<!-- ── Team ───────────────────────────────────────────────────── -->
 <section class="team" id="team">
   <div class="team-inner">
     <div class="team-header reveal">
@@ -497,6 +482,7 @@
       <h2 class="team-heading">A close-knit team<br>with <em>broad horizons.</em></h2>
     </div>
     <div class="team-grid reveal" id="team-grid">
+      <!-- Populated by CMS content loader -->
       <div class="team-card">
         <div class="team-photo">
           <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80"
@@ -521,6 +507,7 @@
   </div>
 </section>
 
+<!-- ── Contact ────────────────────────────────────────────────── -->
 <section class="contact" id="contact">
   <div class="contact-inner">
     <div class="reveal">
@@ -559,12 +546,13 @@
       <a href="/terms-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>
       <a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>
       <a href="/cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a>
-      <a href="/compliance.html" target="_blank" rel="noopener">Corporate Compliance</a>
     </div>
   </div>
 </section>
 
+<!-- ── Scripts ────────────────────────────────────────────────── -->
 <script>
+  // Scroll reveal
   var revealEls = document.querySelectorAll('.reveal');
   var revealObserver = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
@@ -577,6 +565,7 @@
   revealEls.forEach(function(el) { revealObserver.observe(el); });
 </script>
 
+<!-- ── CMS Content Loader ─────────────────────────────────────── -->
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on('init', function(user) {
@@ -586,6 +575,7 @@
     });
   }
 
+  // New team members to add if not already in CMS
   var EXTRA_TEAM = [
     { name: 'Amanda Murray', role: 'TBC', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80' },
     { name: 'Jordan Taylor',  role: 'TBC', photo: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80' },
@@ -593,11 +583,11 @@
     { name: 'Howard Earley',  role: 'TBC', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80' }
   ];
 
+  // Category → matching tags in content.json
   var CAT_TAG_MAP = {
-    'musical-theatre':       ['Musical Theatre', 'Musical'],
-    'immersive-experiences': ['Immersive'],
-    'classical':             ['Opera', 'Classical'],
-    'exhibitions':           ['Exhibition']
+    'theatrical':  ['Theatrical', 'Musical Theatre', 'Musical'],
+    'classical':   ['Opera', 'Classical'],
+    'exhibitions': ['Exhibition', 'Immersive']
   };
 
   fetch('/content.json')
@@ -607,52 +597,57 @@
       function set(id, val) { var el = document.getElementById(id); if (el && val != null) el.textContent = val; }
       function qs(sel) { return document.querySelector(sel); }
 
+      // ── Hero ────────────────────────────────────────────────
       var he = d.hero;
       if (he) {
         set('hero-eyebrow', he.eyebrow);
         set('hero-subtitle', he.subtitle);
-        if (he.image) qs('.hero-img').src = he.image;
+        if (he.video_url) {
+          var vid = document.getElementById('hero-video');
+          vid.src = he.video_url;
+          vid.style.display = 'block';
+          document.getElementById('hero-img').style.display = 'none';
+        } else if (he.image) {
+          document.getElementById('hero-img').src = he.image;
+        }
         if (he.title && he.title_em) {
           document.getElementById('hero-title').innerHTML =
             esc(he.title) + '<br>is <em>' + esc(he.title_em) + '</em>';
         }
       }
 
+      // ── About ─────────────────────────────────────────────────
       var intro = d.intro;
       if (intro) {
         if (intro.heading && intro.heading_em) {
           document.getElementById('about-heading').innerHTML =
             esc(intro.heading) + '<br><em>' + esc(intro.heading_em) + '</em>';
         }
-        set('intro-body1',  intro.body1);
-        set('intro-body2',  intro.body2);
-        set('stat1-num',    intro.stat1_num);
-        set('stat1-label',  intro.stat1_label);
-        set('stat2-num',    intro.stat2_num);
-        set('stat2-label',  intro.stat2_label);
-        set('stat3-num',    intro.stat3_num);
-        set('stat3-label',  intro.stat3_label);
+        set('stat1-num',   intro.stat1_num);
+        set('stat1-label', intro.stat1_label);
+        set('stat2-num',   intro.stat2_num);
+        set('stat2-label', intro.stat2_label);
+        set('stat3-num',   intro.stat3_num);
+        set('stat3-label', intro.stat3_label);
       }
       var ab = d.about;
       if (ab) {
         set('about-body1', ab.body1);
         set('about-body3', ab.body3);
-        if (ab.quote) {
-          document.getElementById('about-quote').textContent = '"' + ab.quote + '"';
-        }
         if (ab.image) {
           var aboutImg = document.getElementById('about-img');
           if (aboutImg) aboutImg.src = ab.image;
         }
       }
 
+      // ── Category block images — use first matching production image ──
       if (d.productions && d.productions.length) {
-        var catImgs = { 'musical-theatre': null, 'immersive-experiences': null, 'classical': null, 'exhibitions': null };
+        var catImgs = { 'theatrical': null, 'classical': null, 'exhibitions': null };
         d.productions.forEach(function(p) {
           if (!p.image) return;
           var tag = p.tag || '';
           Object.keys(CAT_TAG_MAP).forEach(function(catSlug) {
-            if (catImgs[catSlug]) return;
+            if (catImgs[catSlug]) return; // already have one
             var matches = CAT_TAG_MAP[catSlug].some(function(t) { return tag.toLowerCase().includes(t.toLowerCase()); });
             if (matches) catImgs[catSlug] = p.image;
           });
@@ -665,8 +660,11 @@
         });
       }
 
+      // ── Team ────────────────────────────────────────────────
       var cmsTeam = d.team || [];
       var cmsNames = cmsTeam.map(function(m) { return m.name.toLowerCase().trim(); });
+
+      // Append any new members not yet in CMS
       var allTeam = cmsTeam.slice();
       EXTRA_TEAM.forEach(function(m) {
         if (cmsNames.indexOf(m.name.toLowerCase().trim()) === -1) {
@@ -690,11 +688,13 @@
             '</div>' +
             '<div class="team-name">' + esc(m.name) + '</div>' +
             '<div class="team-role">' + esc(m.role) + '</div>' +
+
             '<span class="team-link-hint">View profile ›</span>' +
           '</a>';
         }).join('');
       }
 
+      // ── Contact ─────────────────────────────────────────────
       var ct = d.contact;
       if (ct) {
         if (ct.email) {
@@ -702,11 +702,14 @@
           emailEl.textContent = ct.email;
           emailEl.href = 'mailto:' + ct.email;
         }
+        // London & Paris address fields (new fields added to CMS)
         if (ct.london_address) set('contact-london', ct.london_address);
         if (ct.paris_address)  set('contact-paris',  ct.paris_address);
       }
     })
-    .catch(function() {});
+    .catch(function() {
+      // content.json not found — static fallback stays visible
+    });
 </script>
 
 </body>
