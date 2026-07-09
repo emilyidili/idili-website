@@ -22,7 +22,8 @@ collections:
               - { label: "Title (first part)", name: "title", widget: "string", hint: "e.g. Every night is" }
               - { label: "Title (italic part)", name: "title_em", widget: "string", hint: "e.g. opening night." }
               - { label: "Subtitle Paragraph", name: "subtitle", widget: "text" }
-              - { label: "Hero Image", name: "image", widget: "image" }
+              - { label: "Hero Image", name: "image", widget: "image", required: false }
+              - { label: "Hero Video URL", name: "video_url", widget: "string", required: false, hint: "Paste a direct .mp4 URL to use video instead of the hero image. Leave blank to use the image above." }
 
           - label: "About Section"
             name: "intro"
@@ -30,8 +31,8 @@ collections:
             fields:
               - { label: "Heading (first part)", name: "heading", widget: "string" }
               - { label: "Heading (italic part)", name: "heading_em", widget: "string" }
-              - { label: "Paragraph 1", name: "body1", widget: "text" }
-              - { label: "Paragraph 2", name: "body2", widget: "text" }
+              - { label: "Paragraph 1", name: "body1", widget: "text", required: false }
+              - { label: "Paragraph 2", name: "body2", widget: "text", required: false }
               - { label: "Stat 1 — Number", name: "stat1_num", widget: "string" }
               - { label: "Stat 1 — Label", name: "stat1_label", widget: "string" }
               - { label: "Stat 2 — Number", name: "stat2_num", widget: "string" }
@@ -45,18 +46,18 @@ collections:
             fields:
               - { label: "Heading (first part)", name: "heading", widget: "string" }
               - { label: "Heading (italic part)", name: "heading_em", widget: "string" }
-              - { label: "Paragraph 1 — Ingrid", name: "body1", widget: "text" }
-              - { label: "Paragraph 2 — Miguel", name: "body2", widget: "text" }
-              - { label: "Pull Quote", name: "quote", widget: "text" }
-              - { label: "Paragraph 3 — Team", name: "body3", widget: "text" }
-              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Paragraph 1 — Ingrid", name: "body1", widget: "text", required: false }
+              - { label: "Paragraph 2 — Miguel", name: "body2", widget: "text", required: false }
+              - { label: "Pull Quote", name: "quote", widget: "text", required: false }
+              - { label: "Paragraph 3 — Team", name: "body3", widget: "text", required: false }
+              - { label: "Photo", name: "image", widget: "image", required: false }
 
           - label: "Productions"
             name: "productions"
             widget: "list"
             label_singular: "Production"
             fields:
-              - { label: "Category Tag", name: "tag", widget: "string", hint: "Musical Theatre | Immersive Theatre & Dining | Opera & Classical | Classical Concerts | Exhibition" }
+              - { label: "Category Tag", name: "tag", widget: "string", hint: "Theatrical | Opera & Classical | Exhibitions & Other Experiences" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Short Description", name: "description", widget: "text", hint: "One or two lines shown on the category page card" }
               - { label: "Card Image", name: "image", widget: "image", hint: "Also used automatically as the category block image on the home page" }
@@ -77,7 +78,7 @@ collections:
             fields:
               - { label: "Full Name", name: "name", widget: "string" }
               - { label: "Job Title", name: "role", widget: "string" }
-              - { label: "Short Bio", name: "bio", widget: "text", required: false, hint: "Optional one or two sentence biography shown on the team profile page" }
+              - { label: "Short Bio", name: "bio", widget: "text", required: false, hint: "Optional biography shown on the team member's profile page" }
               - { label: "Photo", name: "photo", widget: "image" }
 
           - label: "Venues & Partners"
