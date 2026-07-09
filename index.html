@@ -433,8 +433,8 @@
       <div class="cat-overlay">
         <div class="cat-num">01</div>
         <div class="cat-bar" style="background: var(--logo-red);"></div>
-        <h3 class="cat-name">Theatrical</h3>
-        <p class="cat-desc">From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.</p>
+        <h3 class="cat-name" id="cat-name-theatrical">Theatrical</h3>
+        <p class="cat-desc" id="cat-desc-theatrical">From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.</p>
         <span class="cat-arrow">Explore
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </span>
@@ -448,8 +448,8 @@
       <div class="cat-overlay">
         <div class="cat-num">02</div>
         <div class="cat-bar" style="background: var(--logo-teal);"></div>
-        <h3 class="cat-name">Opera &amp; Classical</h3>
-        <p class="cat-desc">International tours and concert presentations with the world's finest operatic voices and orchestras.</p>
+        <h3 class="cat-name" id="cat-name-classical">Opera &amp; Classical</h3>
+        <p class="cat-desc" id="cat-desc-classical">International tours and concert presentations with the world's finest operatic voices and orchestras.</p>
         <span class="cat-arrow">Explore
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </span>
@@ -463,8 +463,8 @@
       <div class="cat-overlay">
         <div class="cat-num">03</div>
         <div class="cat-bar" style="background: var(--logo-blue);"></div>
-        <h3 class="cat-name">Exhibitions &amp; Other Experiences</h3>
-        <p class="cat-desc">Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new audiences.</p>
+        <h3 class="cat-name" id="cat-name-exhibitions">Exhibitions &amp; Other Experiences</h3>
+        <p class="cat-desc" id="cat-desc-exhibitions">Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new audiences.</p>
         <span class="cat-arrow">Explore
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
         </span>
@@ -640,9 +640,25 @@
         }
       }
 
-      // ── Category block images — use first matching production image ──
+      // ── Category card names, descriptions and images ─────────────
+      var cats = d.categories;
+      var catImgs = { 'theatrical': null, 'classical': null, 'exhibitions': null };
+
+      // First: apply any manually set images from CMS
+      if (cats) {
+        ['theatrical', 'classical', 'exhibitions'].forEach(function(slug) {
+          var c = cats[slug];
+          if (!c) return;
+          var nameEl = document.getElementById('cat-name-' + slug);
+          var descEl = document.getElementById('cat-desc-' + slug);
+          if (nameEl && c.name) nameEl.textContent = c.name;
+          if (descEl && c.desc) descEl.textContent = c.desc;
+          if (c.image) catImgs[slug] = c.image; // manual image takes priority
+        });
+      }
+
+      // Then: fill any blanks with the first matching production image
       if (d.productions && d.productions.length) {
-        var catImgs = { 'theatrical': null, 'classical': null, 'exhibitions': null };
         d.productions.forEach(function(p) {
           if (!p.image) return;
           var tag = p.tag || '';
@@ -652,13 +668,15 @@
             if (matches) catImgs[catSlug] = p.image;
           });
         });
-        Object.keys(catImgs).forEach(function(slug) {
-          if (catImgs[slug]) {
-            var el = document.getElementById('cat-img-' + slug);
-            if (el) el.src = catImgs[slug];
-          }
-        });
       }
+
+      // Apply all images
+      Object.keys(catImgs).forEach(function(slug) {
+        if (catImgs[slug]) {
+          var el = document.getElementById('cat-img-' + slug);
+          if (el) el.src = catImgs[slug];
+        }
+      });
 
       // ── Team ────────────────────────────────────────────────
       var cmsTeam = d.team || [];
