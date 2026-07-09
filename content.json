@@ -44,7 +44,7 @@
     {
       "tag": "Musical Theatre",
       "title": "Rent The Musical",
-      "description": "20th anniversary UK tour of the award-winning rock musical ",
+      "description": "20th anniversary UK tour of the famous rock musical ",
       "image": "/images/rent.avif",
       "slug": "rent-the-musical",
       "long_description": "A tour of an acclaimed, 20th anniversary revival production of the multi-award-winning rock musical Rent was produced by Idili from 2016 to 2017.\n\nDescribed as an “exhilarating, landmark rock opera,” Rent returned to the London stage at Victoria’s St James Theatre, telling the thrilling story of a group of impoverished young artists struggling to survive in New York City’s East Village in the thriving days of Bohemian excess. \n\nInspired by Puccini’s classic opera La Bohème, Rent features unforgettable music and lyrics by Jonathan Larson including the much-loved songs Seasons of Love, Take Me or Leave Me and La Vie Bohème. Winner of four Tony Awards, six Drama Desk Awards and the prestigious Pulitzer Prize for Drama, it ran on Broadway for an astonishing 5,123 performances during its 12-year run. It is amongst the top 20 highest grossing Broadway musicals ever.\n\nDirected by Bruce Guthrie, Idili’s 20th anniversary production of Rent starred Ross Hunter (We Will Rock You, The Book of Mormon) as Roger Davis, Billy Cullum (Matilda, Charlie and the Chocolate Factory) as Mark Cohen, Ryan O’Gorman (Les Misérables, The Phantom of the Opera) as Tom Collins, Shanay Holmes (Thriller Live, The Bodyguard) as Joanne Jefferson, Layton Williams (Billy Elliot, Thriller Live) as Angel Schunard, Philippa Stefani (In The Heights, High Society) as Mimi Marquez and Lucie Jones (American Psycho, Les Misérables) as Maureen Johnson. Several of the cast members subsequently had feature roles in West End productions and on television shows.",
@@ -144,6 +144,19 @@
         "/images/pretty_2-5989.jpg",
         "/images/pretty_2-8763.jpg"
       ]
+    },
+    {
+      "tag": "Musical Theatre",
+      "title": "Phantom Of The Opera",
+      "description": "The legendary musical in Monte Carlo",
+      "slug": "phantom-of-the-opera",
+      "long_description": "The Opéra de Monte-Carlo presented a sold out, new staging of The Phantom of the Opera, co-produced with IDILI Live and Broadway Italia SRL, in December 2023. Since its opening in 1986, this record-breaking musical has played all over the world: to over 145 million people, in 183 cities, in 17 languages and has received over 70 major theatre awards, including seven Tonys and four Olivier Awards. \n\nRecognised throughout the world as one of the best Phantoms, Olivier and Tony nominee Ramin Karimloo took on the role of The Phantom in Monaco, having previously played the role in London’s West End, Korea and in the 25th Anniversary Concert at the Royal Albert Hall.  ",
+      "gallery": [
+        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-52-.jpg",
+        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-94-.jpg",
+        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-31-.jpg"
+      ],
+      "image": "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-75-.jpg"
     }
   ],
   "about": {
