@@ -44,11 +44,15 @@
     {
       "tag": "Musical Theatre",
       "title": "Rent The Musical",
-      "description": "20th anniversary UK tour. Multi-award-winning rock musical returning to the West End.",
+      "description": "20th anniversary UK tour of the multi-award-winning rock musical ",
       "image": "/images/rent.avif",
       "slug": "rent-the-musical",
-      "long_description": "",
-      "gallery": []
+      "long_description": "A tour of an acclaimed, 20th anniversary revival production of the multi-award-winning rock musical Rent was produced by Idili from 2016 to 2017.\n\nDescribed as an “exhilarating, landmark rock opera,” Rent returned to the London stage at Victoria’s St James Theatre, telling the thrilling story of a group of impoverished young artists struggling to survive in New York City’s East Village in the thriving days of Bohemian excess. \n\nInspired by Puccini’s classic opera La Bohème, Rent features unforgettable music and lyrics by Jonathan Larson including the much-loved songs Seasons of Love, Take Me or Leave Me and La Vie Bohème. Winner of four Tony Awards, six Drama Desk Awards and the prestigious Pulitzer Prize for Drama, it ran on Broadway for an astonishing 5,123 performances during its 12-year run. It is amongst the top 20 highest grossing Broadway musicals ever.\n\nDirected by Bruce Guthrie, Idili’s 20th anniversary production of Rent starred Ross Hunter (We Will Rock You, The Book of Mormon) as Roger Davis, Billy Cullum (Matilda, Charlie and the Chocolate Factory) as Mark Cohen, Ryan O’Gorman (Les Misérables, The Phantom of the Opera) as Tom Collins, Shanay Holmes (Thriller Live, The Bodyguard) as Joanne Jefferson, Layton Williams (Billy Elliot, Thriller Live) as Angel Schunard, Philippa Stefani (In The Heights, High Society) as Mimi Marquez and Lucie Jones (American Psycho, Les Misérables) as Maureen Johnson. Several of the cast members subsequently had feature roles in West End productions and on television shows.",
+      "gallery": [
+        "/images/screenshot-2023-02-08-at-11.02.06.webp",
+        "/images/rent-the-musical-1.webp",
+        "/images/rent2.webp"
+      ]
     },
     {
       "tag": "Exhibition",
