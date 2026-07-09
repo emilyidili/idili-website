@@ -56,7 +56,7 @@
       ]
     },
     {
-      "tag": "Exhibitions & Other Experiences",
+      "tag": "Exhibitions & Other Events",
       "title": "ABBA: Super Troupers The Exhibition",
       "description": "The official ABBA exhibition, presented in London.",
       "image": "/images/abba-super-troupers-7.jpg",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "tag": "Exhibitions & Other Experiences",
+      "tag": "Exhibitions & Other Events",
       "title": "Monet's Garden",
       "description": "A 360-degree journey immersive art experience through the history and works of Claude Monet.",
       "image": "/images/screenshot-2026-06-11-at-15.40.24.png",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "tag": "Exhibitions & Other Experiences",
+      "tag": "Exhibitions & Other Events",
       "title": "Viva Frida Kahlo!",
       "description": "A sensory journey through Frida's world and art.",
       "image": "/images/frida_5_1080x1080.webp",
@@ -137,11 +137,11 @@
       "tag": "Opera & Classical",
       "title": "Pretty Yende",
       "long_description": "South African soprano Pretty Yende was born in the small town of Piet Retief and has risen to the top of the opera world at an unprecedented speed. With her magnetic charm, her internationally acclaimed opera and solo performances, and a critically acclaimed discography, she has quickly become one of the brightest stars in the classical music world. \n\nSince her professional opera debut at the Latvian National Theatre in Riga as Micaela in Carmen, she has appeared at almost all of the world's major theatres, including the Royal Opera House, Covent Garden, the Opéra National de Paris, the Metropolitan Opera, the Teatro alla Scala in Milan, the Deutsche Oper Berlin, the Staatsoper Berlin, the Bavarian State Opera in Munich, the Zurich Opera House and the Gran Teatre del Liceu in Barcelona, the Vienna State Opera and many major concert venues. \n\n\"A gracefulness that can seem decidedly divine seems to radiate from Ms. Yende.\" (New York Times)",
-      "image": "/images/pretty_2-9008.jpg",
+      "image": "/images/pretty_2-5989.jpg",
       "description": "Leading South African soprano",
       "slug": "pretty-yende",
       "gallery": [
-        "/images/pretty-yende-dior-â©-pierre-mouton.jpg",
+        "/images/pretty_2-9008.jpg",
         "/images/pretty_2-5989.jpg",
         "/images/pretty_2-8763.jpg"
       ]
@@ -262,5 +262,22 @@
     "specialisms": "Musical Theatre, Immersive, Opera, Exhibitions",
     "london_address": "10 Queen Street Place, London, United Kingdom, EC4R 1AG",
     "paris_address": " 34 Rue de l'Échiquier, 75010 Paris, France"
+  },
+  "categories": {
+    "theatrical": {
+      "name": "Theatrical",
+      "desc": "From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.",
+      "image": "/images/mmtp.jpg"
+    },
+    "classical": {
+      "name": "Opera & Classical",
+      "desc": "International tours and concert presentations with the world's finest operatic voices and classical orchestras.",
+      "image": "/images/requiem-de-brahms-festival-de-saint-denis-5-juin-2024-crédit-edouard-brane-28.jpg"
+    },
+    "exhibitions": {
+      "name": "Exhibitions & Other Events",
+      "desc": "Landmark cultural exhibitions, immersive experiences, and events that bring iconic artists and stories to life for new audiences ",
+      "image": "/images/abba.webp"
+    }
   }
 }
