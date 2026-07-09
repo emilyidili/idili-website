@@ -182,6 +182,26 @@
       "name": "Mandy Manaka",
       "role": "Finance",
       "photo": "/images/mandy.jpeg"
+    },
+    {
+      "name": "Amanda Murray",
+      "role": "General Manager",
+      "photo": "/images/biggy-x-monet-s-garden-15.jpg"
+    },
+    {
+      "name": "Jordan Taylor",
+      "role": "General Manager",
+      "photo": "/images/jordan.jpeg"
+    },
+    {
+      "name": "Michael Peck",
+      "role": "TBC",
+      "photo": "/images/michael.jpeg"
+    },
+    {
+      "name": "Howard Earley",
+      "role": "Finance Advisor",
+      "photo": "/images/howard.jpeg"
     }
   ],
   "venues": [
