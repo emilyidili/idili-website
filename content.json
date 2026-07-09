@@ -185,12 +185,26 @@
     {
       "name": "Suzi Arkley",
       "role": "Group Managing Director",
-      "photo": "/images/screenshot-2026-06-11-at-15.16.13.png"
+      "photo": "/images/screenshot-2026-06-11-at-15.16.13.png",
+      "bio": "Suzi has extensive global experience across industry leading brands and organisations in the retail, leisure, sports, music and entertainment sectors. Having begun her career in the sports sector with roles at TaylorMade adidas Golf and Surrey County Cricket Club, Suzi made the move into music and entertainment with AEG Europe, where she held various senior positions across the marketing and sponsorship functions for their UK venue portfolio, including The O2, the Ovo Arena Wembley and the Ovo Hydro. During her time at AEG Europe, Suzi was responsible for delivering ticketing and sponsorship revenues for hundreds of events including the Barclays ATP World Finals, The Sundance London Film Festival, Country 2 Country and many other diverse music, comedy and entertainment acts. In 2012, she launched The O2’s first permanent tourist attraction, Up at The O2, which is now regularly listed amongst the top 10 things to do in London. Since leaving AEG Europe in 2017, Suzi has worked on a variety of projects including the launch of ICON Outlet at The O2, Mamma Mia! The Party, ABBA Super Troupers the Exhibition, Sandi Toksvig Live, Van Gogh Alive and London’s first permanent digital immersive art experience, Frameless. "
     },
     {
       "name": "Emily Brett",
       "role": "Marketing Director",
-      "photo": "/images/screenshot-2026-06-22-at-12.01.18.png"
+      "photo": "/images/screenshot-2026-06-22-at-12.01.18.png",
+      "bio": "Emily is a seasoned live entertainment and events professional with over 25 years of experience spanning music, sport, and large-scale live productions. She has held senior commercial and marketing roles across some of the UK’s most respected entertainment organisations and now leads her own consultancy, Brett Inc, which she founded in 2014.\n\nThrough Brett Inc, Emily has delivered marketing, sponsorship, and live event production services for an impressive roster of global clients including AEG Presents, AEG Global Partnerships, The O2, OVO Arena Wembley, Formula E, London 2012 Olympic & Paralympic Games, Lloyd Webber Theatres, Eventim UK, and Nordoff Robbins. Her work brings together strategic insight, creative excellence, and operational precision to produce world-class live experiences and meaningful brand collaborations.\n\nPrior to founding Brett Inc, Emily served as Event Marketing Manager at AEG, leading promotional strategies across The O2 to maximise attendance and revenue. Her earlier career included key roles in entertainment and sponsorship management for London 2012, Nordoff Robbins, and Peace One Day, as well as commercial and licensing positions within Sanctuary Group, Bravado International, and 2waytraffic International (formerly Celador)."
+    },
+    {
+      "name": "Jonathan Fleming",
+      "role": "Projects Director",
+      "photo": "/images/screenshot-2026-06-22-at-12.04.24.png",
+      "bio": "Jonathan Fleming joined IDILI Live in 2022, following many years in the Tours & Projects team at Askonas Holt in London. There he worked worldwide with touring clients including Alvin Ailey American Dance Theater, Nederlands Dans Theater, San Francisco Ballet, The Australian Ballet and Cape Town Opera, as well as leading the company’s own presentations of Kabuki, Beijing Opera, orchestras and recitals at the major London venues. \n\nAway from work, Jonathan enjoys cooking, hill-walking, trips to the Scottish Islands and spending time with his two young daughters. "
+    },
+    {
+      "name": "Alice Binick",
+      "role": "Project Manager",
+      "photo": "/images/screenshot-2026-06-22-at-12.02.22.png",
+      "bio": "After training as an Opera singer in Paris, Alice Binick transitioned to arts administration, starting her career with Les Grandes Voix. In 2014, she moved to London and took on the role of Event Manager at the English National Opera. In 2017, she worked as a consultant on U-Live’s production of Norma, starring Cecilia Bartoli. She then ventured into running her own pub in Central London for a few years before returning to classical music as an Orchestra Manager in 2022. Alice joined IDILI Live as a full time Concerts Manager in 2024 following her consultancy role on Lise Davidsen’s Christmas tour in Norway in 2023."
     },
     {
       "name": "Frédérique Gerbelle",
@@ -201,16 +215,6 @@
       "name": "Jeanne Coussy",
       "role": "Celeste Administrator",
       "photo": "/images/jeanne-coussy.png"
-    },
-    {
-      "name": "Jonathan Fleming",
-      "role": "Projects Director",
-      "photo": "/images/screenshot-2026-06-22-at-12.04.24.png"
-    },
-    {
-      "name": "Alice Binick",
-      "role": "Project Manager",
-      "photo": "/images/screenshot-2026-06-22-at-12.02.22.png"
     },
     {
       "name": "Sarah Brooks",
