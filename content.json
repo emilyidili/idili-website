@@ -10,7 +10,7 @@
     "heading": "Where craft meets",
     "stat1_num": "10+",
     "heading_em": "spectacle.",
-    "stat2_num": "4",
+    "stat2_num": "3",
     "stat3_num": "∞",
     "body1": "1",
     "body2": "1",
@@ -20,7 +20,7 @@
   },
   "productions": [
     {
-      "tag": "Immersive Theatre & Dining",
+      "tag": "Theatrical",
       "title": "Mamma Mia! The Party",
       "description": "London & Stockholm. An immersive ABBA-themed theatrical dining experience that redefined the genre.",
       "image": "/images/mmtp.jpg",
@@ -166,7 +166,7 @@
     "body2": "Ingrid has produced and promoted hit West End musicals and concert tours across Europe with world-renowned opera stars. Miguel co-founded the Verbier Festival and manages leading artists including soprano Anna Netrebko.",
     "quote": "1",
     "body3": "Our team has extensive expertise across immersive theatre, classical music, exhibitions and large-scale musicals, always working with the same commitment to exceptional production values and unforgettable audience experiences.",
-    "image": "/images/pealight-tunnel.jpg"
+    "image": "/images/hands-up.avif"
   },
   "team": [
     {
