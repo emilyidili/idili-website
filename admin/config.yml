@@ -52,6 +52,32 @@ collections:
               - { label: "Paragraph 3 — Team", name: "body3", widget: "text", required: false }
               - { label: "Photo", name: "image", widget: "image", required: false }
 
+          - label: "Category Cards"
+            name: "categories"
+            widget: "object"
+            fields:
+              - label: "Theatrical"
+                name: "theatrical"
+                widget: "object"
+                fields:
+                  - { label: "Card Name", name: "name", widget: "string" }
+                  - { label: "Card Description", name: "desc", widget: "text" }
+                  - { label: "Card Image", name: "image", widget: "image", required: false, hint: "Optional — if left blank, the first Theatrical production image is used automatically" }
+              - label: "Opera & Classical"
+                name: "classical"
+                widget: "object"
+                fields:
+                  - { label: "Card Name", name: "name", widget: "string" }
+                  - { label: "Card Description", name: "desc", widget: "text" }
+                  - { label: "Card Image", name: "image", widget: "image", required: false, hint: "Optional — if left blank, the first Opera & Classical production image is used automatically" }
+              - label: "Exhibitions & Other Experiences"
+                name: "exhibitions"
+                widget: "object"
+                fields:
+                  - { label: "Card Name", name: "name", widget: "string" }
+                  - { label: "Card Description", name: "desc", widget: "text" }
+                  - { label: "Card Image", name: "image", widget: "image", required: false, hint: "Optional — if left blank, the first Exhibitions production image is used automatically" }
+
           - label: "Productions"
             name: "productions"
             widget: "list"
