@@ -121,3 +121,5 @@ collections:
               - { label: "Based In", name: "based", widget: "string" }
               - { label: "London Address", name: "london_address", widget: "string", required: false, hint: "e.g. 10 Somewhere Street, London W1A 1AA" }
               - { label: "Paris Address", name: "paris_address", widget: "string", required: false, hint: "e.g. 5 Rue de Somewhere, 75001 Paris" }
+
+ 
