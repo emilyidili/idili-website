@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "/team/*"
+  to = "/team.html"
+  status = 200
+
+[[redirects]]
   from = "/productions/category/*"
   to = "/productions/category/index.html"
   status = 200
@@ -25,8 +30,3 @@
   for = "/content.json"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
-
-    [[redirects]]
-  from = "/team/*"
-  to = "/team.html"
-  status = 200
