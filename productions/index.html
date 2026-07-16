@@ -35,7 +35,7 @@
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-    img { display: block; width: 100%; object-fit: cover; }
+    img { display: block; }
     a { color: inherit; text-decoration: none; }
 
     /* ── Nav ── */
@@ -50,17 +50,19 @@
     .nav-links { display: flex; gap: 36px; list-style: none; }
     .nav-links a {
       font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--cream); opacity: 0.8; transition: opacity 0.2s;
+      color: var(--white); font-weight: 500; opacity: 1; transition: opacity 0.2s;
     }
-    .nav-links a:hover { opacity: 1; }
+    .nav-links a:hover { opacity: 0.75; }
     .nav-cta {
-      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-      border: 1px solid rgba(245,240,232,0.4); padding: 10px 22px;
-      color: var(--cream); transition: background 0.25s, color 0.25s;
+      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;
+      border: 1px solid rgba(250,250,248,0.65); padding: 10px 22px;
+      color: var(--white); transition: background 0.25s, color 0.25s;
     }
-    .nav-cta:hover { background: var(--cream); color: var(--black); }
+    .nav-cta:hover { background: var(--white); color: var(--black); }
 
-    /* ── Category header ── */
+    /* ════════════════════════════════
+       CATEGORY PAGE STYLES
+    ════════════════════════════════ */
     .cat-header {
       background: var(--black);
       padding: 160px 48px 72px;
@@ -86,12 +88,9 @@
       font-weight: 700; color: var(--white); line-height: 1.0; letter-spacing: -0.02em;
       margin-bottom: 20px;
     }
-    .cat-title em { font-style: italic; }
     .cat-subtitle {
       font-size: 15px; color: var(--sand); line-height: 1.75; max-width: 600px; opacity: 0.85;
     }
-
-    /* ── Scroll arrows ── */
     .scroll-arrows { display: flex; gap: 8px; margin-bottom: 20px; }
     .scroll-btn {
       width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
@@ -101,8 +100,6 @@
     }
     .scroll-btn:hover { background: var(--sand); color: var(--black); border-color: var(--sand); }
     .scroll-btn svg { width: 14px; height: 14px; pointer-events: none; }
-
-    /* ── Productions grid ── */
     .cat-productions { background: var(--black); padding: 64px 48px 96px; }
     .cat-productions-inner { max-width: 1200px; margin: 0 auto; }
     .prod-scroll-wrap {
@@ -118,7 +115,7 @@
     }
     .prod-card img {
       position: absolute; inset: 0; width: 100%; height: 100%;
-      object-fit: cover;
+      object-fit: cover; object-position: center top;
       transition: transform 0.7s ease, filter 0.4s ease;
       filter: brightness(0.78) saturate(0.82);
     }
@@ -129,42 +126,149 @@
       display: flex; flex-direction: column; justify-content: flex-end;
       padding: 32px;
     }
-    .prod-tag {
+    .prod-tag-sm {
       font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
       color: var(--sand); margin-bottom: 8px;
     }
     .prod-name { font-size: 24px; font-weight: 500; color: var(--white); line-height: 1.15; letter-spacing: -0.01em; }
-    .prod-desc {
+    .prod-desc-sm {
       font-size: 12px; color: var(--sand); margin-top: 8px;
       opacity: 0; transform: translateY(8px);
       transition: opacity 0.35s, transform 0.35s; line-height: 1.6;
     }
-    .prod-card:hover .prod-desc { opacity: 1; transform: translateY(0); }
-
-    /* ── Empty state ── */
+    .prod-card:hover .prod-desc-sm { opacity: 1; transform: translateY(0); }
     .empty-state {
       text-align: center; padding: 80px 24px;
       color: var(--taupe); font-size: 15px;
     }
 
-    /* ── Footer ── */
-    .cat-footer {
+    /* ════════════════════════════════
+       PRODUCTION DETAIL PAGE STYLES
+    ════════════════════════════════ */
+    .prod-hero {
+      position: relative;
+      height: 70vh; min-height: 420px;
+      overflow: hidden;
+    }
+    .prod-hero-img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+      filter: brightness(0.72);
+    }
+    .prod-hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,23,20,0.92) 0%, rgba(26,23,20,0.1) 55%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 64px 80px;
+    }
+    .prod-back-detail {
+      position: absolute; top: 120px; left: 80px;
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--sand); opacity: 0.75; transition: opacity 0.2s;
+    }
+    .prod-back-detail:hover { opacity: 1; }
+    .prod-back-detail svg { width: 14px; height: 14px; }
+    .prod-tag-detail {
+      font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--sand); margin-bottom: 16px;
+    }
+    .prod-title-detail {
+      font-family: var(--serif);
+      font-size: clamp(40px, 6vw, 88px);
+      font-weight: 700; color: var(--white); line-height: 1.0; letter-spacing: -0.02em;
+    }
+    .prod-body {
+      max-width: 760px; margin: 0 auto;
+      padding: 72px 48px 96px;
+    }
+    .section-label {
+      font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--sand);
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 40px; opacity: 0.7;
+    }
+    .section-label::before {
+      content: ''; display: block;
+      width: 32px; height: 1px;
+      background: var(--sand); opacity: 0.5;
+    }
+    .prod-long-desc {
+      font-size: 17px; font-weight: 300; color: var(--cream);
+      line-height: 1.85; white-space: pre-wrap;
+    }
+    .prod-description-lead {
+      font-size: 20px; font-weight: 300; color: var(--sand);
+      line-height: 1.75; margin-bottom: 48px;
+      border-bottom: 1px solid rgba(201,185,154,0.15);
+      padding-bottom: 48px;
+    }
+    .prod-gallery {
+      background: rgba(255,255,255,0.02);
+      border-top: 1px solid rgba(201,185,154,0.1);
+      padding: 72px 48px 96px;
+    }
+    .prod-gallery-inner { max-width: 1200px; margin: 0 auto; }
+    .prod-gallery-label {
+      font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--sand);
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 40px; opacity: 0.7;
+    }
+    .prod-gallery-label::before {
+      content: ''; display: block;
+      width: 32px; height: 1px;
+      background: var(--sand); opacity: 0.5;
+    }
+    .prod-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+    }
+    .gallery-item {
+      overflow: hidden; aspect-ratio: 4/3; cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease, filter 0.4s ease;
+      filter: brightness(0.85) saturate(0.9);
+    }
+    .gallery-item:hover img { transform: scale(1.04); filter: brightness(1) saturate(1); }
+    .lightbox {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(10,10,10,0.95);
+      align-items: center; justify-content: center; cursor: zoom-out;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 90vw; max-height: 88vh;
+      width: auto; height: auto; object-fit: contain; cursor: default;
+    }
+    .lightbox-close {
+      position: absolute; top: 24px; right: 32px;
+      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--sand); cursor: pointer; opacity: 0.7; transition: opacity 0.2s;
+    }
+    .lightbox-close:hover { opacity: 1; }
+
+    /* ── Shared Footer ── */
+    .page-footer {
       background: var(--black);
       border-top: 1px solid rgba(201,185,154,0.1);
       padding: 36px 48px;
     }
-    .cat-footer-inner {
+    .page-footer-inner {
       max-width: 1200px; margin: 0 auto;
       display: flex; align-items: center; justify-content: space-between;
     }
     .footer-logo img { height: 52px; width: auto; display: block; opacity: 0.85; transition: opacity 0.3s; }
     .footer-logo img:hover { opacity: 1; }
     .footer-copy { font-size: 10px; color: var(--sand); opacity: 0.7; }
-    .footer-back {
+    .footer-back-link {
       font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
       color: var(--sand); opacity: 0.8; transition: opacity 0.2s;
     }
-    .footer-back:hover { opacity: 1; }
+    .footer-back-link:hover { opacity: 1; }
     .footer-legal {
       background: var(--black);
       border-top: 1px solid rgba(201,185,154,0.07);
@@ -189,14 +293,22 @@
       .cat-productions { padding: 48px 0 72px; }
       .cat-productions-inner { max-width: 100%; }
       .prod-card { flex: 0 0 280px; height: 380px; }
-      .cat-footer { padding: 28px 24px; }
-      .cat-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+      .prod-hero-overlay { padding: 40px 24px; }
+      .prod-back-detail { top: 100px; left: 24px; }
+      .prod-body { padding: 48px 24px 64px; }
+      .prod-gallery { padding: 48px 24px 64px; }
+      .prod-gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .page-footer { padding: 28px 24px; }
+      .page-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+    }
+    @media (max-width: 560px) {
+      .prod-gallery-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-<!-- Nav -->
+<!-- Nav (always shown) -->
 <nav>
   <a href="/" class="nav-logo" aria-label="IDILI Live and Theatricals">
     <img src="/idili-logo.png" alt="IDILI" />
@@ -210,64 +322,17 @@
   <a href="/#contact" class="nav-cta">Get in touch</a>
 </nav>
 
-<!-- Category header -->
-<section class="cat-header">
-  <div class="cat-header-inner">
-    <a href="/" class="cat-back">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M13 8H3M7 12l-4-4 4-4"/>
-      </svg>
-      Back to all work
-    </a>
-    <p class="cat-num-display" id="cat-num">01</p>
-    <div class="cat-bar-display" id="cat-bar"></div>
-    <h1 class="cat-title" id="cat-title">Productions</h1>
-    <p class="cat-subtitle" id="cat-subtitle"></p>
-  </div>
-</section>
+<!-- Main content — rendered by JS based on URL -->
+<div id="page-content"></div>
 
-<!-- Productions grid for this category -->
-<section class="cat-productions">
-  <div class="cat-productions-inner">
-    <div style="display:flex; align-items:center; justify-content:flex-end; margin-bottom:20px;">
-      <div class="scroll-arrows">
-        <button class="scroll-btn" id="prod-prev" aria-label="Previous">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 12L6 8l4-4"/></svg>
-        </button>
-        <button class="scroll-btn" id="prod-next" aria-label="Next">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4l4 4-4 4"/></svg>
-        </button>
-      </div>
-    </div>
-    <div class="prod-scroll-wrap">
-      <div class="prod-grid" id="prod-grid">
-        <div class="empty-state">Loading...</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="cat-footer">
-  <div class="cat-footer-inner">
-    <a href="/" class="footer-logo">
-      <img src="/idili-logo.png" alt="IDILI Live and Theatricals" />
-    </a>
-    <a href="/" class="footer-back">&#8592; Back to IDILI</a>
-    <span class="footer-copy">&copy; 2025 IDILI Live &amp; Theatricals Ltd</span>
-  </div>
-</footer>
-
-<div class="footer-legal">
-  <div class="footer-legal-inner">
-    <a href="/terms-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>
-    <a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>
-    <a href="/cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a>
-  </div>
+<!-- Lightbox (used by production detail) -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">Close &times;</span>
+  <img id="lightbox-img" src="" alt="" />
 </div>
 
 <script>
-  // Category definitions
+  // ── Category definitions ──────────────────────────────────────────
   var CATEGORIES = {
     'theatrical': {
       num: '01', name: 'Theatrical',
@@ -276,74 +341,259 @@
       desc: 'From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.'
     },
     'classical': {
-      num: '02', name: 'Opera &amp; Classical',
+      num: '02', name: 'Opera & Classical',
       color: '#009990',
       tags: ['Opera', 'Classical'],
-      desc: 'International tours and concert presentations with the world\'s finest operatic voices and orchestras.'
+      desc: "International tours and concert presentations with the world's finest operatic voices and orchestras."
     },
     'exhibitions': {
-      num: '03', name: 'Exhibitions &amp; Other Experiences',
+      num: '03', name: 'Exhibitions & Other Experiences',
       color: '#0075BC',
       tags: ['Exhibition', 'Immersive'],
       desc: 'Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new and existing audiences.'
     }
   };
 
-  // Read category slug from URL: /productions/category/musical-theatre
-  var parts = window.location.pathname.replace(/\/$/, '').split('/');
-  var categorySlug = parts[parts.length - 1];
-  var cat = CATEGORIES[categorySlug];
+  // Tag → category lookup (for production detail back link)
+  var TAG_TO_CAT = [
+    { keys: ['theatrical', 'musical theatre', 'musical'], slug: 'theatrical', label: 'Theatrical' },
+    { keys: ['opera', 'classical'],                       slug: 'classical',  label: 'Opera & Classical' },
+    { keys: ['exhibition', 'immersive'],                  slug: 'exhibitions',label: 'Exhibitions & Other Experiences' }
+  ];
+  function catFromTag(tag) {
+    var t = (tag || '').toLowerCase();
+    for (var i = 0; i < TAG_TO_CAT.length; i++) {
+      for (var j = 0; j < TAG_TO_CAT[i].keys.length; j++) {
+        if (t.includes(TAG_TO_CAT[i].keys[j])) return TAG_TO_CAT[i];
+      }
+    }
+    return { slug: 'theatrical', label: 'Productions' };
+  }
 
-  if (!cat) {
-    window.location.href = '/';
+  function esc(s) {
+    return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function sharedFooter(backHref, backLabel) {
+    return '<footer class="page-footer">' +
+      '<div class="page-footer-inner">' +
+        '<a href="/" class="footer-logo"><img src="/idili-logo.png" alt="IDILI Live and Theatricals" /></a>' +
+        '<a href="' + esc(backHref) + '" class="footer-back-link">&#8592; ' + esc(backLabel) + '</a>' +
+        '<span class="footer-copy">&copy; 2025 IDILI Live &amp; Theatricals Ltd</span>' +
+      '</div>' +
+    '</footer>' +
+    '<div class="footer-legal">' +
+      '<div class="footer-legal-inner">' +
+        '<a href="/terms-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>' +
+        '<a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>' +
+        '<a href="/cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a>' +
+      '</div>' +
+    '</div>';
+  }
+
+  // ── URL routing ───────────────────────────────────────────────────
+  var pathname = window.location.pathname.replace(/\/$/, '');
+  var parts = pathname.split('/').filter(Boolean);
+  // parts[0] = 'productions'
+  // parts[1] = 'category' OR production-slug
+  // parts[2] = category-slug (if parts[1] === 'category')
+
+  var isCategory = parts[1] === 'category';
+
+  // ══════════════════════════════════════════════════════════════════
+  // CATEGORY PAGE MODE
+  // ══════════════════════════════════════════════════════════════════
+  if (isCategory) {
+    var catSlug = parts[2] || '';
+    var cat = CATEGORIES[catSlug];
+
+    if (!cat) {
+      window.location.href = '/';
+    } else {
+      document.title = cat.name + ' — IDILI Live & Theatricals';
+
+      // Build category header HTML
+      var catHtml =
+        '<section class="cat-header">' +
+          '<div class="cat-header-inner">' +
+            '<a href="/" class="cat-back">' +
+              '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 12l-4-4 4-4"/></svg>' +
+              'Back to all work' +
+            '</a>' +
+            '<p class="cat-num-display">' + esc(cat.num) + '</p>' +
+            '<div class="cat-bar-display" style="background:' + cat.color + '"></div>' +
+            '<h1 class="cat-title">' + esc(cat.name) + '</h1>' +
+            '<p class="cat-subtitle">' + esc(cat.desc) + '</p>' +
+          '</div>' +
+        '</section>' +
+        '<section class="cat-productions">' +
+          '<div class="cat-productions-inner">' +
+            '<div style="display:flex;align-items:center;justify-content:flex-end;margin-bottom:20px;">' +
+              '<div class="scroll-arrows">' +
+                '<button class="scroll-btn" id="prod-prev" aria-label="Previous">' +
+                  '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 12L6 8l4-4"/></svg>' +
+                '</button>' +
+                '<button class="scroll-btn" id="prod-next" aria-label="Next">' +
+                  '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4l4 4-4 4"/></svg>' +
+                '</button>' +
+              '</div>' +
+            '</div>' +
+            '<div class="prod-scroll-wrap" id="prod-scroll-wrap">' +
+              '<div class="prod-grid" id="prod-grid"><div class="empty-state">Loading&hellip;</div></div>' +
+            '</div>' +
+          '</div>' +
+        '</section>';
+
+      document.getElementById('page-content').innerHTML = catHtml + sharedFooter('/', 'Back to IDILI');
+
+      // Set up scroll arrows
+      document.getElementById('prod-prev').addEventListener('click', function() {
+        document.getElementById('prod-scroll-wrap').scrollBy({ left: -370, behavior: 'smooth' });
+      });
+      document.getElementById('prod-next').addEventListener('click', function() {
+        document.getElementById('prod-scroll-wrap').scrollBy({ left:  370, behavior: 'smooth' });
+      });
+
+      // Fetch productions for this category
+      fetch('/content.json')
+        .then(function(r) { return r.json(); })
+        .then(function(d) {
+          var all = d.productions || [];
+          var filtered = all.filter(function(p) {
+            var tag = (p.tag || '').toLowerCase();
+            return cat.tags.some(function(t) { return tag.includes(t.toLowerCase()); });
+          });
+
+          var grid = document.getElementById('prod-grid');
+          if (filtered.length === 0) {
+            grid.innerHTML = '<div class="empty-state">No productions found in this category yet.</div>';
+            return;
+          }
+
+          grid.innerHTML = filtered.map(function(p) {
+            var href = p.slug ? '/productions/' + p.slug : '#';
+            var cardImg = p.thumbnail || p.image;
+            return '<a class="prod-card" href="' + esc(href) + '">' +
+              '<img src="' + esc(cardImg) + '" alt="' + esc(p.title) + '" loading="lazy" />' +
+              '<div class="prod-overlay">' +
+                '<span class="prod-tag-sm">' + esc(p.tag) + '</span>' +
+                '<h2 class="prod-name">' + esc(p.title) + '</h2>' +
+                '<p class="prod-desc-sm">' + esc(p.description) + '</p>' +
+              '</div>' +
+            '</a>';
+          }).join('');
+        })
+        .catch(function() {
+          var grid = document.getElementById('prod-grid');
+          if (grid) grid.innerHTML = '<div class="empty-state">Unable to load productions. Please try again.</div>';
+        });
+    }
+
+  // ══════════════════════════════════════════════════════════════════
+  // PRODUCTION DETAIL PAGE MODE
+  // ══════════════════════════════════════════════════════════════════
   } else {
-    // Set page title and header
-    document.title = cat.name.replace(/&amp;/, '&') + ' — IDILI Live & Theatricals';
-    document.getElementById('cat-num').textContent = cat.num;
-    document.getElementById('cat-bar').style.background = cat.color;
-    document.getElementById('cat-title').innerHTML = cat.name;
-    document.getElementById('cat-subtitle').innerHTML = cat.desc;
+    var slug = parts[parts.length - 1] || '';
 
-    // Fetch productions
     fetch('/content.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
-        function esc(s) { return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-
+        var prod = null;
         var all = d.productions || [];
-        var filtered = all.filter(function(p) {
-          var tag = (p.tag || '').toLowerCase();
-          return cat.tags.some(function(t) { return tag.includes(t.toLowerCase()); });
-        });
+        for (var i = 0; i < all.length; i++) {
+          if (all[i].slug === slug) { prod = all[i]; break; }
+        }
 
-        var grid = document.getElementById('prod-grid');
-
-        if (filtered.length === 0) {
-          grid.innerHTML = '<div class="empty-state">No productions found in this category yet.</div>';
+        if (!prod) {
+          document.getElementById('page-content').innerHTML =
+            '<div style="text-align:center;padding:160px 48px 80px;">' +
+              '<p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);margin-bottom:24px;">404</p>' +
+              '<h1 style="font-family:var(--serif);font-size:48px;color:var(--white);font-weight:700;margin-bottom:16px;">Production not found</h1>' +
+              '<p style="color:var(--sand);margin-bottom:36px;">We could not find this production.</p>' +
+              '<a href="/" style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;border:1px solid rgba(201,185,154,0.4);padding:12px 28px;color:var(--sand);">Back to home</a>' +
+            '</div>' +
+            sharedFooter('/', 'Back to IDILI');
           return;
         }
 
-        // Scroll arrows
-        var prodGrid = document.getElementById('prod-grid');
-        document.getElementById('prod-prev').addEventListener('click', function() { prodGrid.parentElement.scrollBy({ left: -370, behavior: 'smooth' }); });
-        document.getElementById('prod-next').addEventListener('click', function() { prodGrid.parentElement.scrollBy({ left:  370, behavior: 'smooth' }); });
+        document.title = prod.title + ' — IDILI Live & Theatricals';
 
-        grid.innerHTML = filtered.map(function(p) {
-          var href = p.slug ? '/productions/' + esc(p.slug) : '/';
-          var cardImg = p.thumbnail || p.image;
-          return '<a class="prod-card" href="' + href + '">' +
-            '<img src="' + esc(cardImg) + '" alt="' + esc(p.title) + '" loading="lazy" />' +
-            '<div class="prod-overlay">' +
-              '<span class="prod-tag">' + esc(p.tag) + '</span>' +
-              '<h2 class="prod-name">' + esc(p.title) + '</h2>' +
-              '<p class="prod-desc">' + esc(p.description) + '</p>' +
+        // Back link to correct category
+        var cat = catFromTag(prod.tag);
+        var backHref = '/productions/category/' + cat.slug;
+
+        // Hero
+        var heroHtml =
+          '<section class="prod-hero">' +
+            '<img class="prod-hero-img" src="' + esc(prod.image) + '" alt="' + esc(prod.title) + '" />' +
+            '<a href="' + esc(backHref) + '" class="prod-back-detail">' +
+              '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 12l-4-4 4-4"/></svg>' +
+              esc(cat.label) +
+            '</a>' +
+            '<div class="prod-hero-overlay">' +
+              '<p class="prod-tag-detail">' + esc(prod.tag) + '</p>' +
+              '<h1 class="prod-title-detail">' + esc(prod.title) + '</h1>' +
             '</div>' +
-          '</a>';
-        }).join('');
+          '</section>';
+
+        // Body — lead description + full story
+        var bodyHtml = '<section class="prod-body">';
+        if (prod.description) {
+          bodyHtml += '<p class="prod-description-lead">' + esc(prod.description) + '</p>';
+        }
+        if (prod.long_description && prod.long_description.trim()) {
+          bodyHtml += '<p class="section-label">Full Story</p><p class="prod-long-desc">' + esc(prod.long_description) + '</p>';
+        }
+        bodyHtml += '</section>';
+
+        // Gallery
+        var galleryHtml = '';
+        var gallery = prod.gallery || [];
+        if (gallery.length > 0) {
+          var imgs = gallery.map(function(item, idx) {
+            var src = (typeof item === 'string') ? item : (item.image || item);
+            return '<div class="gallery-item" data-src="' + esc(src) + '">' +
+              '<img src="' + esc(src) + '" alt="' + esc(prod.title) + ' photo ' + (idx + 1) + '" loading="lazy" />' +
+            '</div>';
+          }).join('');
+          galleryHtml =
+            '<section class="prod-gallery">' +
+              '<div class="prod-gallery-inner">' +
+                '<p class="prod-gallery-label">Gallery</p>' +
+                '<div class="prod-gallery-grid" id="prod-gallery-grid">' + imgs + '</div>' +
+              '</div>' +
+            '</section>';
+        }
+
+        document.getElementById('page-content').innerHTML =
+          heroHtml + bodyHtml + galleryHtml + sharedFooter(backHref, 'Back to ' + cat.label);
+
+        // Lightbox
+        if (gallery.length > 0) {
+          var lightbox = document.getElementById('lightbox');
+          var lightboxImg = document.getElementById('lightbox-img');
+          document.querySelectorAll('.gallery-item').forEach(function(item) {
+            item.addEventListener('click', function() {
+              lightboxImg.src = item.getAttribute('data-src');
+              lightbox.classList.add('open');
+            });
+          });
+          document.getElementById('lightbox-close').addEventListener('click', function() {
+            lightbox.classList.remove('open');
+          });
+          lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) lightbox.classList.remove('open');
+          });
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') lightbox.classList.remove('open');
+          });
+        }
       })
       .catch(function() {
-        document.getElementById('prod-grid').innerHTML =
-          '<div class="empty-state">Unable to load productions. Please try again.</div>';
+        document.getElementById('page-content').innerHTML =
+          '<div style="text-align:center;padding:160px 48px;">' +
+            '<p style="color:var(--sand);">Unable to load content. Please try again.</p>' +
+          '</div>';
       });
   }
 </script>
