@@ -106,3 +106,68 @@
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 12L6 8l4-4"/></svg>
         </button>
         <button class="scroll-btn" id="prod-next" aria-label="Next">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4l4 4-4 4"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="prod-scroll-wrap">
+      <div class="prod-grid" id="prod-grid">
+        <div class="empty-state">Loading...</div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="cat-footer">
+  <div class="cat-footer-inner">
+    <a href="/" class="footer-logo"><img src="/idili-logo.png" alt="IDILI Live and Theatricals" /></a>
+    <a href="/" class="footer-back">&#8592; Back to IDILI</a>
+    <span class="footer-copy">&copy; 2025 IDILI Live &amp; Theatricals Ltd</span>
+  </div>
+</footer>
+<div class="footer-legal">
+  <div class="footer-legal-inner">
+    <a href="/terms-conditions.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+    <a href="/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>
+    <a href="/cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a>
+  </div>
+</div>
+<script>
+  var CATEGORIES = {
+    'theatrical': { num: '01', name: 'Theatrical', color: '#E82020', tags: ['Theatrical', 'Musical Theatre', 'Musical'], desc: 'From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.' },
+    'classical':  { num: '02', name: 'Opera &amp; Classical', color: '#009990', tags: ['Opera', 'Classical'], desc: 'International tours and concert presentations with the world\'s finest operatic voices and orchestras.' },
+    'exhibitions':{ num: '03', name: 'Exhibitions &amp; Other Experiences', color: '#0075BC', tags: ['Exhibition', 'Immersive'], desc: 'Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new and existing audiences.' }
+  };
+  var parts = window.location.pathname.replace(/\/$/, '').split('/');
+  var categorySlug = parts[parts.length - 1];
+  var cat = CATEGORIES[categorySlug];
+  if (!cat) { window.location.href = '/'; }
+  else {
+    document.title = cat.name.replace(/&amp;/, '&') + ' — IDILI Live & Theatricals';
+    document.getElementById('cat-num').textContent = cat.num;
+    document.getElementById('cat-bar').style.background = cat.color;
+    document.getElementById('cat-title').innerHTML = cat.name;
+    document.getElementById('cat-subtitle').innerHTML = cat.desc;
+    fetch('/content.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+        var all = d.productions || [];
+        var filtered = all.filter(function(p) {
+          var tag = (p.tag||'').toLowerCase();
+          return cat.tags.some(function(t) { return tag.includes(t.toLowerCase()); });
+        });
+        var grid = document.getElementById('prod-grid');
+        if (filtered.length === 0) { grid.innerHTML = '<div class="empty-state">No productions found in this category yet.</div>'; return; }
+        document.getElementById('prod-prev').addEventListener('click', function() { document.querySelector('.prod-scroll-wrap').scrollBy({ left: -370, behavior: 'smooth' }); });
+        document.getElementById('prod-next').addEventListener('click', function() { document.querySelector('.prod-scroll-wrap').scrollBy({ left:  370, behavior: 'smooth' }); });
+        grid.innerHTML = filtered.map(function(p) {
+          var href = p.slug ? '/productions/' + esc(p.slug) : '/';
+          var cardImg = p.thumbnail || p.image;
+          return '<a class="prod-card" href="' + href + '"><img src="' + esc(cardImg) + '" alt="' + esc(p.title) + '" loading="lazy" /><div class="prod-overlay"><span class="prod-tag">' + esc(p.tag) + '</span><h2 class="prod-name">' + esc(p.title) + '</h2><p class="prod-desc">' + esc(p.description) + '</p></div></a>';
+        }).join('');
+      })
+      .catch(function() { document.getElementById('prod-grid').innerHTML = '<div class="empty-state">Unable to load productions. Please try again.</div>'; });
+  }
+</script>
+</body>
+</html>
