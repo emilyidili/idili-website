@@ -55,15 +55,15 @@
     .nav-links { display: flex; gap: 36px; list-style: none; }
     .nav-links a {
       font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--cream); opacity: 0.8; transition: opacity 0.2s;
+      color: var(--white); font-weight: 500; opacity: 1; transition: opacity 0.2s;
     }
-    .nav-links a:hover { opacity: 1; }
+    .nav-links a:hover { opacity: 0.75; }
     .nav-cta {
-      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-      border: 1px solid rgba(245,240,232,0.4); padding: 10px 22px;
-      color: var(--cream); transition: background 0.25s, color 0.25s;
+      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;
+      border: 1px solid rgba(250,250,248,0.65); padding: 10px 22px;
+      color: var(--white); transition: background 0.25s, color 0.25s;
     }
-    .nav-cta:hover { background: var(--cream); color: var(--black); }
+    .nav-cta:hover { background: var(--white); color: var(--black); }
 
     /* ── Hero ──────────────────────────────────────────────────── */
     .hero { position: relative; height: 100vh; min-height: 640px; overflow: hidden; }
@@ -84,7 +84,7 @@
       display: flex; flex-direction: column; justify-content: flex-end;
       padding: 0 48px 80px; max-width: 860px;
     }
-    .hero-eyebrow { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sand); margin-bottom: 20px; }
+    .hero-eyebrow { font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--white); font-weight: 500; margin-bottom: 20px; }
     .hero-title {
       font-family: var(--serif);
       font-size: clamp(48px, 7.5vw, 104px);
@@ -93,13 +93,13 @@
     }
     .hero-title em { font-style: italic; font-weight: 400; color: #F5A800; }
     .hero-subtitle {
-      font-size: 14px; font-weight: 300; color: var(--sand);
-      letter-spacing: 0.04em; max-width: 480px; margin-bottom: 44px; opacity: 0.9;
+      font-size: 14px; font-weight: 400; color: var(--white);
+      letter-spacing: 0.04em; max-width: 480px; margin-bottom: 44px;
     }
     .hero-cta {
       display: inline-flex; align-items: center; gap: 12px;
-      font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--cream); border-bottom: 1px solid var(--sand); padding-bottom: 6px;
+      font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;
+      color: var(--white); border-bottom: 1px solid rgba(250,250,248,0.5); padding-bottom: 6px;
       transition: gap 0.3s;
     }
     .hero-cta:hover { gap: 20px; }
@@ -107,7 +107,7 @@
     .hero-scroll {
       position: absolute; bottom: 40px; right: 48px; z-index: 2;
       display: flex; flex-direction: column; align-items: center; gap: 8px;
-      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--taupe);
+      font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(250,250,248,0.65); font-weight: 500;
     }
     .hero-scroll-line {
       width: 1px; height: 48px;
@@ -177,14 +177,20 @@
     .productions-title em { font-style: italic; color: var(--logo-teal); }
 
     /* Category image cards */
-    .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+    .cat-grid {
+      display: flex; overflow-x: auto; gap: 2px;
+      scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .cat-grid::-webkit-scrollbar { display: none; }
     .cat-card {
       position: relative; height: 520px; overflow: hidden;
       display: block; text-decoration: none;
+      flex: 0 0 calc(100vw / 3); scroll-snap-align: start;
     }
     .cat-bg-img {
       position: absolute; inset: 0;
-      width: 100%; height: 100%; object-fit: cover;
+      width: 100%; height: 100%; object-fit: cover; object-position: center top;
       transition: transform 0.75s ease, filter 0.5s ease;
       filter: brightness(0.85) saturate(0.82);
     }
@@ -202,19 +208,32 @@
     .cat-bar { width: 28px; height: 2px; border-radius: 2px; margin-bottom: 18px; }
     .cat-name { font-size: 21px; font-weight: 500; color: var(--white); line-height: 1.2; letter-spacing: -0.01em; }
     .cat-desc {
-      font-size: 12px; color: var(--sand); line-height: 1.7; margin-top: 12px;
-      opacity: 0; transform: translateY(8px);
-      transition: opacity 0.35s, transform 0.35s;
+      font-size: 12px; color: var(--sand); line-height: 1.6; margin-top: 10px;
+      opacity: 0.85; transition: opacity 0.2s;
     }
-    .cat-card:hover .cat-desc { opacity: 1; transform: translateY(0); }
+    .cat-card:hover .cat-desc { opacity: 1; }
     .cat-arrow {
-      display: inline-flex; align-items: center; gap: 8px; margin-top: 18px;
+      display: inline-flex; align-items: center; gap: 8px; margin-top: 16px;
       font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sand);
-      opacity: 0; transform: translateY(6px);
-      transition: opacity 0.35s 0.07s, transform 0.35s 0.07s;
+      opacity: 0.6; transition: opacity 0.25s, gap 0.25s;
     }
     .cat-arrow svg { width: 14px; height: 14px; }
-    .cat-card:hover .cat-arrow { opacity: 1; transform: translateY(0); }
+    .cat-card:hover .cat-arrow { opacity: 1; gap: 12px; }
+
+    /* ── Scroll arrows ────────────────────────────────────────── */
+    .scroll-arrows {
+      display: flex; gap: 8px; margin-bottom: 20px;
+    }
+    .scroll-btn {
+      width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      border: 1px solid rgba(201,185,154,0.35); background: transparent;
+      color: var(--sand); transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .scroll-btn:hover { background: var(--sand); color: var(--black); border-color: var(--sand); }
+    .scroll-btn svg { width: 14px; height: 14px; pointer-events: none; }
+    .team .scroll-btn { border-color: rgba(44,40,38,0.2); color: var(--taupe); }
+    .team .scroll-btn:hover { background: var(--charcoal); color: var(--white); border-color: var(--charcoal); }
 
     /* ── Team ─────────────────────────────────────────────────── */
     .team { background: var(--white); padding: 112px 48px; }
@@ -319,8 +338,7 @@
       .about-img-col { display: none; }
       .about-stat-row { gap: 28px; }
       .productions-inner { padding: 64px 24px 40px; }
-      .cat-grid { grid-template-columns: repeat(2, 1fr); }
-      .cat-card { height: 360px; }
+      .cat-card { flex: 0 0 85vw; height: 400px; }
       .team { padding: 80px 24px; }
       .contact { padding: 80px 24px 0; }
       .contact-inner { grid-template-columns: 1fr; gap: 48px; }
@@ -328,8 +346,7 @@
       .footer-nav { flex-wrap: wrap; justify-content: center; }
     }
     @media (max-width: 640px) {
-      .cat-grid { grid-template-columns: 1fr; }
-      .cat-card { height: 300px; }
+      .cat-card { flex: 0 0 90vw; height: 360px; }
     }
   </style>
 </head>
@@ -419,9 +436,19 @@
 <!-- ── Productions — 4 category blocks ───────────────────────── -->
 <section class="productions" id="productions">
   <div class="productions-inner">
-    <div class="productions-header reveal">
-      <p class="section-label">What we do</p>
-      <h2 class="productions-title">Three disciplines,<br>one <em>standard of excellence.</em></h2>
+    <div class="productions-header reveal" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <div>
+        <p class="section-label">What we do</p>
+        <h2 class="productions-title">Three disciplines,<br>one <em>standard of excellence.</em></h2>
+      </div>
+      <div class="scroll-arrows">
+        <button class="scroll-btn" id="disc-prev" aria-label="Previous discipline">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 12L6 8l4-4"/></svg>
+        </button>
+        <button class="scroll-btn" id="disc-next" aria-label="Next discipline">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4l4 4-4 4"/></svg>
+        </button>
+      </div>
     </div>
   </div>
   <div class="cat-grid reveal" id="cat-grid">
@@ -477,9 +504,19 @@
 <!-- ── Team ───────────────────────────────────────────────────── -->
 <section class="team" id="team">
   <div class="team-inner">
-    <div class="team-header reveal">
-      <p class="section-label">The people</p>
-      <h2 class="team-heading">A close-knit team<br>with <em>broad horizons.</em></h2>
+    <div class="team-header reveal" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <div>
+        <p class="section-label">The people</p>
+        <h2 class="team-heading">A small team<br>with <em>big ambitions.</em></h2>
+      </div>
+      <div class="scroll-arrows">
+        <button class="scroll-btn" id="team-prev" aria-label="Previous">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 12L6 8l4-4"/></svg>
+        </button>
+        <button class="scroll-btn" id="team-next" aria-label="Next">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4l4 4-4 4"/></svg>
+        </button>
+      </div>
     </div>
     <div class="team-grid reveal" id="team-grid">
       <!-- Populated by CMS content loader -->
@@ -552,6 +589,18 @@
 
 <!-- ── Scripts ────────────────────────────────────────────────── -->
 <script>
+  // Scroll arrows
+  function setupScrollArrows(gridId, prevId, nextId, amt) {
+    var grid = document.getElementById(gridId);
+    var prev = document.getElementById(prevId);
+    var next = document.getElementById(nextId);
+    if (!grid || !prev || !next) return;
+    prev.addEventListener('click', function() { grid.scrollBy({ left: -amt, behavior: 'smooth' }); });
+    next.addEventListener('click', function() { grid.scrollBy({ left:  amt, behavior: 'smooth' }); });
+  }
+  setupScrollArrows('cat-grid',  'disc-prev', 'disc-next', window.innerWidth / 3);
+  setupScrollArrows('team-grid', 'team-prev', 'team-next', 180);
+
   // Scroll reveal
   var revealEls = document.querySelectorAll('.reveal');
   var revealObserver = new IntersectionObserver(function(entries) {
