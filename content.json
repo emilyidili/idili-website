@@ -182,8 +182,8 @@
   "about": {
     "heading": "A boutique studio with",
     "heading_em": "global reach.",
-    "body1": "IDILI Live was founded in 2016 by Ingrid Sutej and Miguel Esteban, two of the live events industry's most respected figures. Between them, they bring over four decades of experience spanning almost every genre of entertainment imaginable.",
-    "body2": "Ingrid has produced and promoted hit West End musicals and concert tours across Europe with world-renowned opera stars. Miguel co-founded the Verbier Festival and manages leading artists including soprano Anna Netrebko.",
+    "body1": "IDILI Live is a boutique independent company founded in 2016 that produces theatre, classical events and immersive experiences. ",
+    "body2": "1",
     "quote": "1",
     "body3": "Our team has extensive expertise across immersive theatre, classical music, exhibitions and large-scale musicals, always working with the same commitment to exceptional production values and unforgettable audience experiences.",
     "image": "/images/hands-up.avif"
@@ -285,7 +285,7 @@
   "categories": {
     "theatrical": {
       "name": "Theatrical",
-      "desc": "From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.",
+      "desc": "From West End premieres to record-breaking anniversary tours, we have been involved in theatrical experiences that define their era.",
       "image": "/images/mmtp.jpg"
     },
     "classical": {
