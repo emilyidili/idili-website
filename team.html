@@ -30,6 +30,50 @@
     .nav-cta { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(245,240,232,0.4); padding: 10px 22px; color: var(--cream); transition: background 0.25s, color 0.25s; }
     .nav-cta:hover { background: var(--cream); color: var(--black); }
 
+    /* ── Hamburger button ─────────────────────────────── */
+    .nav-burger {
+      display: none;
+      flex-direction: column; justify-content: center; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      padding: 4px; z-index: 110;
+    }
+    .nav-burger span {
+      display: block; width: 24px; height: 1.5px;
+      background: var(--cream);
+      transition: transform 0.3s ease, opacity 0.25s ease;
+      transform-origin: center;
+    }
+    .nav-burger.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-burger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-burger.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* ── Mobile overlay menu ──────────────────────────── */
+    .nav-mobile {
+      display: none;
+      position: fixed; inset: 0; z-index: 99;
+      background: rgba(26,23,20,0.98);
+      flex-direction: column; align-items: center; justify-content: center; gap: 0;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .nav-mobile.is-open { opacity: 1; pointer-events: auto; }
+    .nav-mobile ul {
+      list-style: none; display: flex; flex-direction: column;
+      align-items: center; gap: 0; margin-bottom: 40px;
+    }
+    .nav-mobile ul li a {
+      display: block; padding: 16px 0;
+      font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--cream); opacity: 0.75; transition: opacity 0.2s;
+    }
+    .nav-mobile ul li a:hover { opacity: 1; }
+    .nav-mobile .mobile-cta {
+      font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+      border: 1px solid rgba(245,240,232,0.4); padding: 12px 32px;
+      color: var(--cream); transition: background 0.25s, color 0.25s;
+    }
+    .nav-mobile .mobile-cta:hover { background: var(--cream); color: var(--black); }
+
     .profile { background: var(--black); min-height: 100vh; }
     .profile-details { max-width: 860px; margin: 0 auto; padding: 120px 48px 80px; }
     .profile-back {
@@ -67,8 +111,12 @@
     .footer-legal-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
     .footer-legal a { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); opacity: 0.65; transition: opacity 0.2s, color 0.2s; }
     .footer-legal a:hover { opacity: 1; color: var(--sand); }
+
     @media (max-width: 900px) {
-      nav { padding: 16px 24px; } .nav-links, .nav-cta { display: none; }
+      nav { padding: 16px 24px; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-burger { display: flex; }
+      .nav-mobile { display: flex; }
       .profile-details { padding: 100px 24px 64px; }
       .profile-header { flex-direction: column; gap: 24px; }
       .profile-photo-col { width: 120px; height: 150px; }
@@ -87,7 +135,21 @@
     <li><a href="/#contact">Contact</a></li>
   </ul>
   <a href="/#contact" class="nav-cta">Get in touch</a>
+  <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- Mobile overlay menu -->
+<div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Navigation menu">
+  <ul>
+    <li><a href="/#productions">Work</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#team">Team</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <a href="/#contact" class="mobile-cta">Get in touch</a>
+</div>
 
 <div class="profile" id="profile">
   <div class="profile-details">
@@ -121,7 +183,6 @@
     </a>
   </div>
 </div>
-
 <footer class="profile-footer">
   <div class="profile-footer-inner">
     <a href="/" class="footer-logo"><img src="/idili-logo.png" alt="IDILI Live and Theatricals" /></a>
@@ -136,8 +197,38 @@
     <a href="/cookie-policy.html">Cookie Policy</a>
   </div>
 </div>
-
 <script>
+  // ── Hamburger menu ───────────────────────────────────
+  var burger = document.querySelector('.nav-burger');
+  var mobileMenu = document.getElementById('nav-mobile');
+
+  function openMenu() {
+    burger.classList.add('is-open');
+    burger.setAttribute('aria-expanded', 'true');
+    mobileMenu.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    burger.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', 'false');
+    mobileMenu.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  burger.addEventListener('click', function() {
+    burger.classList.contains('is-open') ? closeMenu() : openMenu();
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  // ── Profile loader ───────────────────────────────────
   var EXTRA_TEAM = [
     { name: 'Amanda Murray', role: 'TBC', bio: '', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&crop=faces,top&auto=format&q=80' },
     { name: 'Jordan Taylor',  role: 'TBC', bio: '', photo: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=800&h=1000&fit=crop&crop=faces,top&auto=format&q=80' },
