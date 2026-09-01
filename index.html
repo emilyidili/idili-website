@@ -41,7 +41,6 @@
     }
     img { display: block; width: 100%; height: 100%; object-fit: cover; }
     a { color: inherit; text-decoration: none; }
-
     /* ── Nav ──────────────────────────────────────────────────── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -64,7 +63,6 @@
       color: var(--white); transition: background 0.25s, color 0.25s;
     }
     .nav-cta:hover { background: var(--white); color: var(--black); }
-
     /* ── Hero ──────────────────────────────────────────────────── */
     .hero { position: relative; height: 100vh; min-height: 640px; overflow: hidden; }
     .hero-img {
@@ -120,7 +118,6 @@
       51%  { transform: scaleY(1); transform-origin: bottom; }
       100% { transform: scaleY(0); transform-origin: bottom; }
     }
-
     /* ── Section commons ──────────────────────────────────────── */
     section { position: relative; }
     .section-label {
@@ -131,8 +128,7 @@
       content: ''; display: block; width: 32px; height: 1px;
       background: var(--sand); opacity: 0.5;
     }
-
-    /* ── About (merged intro + about) ─────────────────────────── */
+    /* ── About ─────────────────────────────────────────────────── */
     .about { background: var(--cream); color: var(--charcoal); padding: 96px 48px; }
     .about-inner {
       max-width: 1200px; margin: 0 auto;
@@ -164,19 +160,15 @@
       transition: gap 0.3s, color 0.2s;
     }
     .about-learn:hover { gap: 18px; color: var(--charcoal); }
-
-    /* ── Productions — 4 category blocks ────────────────────── */
+    /* ── Productions ─────────────────────────────────────────── */
     .productions { background: var(--black); padding: 0; }
     .productions-inner { max-width: 1200px; margin: 0 auto; padding: 96px 48px 56px; }
-    .productions-header { margin-bottom: 48px; }
     .productions-title {
       font-family: var(--serif);
       font-size: clamp(30px, 3.2vw, 48px); font-weight: 700;
       color: var(--white); line-height: 1.1; letter-spacing: -0.02em;
     }
     .productions-title em { font-style: italic; color: var(--logo-teal); }
-
-    /* Category image cards */
     .cat-grid {
       display: flex; overflow-x: auto; gap: 2px;
       scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
@@ -194,10 +186,7 @@
       transition: transform 0.75s ease, filter 0.5s ease;
       filter: brightness(0.85) saturate(0.82);
     }
-    .cat-card:hover .cat-bg-img {
-      transform: scale(1.06);
-      filter: brightness(0.55) saturate(0.9);
-    }
+    .cat-card:hover .cat-bg-img { transform: scale(1.06); filter: brightness(0.55) saturate(0.9); }
     .cat-overlay {
       position: absolute; inset: 0;
       background: linear-gradient(to top, rgba(26,23,20,0.88) 0%, rgba(26,23,20,0.12) 50%, rgba(26,23,20,0.02) 100%);
@@ -207,10 +196,7 @@
     .cat-num { font-size: 11px; letter-spacing: 0.22em; color: var(--sand); margin-bottom: 14px; opacity: 0.65; }
     .cat-bar { width: 28px; height: 2px; border-radius: 2px; margin-bottom: 18px; }
     .cat-name { font-size: 21px; font-weight: 500; color: var(--white); line-height: 1.2; letter-spacing: -0.01em; }
-    .cat-desc {
-      font-size: 12px; color: var(--sand); line-height: 1.6; margin-top: 10px;
-      opacity: 0.85; transition: opacity 0.2s;
-    }
+    .cat-desc { font-size: 12px; color: var(--sand); line-height: 1.6; margin-top: 10px; opacity: 0.85; transition: opacity 0.2s; }
     .cat-card:hover .cat-desc { opacity: 1; }
     .cat-arrow {
       display: inline-flex; align-items: center; gap: 8px; margin-top: 16px;
@@ -219,11 +205,8 @@
     }
     .cat-arrow svg { width: 14px; height: 14px; }
     .cat-card:hover .cat-arrow { opacity: 1; gap: 12px; }
-
     /* ── Scroll arrows ────────────────────────────────────────── */
-    .scroll-arrows {
-      display: flex; gap: 8px; margin-bottom: 20px;
-    }
+    .scroll-arrows { display: flex; gap: 8px; margin-bottom: 20px; }
     .scroll-btn {
       width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
       display: flex; align-items: center; justify-content: center;
@@ -234,11 +217,9 @@
     .scroll-btn svg { width: 14px; height: 14px; pointer-events: none; }
     .team .scroll-btn { border-color: rgba(44,40,38,0.2); color: var(--taupe); }
     .team .scroll-btn:hover { background: var(--charcoal); color: var(--white); border-color: var(--charcoal); }
-
     /* ── Team ─────────────────────────────────────────────────── */
     .team { background: var(--white); padding: 112px 48px; }
     .team-inner { max-width: 1300px; margin: 0 auto; }
-    .team-header { margin-bottom: 64px; }
     .team-heading {
       font-family: var(--serif);
       font-size: clamp(30px, 3.2vw, 48px); font-weight: 700;
@@ -254,16 +235,14 @@
     .team-grid::-webkit-scrollbar-track { background: transparent; }
     .team-grid::-webkit-scrollbar-thumb { background: var(--sand); border-radius: 2px; }
     .team-card { display: block; color: inherit; text-decoration: none; flex: 0 0 160px; scroll-snap-align: start; }
-    .team-photo { width: 160px; height: 192px; padding-top: 0; position: relative; overflow: hidden; margin-bottom: 12px; background: var(--warm); }
+    .team-photo { width: 160px; height: 192px; position: relative; overflow: hidden; margin-bottom: 12px; background: var(--warm); }
     .team-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: filter 0.4s, transform 0.55s ease !important; }
     .team-card:hover .team-photo img { filter: grayscale(0%) !important; transform: scale(1.04); }
     .team-name { font-size: 16px; font-weight: 500; color: var(--black); margin-bottom: 4px; line-height: 1.3; transition: color 0.2s; }
     .team-card:hover .team-name { color: var(--logo-amber); }
     .team-role { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--taupe); opacity: 0.8; line-height: 1.55; }
-
     .team-link-hint { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--logo-amber); margin-top: 8px; opacity: 0; transition: opacity 0.25s; }
     .team-card:hover .team-link-hint { opacity: 1; }
-
     /* ── Contact ───────────────────────────────────────────────── */
     .contact { background: var(--black); padding: 120px 48px 0; }
     .contact-inner {
@@ -285,14 +264,8 @@
     }
     .contact-email:hover { color: var(--logo-amber); border-color: var(--logo-amber); }
     .contact-details { padding-top: 8px; }
-    .contact-detail-item {
-      padding: 20px 0; border-bottom: 1px solid rgba(250,250,248,0.1);
-      display: flex; gap: 24px;
-    }
-    .contact-detail-label {
-      font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600;
-      color: var(--white); opacity: 0.5; width: 80px; flex-shrink: 0; padding-top: 2px;
-    }
+    .contact-detail-item { padding: 20px 0; border-bottom: 1px solid rgba(250,250,248,0.1); display: flex; gap: 24px; }
+    .contact-detail-label { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--white); opacity: 0.5; width: 80px; flex-shrink: 0; padding-top: 2px; }
     .contact-detail-val { font-size: 14px; font-weight: 500; color: var(--white); line-height: 1.6; }
     footer {
       max-width: 1200px; margin: 0 auto; padding: 36px 0;
@@ -301,32 +274,16 @@
     .footer-logo img { height: 52px; width: auto; display: block; opacity: 0.85; transition: opacity 0.3s; }
     .footer-logo img:hover { opacity: 1; }
     .footer-nav { display: flex; gap: 28px; list-style: none; }
-    .footer-nav a {
-      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;
-      color: var(--white); opacity: 0.75; transition: opacity 0.2s;
-    }
-    .footer-nav a:hover { opacity: 1; color: var(--white); }
-    .footer-copy { font-size: 10px; color: var(--white); opacity: 0.5; font-weight: 400; }
-    .footer-legal {
-      background: var(--black);
-      border-top: 1px solid rgba(201,185,154,0.07);
-      padding: 14px 48px;
-    }
-    .footer-legal-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: center;
-      gap: 28px; flex-wrap: wrap;
-    }
-    .footer-legal a {
-      font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--taupe); opacity: 0.65; transition: opacity 0.2s, color 0.2s;
-    }
+    .footer-nav a { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; color: var(--white); opacity: 0.75; transition: opacity 0.2s; }
+    .footer-nav a:hover { opacity: 1; }
+    .footer-copy { font-size: 10px; color: var(--white); opacity: 0.5; }
+    .footer-legal { background: var(--black); border-top: 1px solid rgba(201,185,154,0.07); padding: 14px 48px; }
+    .footer-legal-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); opacity: 0.65; transition: opacity 0.2s, color 0.2s; }
     .footer-legal a:hover { opacity: 1; color: var(--sand); }
-
     /* ── Scroll reveal ────────────────────────────────────────── */
     .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.8s ease, transform 0.8s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
-
     /* ── Mobile ───────────────────────────────────────────────── */
     @media (max-width: 900px) {
       nav { padding: 16px 24px; }
@@ -348,43 +305,21 @@
     @media (max-width: 640px) {
       .cat-card { flex: 0 0 90vw; height: 360px; }
     }
-
     /* ── Mobile nav ── */
-    .nav-hamburger {
-      display: none; flex-direction: column; gap: 5px;
-      background: none; border: none; cursor: pointer; padding: 4px;
-    }
-    .nav-hamburger span {
-      display: block; width: 22px; height: 1.5px;
-      background: var(--white); transition: transform 0.25s, opacity 0.25s;
-    }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); transition: transform 0.25s, opacity 0.25s; }
     .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
     .nav-hamburger.open span:nth-child(2) { opacity: 0; }
     .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-    .nav-mobile {
-      display: none; position: fixed; inset: 0; top: 96px; z-index: 99;
-      background: rgba(26,23,20,0.98); backdrop-filter: blur(12px);
-      flex-direction: column; align-items: center; justify-content: center; gap: 36px;
-    }
+    .nav-mobile { display: none; position: fixed; inset: 0; top: 96px; z-index: 99; background: rgba(26,23,20,0.98); backdrop-filter: blur(12px); flex-direction: column; align-items: center; justify-content: center; gap: 36px; }
     .nav-mobile.open { display: flex; }
-    .nav-mobile a {
-      font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--white); font-weight: 500; opacity: 0.8; transition: opacity 0.2s;
-    }
+    .nav-mobile a { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--white); font-weight: 500; opacity: 0.8; transition: opacity 0.2s; }
     .nav-mobile a:hover { opacity: 1; }
-    .nav-mobile-cta {
-      margin-top: 8px;
-      border: 1px solid rgba(250,250,248,0.5) !important;
-      padding: 12px 36px !important; opacity: 1 !important;
-    }
-    @media (max-width: 900px) {
-      .nav-hamburger { display: flex; }
-    }
+    .nav-mobile-cta { margin-top: 8px; border: 1px solid rgba(250,250,248,0.5) !important; padding: 12px 36px !important; opacity: 1 !important; }
+    @media (max-width: 900px) { .nav-hamburger { display: flex; } }
   </style>
 </head>
 <body>
-
-<!-- ── Navigation ────────────────────────────────────────────── -->
 <nav id="nav">
   <a href="#" class="nav-logo" aria-label="IDILI Live and Theatricals">
     <img src="idili-logo.png" alt="IDILI" />
@@ -407,8 +342,6 @@
   <a href="#contact">Contact</a>
   <a href="#contact" class="nav-mobile-cta">Get in touch</a>
 </div>
-
-<!-- ── Hero ──────────────────────────────────────────────────── -->
 <section class="hero" id="hero">
   <video class="hero-img" id="hero-video" autoplay muted loop playsinline style="display:none; object-fit:cover;"></video>
   <img class="hero-img" id="hero-img"
@@ -430,8 +363,6 @@
     <span>Scroll</span>
   </div>
 </section>
-
-<!-- ── About (merged intro + about) ───────────────────────────── -->
 <section class="about" id="about">
   <div class="about-inner">
     <div class="reveal">
@@ -474,8 +405,6 @@
     </div>
   </div>
 </section>
-
-<!-- ── Productions — 4 category blocks ───────────────────────── -->
 <section class="productions" id="productions">
   <div class="productions-inner">
     <div class="productions-header reveal" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:16px;">
@@ -494,7 +423,6 @@
     </div>
   </div>
   <div class="cat-grid reveal" id="cat-grid">
-
     <a class="cat-card" href="/productions/category/theatrical" data-category="theatrical">
       <img class="cat-bg-img" id="cat-img-theatrical"
         src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=700&h=1000&fit=crop&crop=center&auto=format&q=80"
@@ -504,12 +432,9 @@
         <div class="cat-bar" style="background: var(--logo-red);"></div>
         <h3 class="cat-name" id="cat-name-theatrical">Theatrical</h3>
         <p class="cat-desc" id="cat-desc-theatrical">From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.</p>
-        <span class="cat-arrow">Explore
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-        </span>
+        <span class="cat-arrow">Explore <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
       </div>
     </a>
-
     <a class="cat-card" href="/productions/category/classical" data-category="classical">
       <img class="cat-bg-img" id="cat-img-classical"
         src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=700&h=1000&fit=crop&crop=center&auto=format&q=80"
@@ -519,12 +444,9 @@
         <div class="cat-bar" style="background: var(--logo-teal);"></div>
         <h3 class="cat-name" id="cat-name-classical">Opera &amp; Classical</h3>
         <p class="cat-desc" id="cat-desc-classical">International tours and concert presentations with the world's finest operatic voices and orchestras.</p>
-        <span class="cat-arrow">Explore
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-        </span>
+        <span class="cat-arrow">Explore <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
       </div>
     </a>
-
     <a class="cat-card" href="/productions/category/exhibitions" data-category="exhibitions">
       <img class="cat-bg-img" id="cat-img-exhibitions"
         src="https://images.unsplash.com/photo-1577720643272-265f09367456?w=700&h=1000&fit=crop&crop=center&auto=format&q=80"
@@ -534,16 +456,11 @@
         <div class="cat-bar" style="background: var(--logo-blue);"></div>
         <h3 class="cat-name" id="cat-name-exhibitions">Exhibitions &amp; Other Experiences</h3>
         <p class="cat-desc" id="cat-desc-exhibitions">Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new audiences.</p>
-        <span class="cat-arrow">Explore
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-        </span>
+        <span class="cat-arrow">Explore <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
       </div>
     </a>
-
   </div>
 </section>
-
-<!-- ── Team ───────────────────────────────────────────────────── -->
 <section class="team" id="team">
   <div class="team-inner">
     <div class="team-header reveal" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:16px;">
@@ -585,8 +502,6 @@
     </div>
   </div>
 </section>
-
-<!-- ── Contact ────────────────────────────────────────────────── -->
 <section class="contact" id="contact">
   <div class="contact-inner">
     <div class="reveal">
@@ -609,9 +524,7 @@
     </div>
   </div>
   <footer>
-    <div class="footer-logo">
-      <img src="idili-logo.png" alt="IDILI Live and Theatricals" />
-    </div>
+    <div class="footer-logo"><img src="idili-logo.png" alt="IDILI Live and Theatricals" /></div>
     <ul class="footer-nav">
       <li><a href="#productions">Work</a></li>
       <li><a href="#about">About</a></li>
@@ -628,10 +541,7 @@
     </div>
   </div>
 </section>
-
-<!-- ── Scripts ────────────────────────────────────────────────── -->
 <script>
-  // Scroll arrows
   function setupScrollArrows(gridId, prevId, nextId, amt) {
     var grid = document.getElementById(gridId);
     var prev = document.getElementById(prevId);
@@ -642,36 +552,23 @@
   }
   setupScrollArrows('cat-grid',  'disc-prev', 'disc-next', window.innerWidth / 3);
   setupScrollArrows('team-grid', 'team-prev', 'team-next', 180);
-
-  // Scroll reveal
   var revealEls = document.querySelectorAll('.reveal');
   var revealObserver = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        revealObserver.unobserve(entry.target);
-      }
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach(function(el) { revealObserver.observe(el); });
 </script>
-
-<!-- ── CMS Content Loader ─────────────────────────────────────── -->
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on('init', function(user) {
-      if (!user) {
-        window.netlifyIdentity.on('login', function() { document.location.href = '/admin/'; });
-      }
+      if (!user) { window.netlifyIdentity.on('login', function() { document.location.href = '/admin/'; }); }
     });
   }
 
-  var EXTRA_TEAM = [
-    { name: 'Amanda Murray', role: 'TBC', photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80' },
-    { name: 'Jordan Taylor',  role: 'TBC', photo: 'https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80' },
-    { name: 'Michael Peck',   role: 'TBC', photo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80' },
-    { name: 'Howard Earley',  role: 'TBC', photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=480&fit=crop&crop=faces,top&auto=format&q=80' }
-  ];
+  // ← CHANGED: emptied (Amanda Murray, Michael Peck, Howard Earley removed)
+  var EXTRA_TEAM = [];
 
   var CAT_TAG_MAP = {
     'theatrical':  ['Theatrical', 'Musical Theatre', 'Musical'],
@@ -679,59 +576,44 @@
     'exhibitions': ['Exhibition', 'Immersive']
   };
 
-  fetch('/content.json')
+  // ← CHANGED: added { cache: 'no-store' } so stale data never shows again
+  fetch('/content.json', { cache: 'no-store' })
     .then(function(r) { return r.json(); })
     .then(function(d) {
       function esc(s) { return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
       function set(id, val) { var el = document.getElementById(id); if (el && val != null) el.textContent = val; }
-
       var he = d.hero;
       if (he) {
         set('hero-eyebrow', he.eyebrow);
         set('hero-subtitle', he.subtitle);
         if (he.video_url) {
           var vid = document.getElementById('hero-video');
-          vid.src = he.video_url;
-          vid.style.display = 'block';
+          vid.src = he.video_url; vid.style.display = 'block';
           document.getElementById('hero-img').style.display = 'none';
-        } else if (he.image) {
-          document.getElementById('hero-img').src = he.image;
-        }
+        } else if (he.image) { document.getElementById('hero-img').src = he.image; }
         if (he.title && he.title_em) {
-          document.getElementById('hero-title').innerHTML =
-            esc(he.title) + '<br>is <em>' + esc(he.title_em) + '</em>';
+          document.getElementById('hero-title').innerHTML = esc(he.title) + '<br>is <em>' + esc(he.title_em) + '</em>';
         }
       }
-
       var intro = d.intro;
       if (intro) {
         if (intro.heading && intro.heading_em) {
-          document.getElementById('about-heading').innerHTML =
-            esc(intro.heading) + '<br><em>' + esc(intro.heading_em) + '</em>';
+          document.getElementById('about-heading').innerHTML = esc(intro.heading) + '<br><em>' + esc(intro.heading_em) + '</em>';
         }
-        set('stat1-num',   intro.stat1_num);
-        set('stat1-label', intro.stat1_label);
-        set('stat2-num',   intro.stat2_num);
-        set('stat2-label', intro.stat2_label);
-        set('stat3-num',   intro.stat3_num);
-        set('stat3-label', intro.stat3_label);
+        set('stat1-num', intro.stat1_num); set('stat1-label', intro.stat1_label);
+        set('stat2-num', intro.stat2_num); set('stat2-label', intro.stat2_label);
+        set('stat3-num', intro.stat3_num); set('stat3-label', intro.stat3_label);
       }
       var ab = d.about;
       if (ab) {
-        set('about-body1', ab.body1);
-        set('about-body3', ab.body3);
-        if (ab.image) {
-          var aboutImg = document.getElementById('about-img');
-          if (aboutImg) aboutImg.src = ab.image;
-        }
+        set('about-body1', ab.body1); set('about-body3', ab.body3);
+        if (ab.image) { var aboutImg = document.getElementById('about-img'); if (aboutImg) aboutImg.src = ab.image; }
       }
-
       var cats = d.categories;
       var catImgs = { 'theatrical': null, 'classical': null, 'exhibitions': null };
       if (cats) {
         ['theatrical', 'classical', 'exhibitions'].forEach(function(slug) {
-          var c = cats[slug];
-          if (!c) return;
+          var c = cats[slug]; if (!c) return;
           var nameEl = document.getElementById('cat-name-' + slug);
           var descEl = document.getElementById('cat-desc-' + slug);
           if (nameEl && c.name) nameEl.textContent = c.name;
@@ -745,60 +627,43 @@
           var tag = p.tag || '';
           Object.keys(CAT_TAG_MAP).forEach(function(catSlug) {
             if (catImgs[catSlug]) return;
-            var matches = CAT_TAG_MAP[catSlug].some(function(t) { return tag.toLowerCase().includes(t.toLowerCase()); });
-            if (matches) catImgs[catSlug] = p.image;
+            if (CAT_TAG_MAP[catSlug].some(function(t) { return tag.toLowerCase().includes(t.toLowerCase()); })) catImgs[catSlug] = p.image;
           });
         });
       }
       Object.keys(catImgs).forEach(function(slug) {
-        if (catImgs[slug]) {
-          var el = document.getElementById('cat-img-' + slug);
-          if (el) el.src = catImgs[slug];
-        }
+        if (catImgs[slug]) { var el = document.getElementById('cat-img-' + slug); if (el) el.src = catImgs[slug]; }
       });
-
       var cmsTeam = d.team || [];
       var cmsNames = cmsTeam.map(function(m) { return m.name.toLowerCase().trim(); });
       var allTeam = cmsTeam.slice();
       EXTRA_TEAM.forEach(function(m) {
         if (cmsNames.indexOf(m.name.toLowerCase().trim()) === -1) allTeam.push(m);
       });
-
       function toSlug(name) {
         return (name || '').normalize('NFD').replace(/[̀-ͯ]/g, '')
           .toLowerCase().replace(/[^a-z0-9\s]/g, '').trim().replace(/\s+/g, '-');
       }
-
       if (allTeam.length) {
         document.getElementById('team-grid').innerHTML = allTeam.map(function(m) {
           var slug = toSlug(m.name);
           return '<a class="team-card" href="/team/' + slug + '">' +
-            '<div class="team-photo">' +
-              '<img src="' + esc(m.photo) + '" alt="' + esc(m.name) + '" ' +
-                'style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(30%);" ' +
-                'loading="lazy" />' +
-            '</div>' +
+            '<div class="team-photo"><img src="' + esc(m.photo) + '" alt="' + esc(m.name) + '" ' +
+            'style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(30%);" loading="lazy" /></div>' +
             '<div class="team-name">' + esc(m.name) + '</div>' +
             '<div class="team-role">' + esc(m.role) + '</div>' +
-            '<span class="team-link-hint">View profile ›</span>' +
-          '</a>';
+            '<span class="team-link-hint">View profile ›</span></a>';
         }).join('');
       }
-
       var ct = d.contact;
       if (ct) {
-        if (ct.email) {
-          var emailEl = document.getElementById('contact-email');
-          emailEl.textContent = ct.email;
-          emailEl.href = 'mailto:' + ct.email;
-        }
+        if (ct.email) { var emailEl = document.getElementById('contact-email'); emailEl.textContent = ct.email; emailEl.href = 'mailto:' + ct.email; }
         if (ct.london_address) set('contact-london', ct.london_address);
         if (ct.paris_address)  set('contact-paris',  ct.paris_address);
       }
     })
     .catch(function() {});
 
-  // ── Mobile nav ──────────────────────────────────────────────
   var navHamburger = document.getElementById('nav-hamburger');
   var navMobile = document.getElementById('nav-mobile');
   if (navHamburger && navMobile) {
@@ -814,6 +679,5 @@
     });
   }
 </script>
-
 </body>
 </html>
