@@ -236,6 +236,12 @@
       "bio": "Suzi has extensive global experience across industry leading brands and organisations in the retail, leisure, sports, music and entertainment sectors. Having begun her career in the sports sector with roles at TaylorMade adidas Golf and Surrey County Cricket Club, Suzi made the move into music and entertainment with AEG Europe, where she held various senior positions across the marketing and sponsorship functions for their UK venue portfolio, including The O2, the Ovo Arena Wembley and the Ovo Hydro. During her time at AEG Europe, Suzi was responsible for delivering ticketing and sponsorship revenues for hundreds of events including the Barclays ATP World Finals, The Sundance London Film Festival, Country 2 Country and many other diverse music, comedy and entertainment acts. In 2012, she launched The O2’s first permanent tourist attraction, Up at The O2, which is now regularly listed amongst the top 10 things to do in London. Since leaving AEG Europe in 2017, Suzi has worked on a variety of projects including the launch of ICON Outlet at The O2, Mamma Mia! The Party, ABBA Super Troupers the Exhibition, Sandi Toksvig Live, Van Gogh Alive and London’s first permanent digital immersive art experience, Frameless. "
     },
     {
+      "photo": "/images/frederique.jpg",
+      "name": "Frédérique Gerbelle",
+      "bio": "Following private piano studies and law studies at Paris Nanterre University, then devoting part of her early career to event marketing, Frédérique Gerbelle specialized in the production of musical events. \n\nShe joined Céleste Productions in 1993 and worked with Jean-Pierre Le Pavec on the series “Les Grandes Voix“ and “Les Grands Solistes“, the management of which she took over a few years later. She has been committed to developing long-term and active collaborations with international artists (such as Itzhak Perlman, Fazil Say, Daniil Trifonov, Maxim Vengerov, Roberto Alagna, Cecilia Bartoli, Natalie Dessay, Joyce DiDonato, Juan Diego Flórez, Jonas Kaufmann, Anna Netrebko, Bryn Terfel, Rolando Villazón), prestigious concert halls in France and abroad (the Théâtre des Champs-Elysées in Paris, Victoria Hall in Geneva, Wigmore Hall in London) and the major classical music recording labels. \n\nShe also collaborates with the Festival de Paris and the Radio France’s annual 14 July concert under the Eiffel Tour.",
+      "role": "Managing Director, Céleste Productions"
+    },
+    {
       "name": "Emily Brett",
       "role": "Marketing Director",
       "photo": "/images/screenshot-2026-06-22-at-12.01.18.png",
@@ -262,12 +268,6 @@
       "name": "Jordan Taylor",
       "role": "Project Manager",
       "photo": "/images/jordan.jpeg"
-    },
-    {
-      "photo": "/images/frederique.jpg",
-      "name": "Frédérique Gerbelle",
-      "bio": "Following private piano studies and law studies at Paris Nanterre University, then devoting part of her early career to event marketing, Frédérique Gerbelle specialized in the production of musical events. \n\nShe joined Céleste Productions in 1993 and worked with Jean-Pierre Le Pavec on the series “Les Grandes Voix“ and “Les Grands Solistes“, the management of which she took over a few years later. She has been committed to developing long-term and active collaborations with international artists (such as Itzhak Perlman, Fazil Say, Daniil Trifonov, Maxim Vengerov, Roberto Alagna, Cecilia Bartoli, Natalie Dessay, Joyce DiDonato, Juan Diego Flórez, Jonas Kaufmann, Anna Netrebko, Bryn Terfel, Rolando Villazón), prestigious concert halls in France and abroad (the Théâtre des Champs-Elysées in Paris, Victoria Hall in Geneva, Wigmore Hall in London) and the major classical music recording labels. \n\nShe also collaborates with the Festival de Paris and the Radio France’s annual 14 July concert under the Eiffel Tour.",
-      "role": "Managing Director, Céleste Productions"
     }
   ],
   "venues": [
