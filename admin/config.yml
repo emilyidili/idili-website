@@ -89,6 +89,17 @@ collections:
               - { label: "Thumbnail Image", name: "thumbnail", widget: "image", required: false, hint: "Optional square-ish image used on the category page card. If blank, the full image below is used instead." }
               - { label: "Full-Bleed Image", name: "image", widget: "image", hint: "Main production image — used on the production detail page and as the category homepage card if no thumbnail is set" }
               - { label: "URL Slug", name: "slug", widget: "string", hint: "URL-friendly name — lowercase, hyphens only. e.g. mamma-mia-the-party" }
+              - label: "Image Position"
+                name: "hero_position"
+                widget: "select"
+                required: false
+                hint: "Controls which part of the header image is shown. Leave blank to use the default (top)."
+                options:
+                  - { label: "Top", value: "center top" }
+                  - { label: "Upper", value: "center 25%" }
+                  - { label: "Centre", value: "center 50%" }
+                  - { label: "Lower", value: "center 75%" }
+                  - { label: "Bottom", value: "center bottom" }
               - { label: "Full Story", name: "long_description", widget: "text", required: false, hint: "Longer write-up shown on the production's own page" }
               - label: "Gallery"
                 name: "gallery"
