@@ -366,13 +366,14 @@
 </div>
 <script>
   var PROD_HERO_POSITIONS = {
-    'pretty-yende':              'center top',
+    'pretty-yende':              'center 15%',
     'bryns-christmas':           'center 25%',
     'anna-netrebko':             'center 55%',
     'sandi-toksvig':             'center 25%',
-    'mamma-mia-the-party':       'center 45%',
+    'mamma-mia-the-party':       'center 55%',
     'cecilia-bartoli':           'center 45%',
-    'phantom-of-the-opera':      'center bottom'
+    'phantom-of-the-opera':      'center bottom',
+    'frida-kahlo':               'center 15%'
   };
 
   var PROD_TEXT_REPLACEMENTS = {
@@ -511,7 +512,7 @@
           grid.innerHTML = filtered.map(function(p) {
             var href = p.slug ? '/productions/' + p.slug : '#';
             var cardImg = p.thumbnail || p.image;
-            var cardPos = PROD_HERO_POSITIONS[p.slug] || 'center top';
+            var cardPos = p.hero_position || PROD_HERO_POSITIONS[p.slug] || 'center top';
             return '<a class="prod-card" href="' + esc(href) + '">' +
               '<img src="' + esc(cardImg) + '" alt="' + esc(p.title) + '" loading="lazy" style="object-position:' + cardPos + '" />' +
               '<div class="prod-overlay">' +
@@ -551,7 +552,7 @@
         document.title = prod.title + ' — IDILI Live & Theatricals';
         var cat = catFromTag(prod.tag);
         var backHref = '/productions/category/' + cat.slug;
-        var heroPos = PROD_HERO_POSITIONS[prod.slug] || 'center top';
+        var heroPos = prod.hero_position || PROD_HERO_POSITIONS[prod.slug] || 'center top';
         var heroHtml =
           '<section class="prod-hero">' +
             '<img class="prod-hero-img" src="' + esc(prod.image) + '" alt="' + esc(prod.title) + '" style="object-position:' + heroPos + '" />' +
