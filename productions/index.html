@@ -1,6 +1,3 @@
-Got it — here's the full `productions/index.html` to paste:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +40,6 @@ Got it — here's the full `productions/index.html` to paste:
     }
     img { display: block; }
     a { color: inherit; text-decoration: none; }
-    /* ── Nav ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
@@ -64,9 +60,6 @@ Got it — here's the full `productions/index.html` to paste:
       color: var(--white); transition: background 0.25s, color 0.25s;
     }
     .nav-cta:hover { background: var(--white); color: var(--black); }
-    /* ════════════════════════════════
-       CATEGORY PAGE STYLES
-    ════════════════════════════════ */
     .cat-header {
       background: var(--black);
       padding: 160px 48px 72px;
@@ -76,8 +69,7 @@ Got it — here's the full `productions/index.html` to paste:
     .cat-back {
       display: inline-flex; align-items: center; gap: 8px;
       font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--sand); opacity: 0.75; margin-bottom: 48px;
-      transition: opacity 0.2s;
+      color: var(--sand); opacity: 0.75; margin-bottom: 48px; transition: opacity 0.2s;
     }
     .cat-back:hover { opacity: 1; }
     .cat-back svg { width: 14px; height: 14px; }
@@ -92,9 +84,7 @@ Got it — here's the full `productions/index.html` to paste:
       font-weight: 700; color: var(--white); line-height: 1.0; letter-spacing: -0.02em;
       margin-bottom: 20px;
     }
-    .cat-subtitle {
-      font-size: 15px; color: var(--sand); line-height: 1.75; max-width: 600px; opacity: 0.85;
-    }
+    .cat-subtitle { font-size: 15px; color: var(--sand); line-height: 1.75; max-width: 600px; opacity: 0.85; }
     .scroll-arrows { display: flex; gap: 8px; margin-bottom: 20px; }
     .scroll-btn {
       width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
@@ -130,10 +120,7 @@ Got it — here's the full `productions/index.html` to paste:
       display: flex; flex-direction: column; justify-content: flex-end;
       padding: 32px;
     }
-    .prod-tag-sm {
-      font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--sand); margin-bottom: 8px;
-    }
+    .prod-tag-sm { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sand); margin-bottom: 8px; }
     .prod-name { font-size: 24px; font-weight: 500; color: var(--white); line-height: 1.15; letter-spacing: -0.01em; }
     .prod-desc-sm {
       font-size: 12px; color: var(--sand); margin-top: 8px;
@@ -141,18 +128,8 @@ Got it — here's the full `productions/index.html` to paste:
       transition: opacity 0.35s, transform 0.35s; line-height: 1.6;
     }
     .prod-card:hover .prod-desc-sm { opacity: 1; transform: translateY(0); }
-    .empty-state {
-      text-align: center; padding: 80px 24px;
-      color: var(--taupe); font-size: 15px;
-    }
-    /* ════════════════════════════════
-       PRODUCTION DETAIL PAGE STYLES
-    ════════════════════════════════ */
-    .prod-hero {
-      position: relative;
-      height: 70vh; min-height: 420px;
-      overflow: hidden;
-    }
+    .empty-state { text-align: center; padding: 80px 24px; color: var(--taupe); font-size: 15px; }
+    .prod-hero { position: relative; height: 70vh; min-height: 420px; overflow: hidden; }
     .prod-hero-img {
       width: 100%; height: 100%;
       object-fit: cover; object-position: center top;
@@ -165,42 +142,32 @@ Got it — here's the full `productions/index.html` to paste:
       padding: 64px 80px;
     }
     .prod-back-detail {
-      position: absolute; top: 120px; left: 80px;
-      z-index: 10;
+      position: absolute; top: 120px; left: 80px; z-index: 10;
       display: inline-flex; align-items: center; gap: 8px;
       font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
       color: var(--sand); opacity: 0.75; transition: opacity 0.2s;
     }
     .prod-back-detail:hover { opacity: 1; }
     .prod-back-detail svg { width: 14px; height: 14px; }
-    .prod-tag-detail {
-      font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
-      color: var(--sand); margin-bottom: 16px;
-    }
+    .prod-tag-detail { font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--sand); margin-bottom: 16px; }
     .prod-title-detail {
       font-family: var(--serif);
       font-size: clamp(40px, 6vw, 88px);
       font-weight: 700; color: var(--white); line-height: 1.0; letter-spacing: -0.02em;
     }
-    .prod-body {
-      max-width: 760px; margin: 0 auto;
-      padding: 72px 48px 96px;
-    }
+    .prod-body { max-width: 760px; margin: 0 auto; padding: 72px 48px 96px; }
     .section-label {
       font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase;
-      color: var(--sand);
-      display: flex; align-items: center; gap: 14px;
+      color: var(--sand); display: flex; align-items: center; gap: 14px;
       margin-bottom: 40px; opacity: 0.7;
     }
-    .section-label::before {
-      content: ''; display: block;
-      width: 32px; height: 1px;
-      background: var(--sand); opacity: 0.5;
-    }
+    .section-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--sand); opacity: 0.5; }
     .prod-long-desc {
       font-size: 17px; font-weight: 300; color: var(--cream);
       line-height: 1.85; white-space: pre-wrap;
     }
+    .prod-long-desc a { color: var(--sand); text-decoration: underline; opacity: 0.85; }
+    .prod-long-desc a:hover { opacity: 1; }
     .prod-gallery {
       background: rgba(255,255,255,0.02);
       border-top: 1px solid rgba(201,185,154,0.1);
@@ -209,24 +176,12 @@ Got it — here's the full `productions/index.html` to paste:
     .prod-gallery-inner { max-width: 1200px; margin: 0 auto; }
     .prod-gallery-label {
       font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase;
-      color: var(--sand);
-      display: flex; align-items: center; gap: 14px;
+      color: var(--sand); display: flex; align-items: center; gap: 14px;
       margin-bottom: 40px; opacity: 0.7;
     }
-    .prod-gallery-label::before {
-      content: ''; display: block;
-      width: 32px; height: 1px;
-      background: var(--sand); opacity: 0.5;
-    }
-    .prod-gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 3px;
-    }
-    .gallery-item {
-      overflow: hidden; aspect-ratio: 4/3; cursor: pointer;
-      position: relative;
-    }
+    .prod-gallery-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--sand); opacity: 0.5; }
+    .prod-gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+    .gallery-item { overflow: hidden; aspect-ratio: 4/3; cursor: pointer; position: relative; }
     .gallery-item img {
       width: 100%; height: 100%; object-fit: cover;
       transition: transform 0.6s ease, filter 0.4s ease;
@@ -238,8 +193,7 @@ Got it — here's the full `productions/index.html` to paste:
       padding: 8px 12px;
       background: linear-gradient(to top, rgba(26,23,20,0.75) 0%, transparent 100%);
       font-size: 10px; letter-spacing: 0.08em; color: var(--sand);
-      opacity: 0; transition: opacity 0.3s;
-      pointer-events: none;
+      opacity: 0; transition: opacity 0.3s; pointer-events: none;
     }
     .gallery-item:hover .gallery-credit { opacity: 1; }
     .lightbox {
@@ -248,10 +202,7 @@ Got it — here's the full `productions/index.html` to paste:
       align-items: center; justify-content: center; cursor: zoom-out;
     }
     .lightbox.open { display: flex; }
-    .lightbox img {
-      max-width: 90vw; max-height: 88vh;
-      width: auto; height: auto; object-fit: contain; cursor: default;
-    }
+    .lightbox img { max-width: 90vw; max-height: 88vh; width: auto; height: auto; object-fit: contain; cursor: default; }
     .lightbox-close {
       position: absolute; top: 24px; right: 32px;
       font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
@@ -262,40 +213,17 @@ Got it — here's the full `productions/index.html` to paste:
       position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
       font-size: 10px; letter-spacing: 0.1em; color: var(--sand); opacity: 0.7;
     }
-    /* ── Shared Footer ── */
-    .page-footer {
-      background: var(--black);
-      border-top: 1px solid rgba(201,185,154,0.1);
-      padding: 36px 48px;
-    }
-    .page-footer-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: space-between;
-    }
+    .page-footer { background: var(--black); border-top: 1px solid rgba(201,185,154,0.1); padding: 36px 48px; }
+    .page-footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
     .footer-logo img { height: 52px; width: auto; display: block; opacity: 0.85; transition: opacity 0.3s; }
     .footer-logo img:hover { opacity: 1; }
     .footer-copy { font-size: 10px; color: var(--sand); opacity: 0.7; }
-    .footer-back-link {
-      font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--sand); opacity: 0.8; transition: opacity 0.2s;
-    }
+    .footer-back-link { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sand); opacity: 0.8; transition: opacity 0.2s; }
     .footer-back-link:hover { opacity: 1; }
-    .footer-legal {
-      background: var(--black);
-      border-top: 1px solid rgba(201,185,154,0.07);
-      padding: 14px 48px;
-    }
-    .footer-legal-inner {
-      max-width: 1200px; margin: 0 auto;
-      display: flex; align-items: center; justify-content: center;
-      gap: 28px; flex-wrap: wrap;
-    }
-    .footer-legal a {
-      font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--taupe); opacity: 0.65; transition: opacity 0.2s, color 0.2s;
-    }
+    .footer-legal { background: var(--black); border-top: 1px solid rgba(201,185,154,0.07); padding: 14px 48px; }
+    .footer-legal-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); opacity: 0.65; transition: opacity 0.2s, color 0.2s; }
     .footer-legal a:hover { opacity: 1; color: var(--sand); }
-    /* ── Mobile ── */
     @media (max-width: 900px) {
       nav { padding: 16px 24px; }
       .nav-links, .nav-cta { display: none; }
@@ -311,46 +239,23 @@ Got it — here's the full `productions/index.html` to paste:
       .page-footer { padding: 28px 24px; }
       .page-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
     }
-    @media (max-width: 560px) {
-      .prod-gallery-grid { grid-template-columns: 1fr; }
-    }
-    /* ── Mobile nav ── */
-    .nav-hamburger {
-      display: none; flex-direction: column; gap: 5px;
-      background: none; border: none; cursor: pointer; padding: 4px;
-    }
-    .nav-hamburger span {
-      display: block; width: 22px; height: 1.5px;
-      background: var(--white); transition: transform 0.25s, opacity 0.25s;
-    }
+    @media (max-width: 560px) { .prod-gallery-grid { grid-template-columns: 1fr; } }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--white); transition: transform 0.25s, opacity 0.25s; }
     .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
     .nav-hamburger.open span:nth-child(2) { opacity: 0; }
     .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-    .nav-mobile {
-      display: none; position: fixed; inset: 0; top: 96px; z-index: 99;
-      background: rgba(26,23,20,0.98); backdrop-filter: blur(12px);
-      flex-direction: column; align-items: center; justify-content: center; gap: 36px;
-    }
+    .nav-mobile { display: none; position: fixed; inset: 0; top: 96px; z-index: 99; background: rgba(26,23,20,0.98); backdrop-filter: blur(12px); flex-direction: column; align-items: center; justify-content: center; gap: 36px; }
     .nav-mobile.open { display: flex; }
-    .nav-mobile a {
-      font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--white); font-weight: 500; opacity: 0.8; transition: opacity 0.2s;
-    }
+    .nav-mobile a { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--white); font-weight: 500; opacity: 0.8; transition: opacity 0.2s; }
     .nav-mobile a:hover { opacity: 1; }
-    .nav-mobile-cta {
-      margin-top: 8px; border: 1px solid rgba(250,250,248,0.5) !important;
-      padding: 12px 36px !important; opacity: 1 !important;
-    }
-    @media (max-width: 900px) {
-      .nav-hamburger { display: flex; }
-    }
+    .nav-mobile-cta { margin-top: 8px; border: 1px solid rgba(250,250,248,0.5) !important; padding: 12px 36px !important; opacity: 1 !important; }
+    @media (max-width: 900px) { .nav-hamburger { display: flex; } }
   </style>
 </head>
 <body>
 <nav>
-  <a href="/" class="nav-logo" aria-label="IDILI Live and Theatricals">
-    <img src="/idili-logo.png" alt="IDILI" />
-  </a>
+  <a href="/" class="nav-logo"><img src="/idili-logo.png" alt="IDILI" /></a>
   <ul class="nav-links">
     <li><a href="/#productions">Work</a></li>
     <li><a href="/#about">About</a></li>
@@ -358,9 +263,7 @@ Got it — here's the full `productions/index.html` to paste:
     <li><a href="/#contact">Contact</a></li>
   </ul>
   <a href="/#contact" class="nav-cta">Get in touch</a>
-  <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="nav-hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
 </nav>
 <div class="nav-mobile" id="nav-mobile">
   <a href="/#productions">Work</a>
@@ -385,36 +288,31 @@ Got it — here's the full `productions/index.html` to paste:
     'cecilia-bartoli':     'center 45%'
   };
   var CATEGORIES = {
-    'theatrical': {
-      num: '01', name: 'Theatrical', color: '#E82020',
-      tags: ['Theatrical', 'Musical Theatre', 'Musical'],
-      desc: 'From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.'
-    },
-    'classical': {
-      num: '02', name: 'Opera & Classical', color: '#009990',
-      tags: ['Opera', 'Classical'],
-      desc: "International tours and concert presentations with the world's finest operatic voices and orchestras."
-    },
-    'exhibitions': {
-      num: '03', name: 'Exhibitions & Other Experiences', color: '#0075BC',
-      tags: ['Exhibition', 'Immersive', 'Exhibitions & Other Events'],
-      desc: 'Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new and existing audiences.'
-    }
+    'theatrical':  { num:'01', name:'Theatrical',                   color:'#E82020', tags:['Theatrical','Musical Theatre','Musical'],            desc:'From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.' },
+    'classical':   { num:'02', name:'Opera & Classical',            color:'#009990', tags:['Opera','Classical'],                                 desc:"International tours and concert presentations with the world's finest operatic voices and orchestras." },
+    'exhibitions': { num:'03', name:'Exhibitions & Other Experiences', color:'#0075BC', tags:['Exhibition','Immersive','Exhibitions & Other Events'], desc:'Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new and existing audiences.' }
   };
   var TAG_TO_CAT = [
-    { keys: ['theatrical', 'musical theatre', 'musical'], slug: 'theatrical',  label: 'Theatrical' },
-    { keys: ['opera', 'classical'],                       slug: 'classical',   label: 'Opera & Classical' },
-    { keys: ['exhibition', 'immersive', 'exhibitions'],   slug: 'exhibitions', label: 'Exhibitions & Other Experiences' }
+    { keys:['theatrical','musical theatre','musical'], slug:'theatrical',  label:'Theatrical' },
+    { keys:['opera','classical'],                      slug:'classical',   label:'Opera & Classical' },
+    { keys:['exhibition','immersive','exhibitions'],   slug:'exhibitions', label:'Exhibitions & Other Experiences' }
   ];
   function catFromTag(tag) {
-    var t = (tag || '').toLowerCase();
-    for (var i = 0; i < TAG_TO_CAT.length; i++)
-      for (var j = 0; j < TAG_TO_CAT[i].keys.length; j++)
-        if (t.includes(TAG_TO_CAT[i].keys[j])) return TAG_TO_CAT[i];
-    return { slug: 'theatrical', label: 'Productions' };
+    var t = (tag||'').toLowerCase();
+    for (var i=0;i<TAG_TO_CAT.length;i++) for (var j=0;j<TAG_TO_CAT[i].keys.length;j++) if (t.includes(TAG_TO_CAT[i].keys[j])) return TAG_TO_CAT[i];
+    return { slug:'theatrical', label:'Productions' };
   }
-  function esc(s) {
-    return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  // Converts plain text to HTML, turning URLs into clickable links
+  function renderText(text) {
+    var parts = (text||'').split(/(https?:\/\/\S+)/g);
+    return parts.map(function(part, i) {
+      if (i % 2 === 1) {
+        var cleanUrl = part.replace(/[.,;)]+$/, ''); // strip trailing punctuation
+        return '<a href="' + esc(cleanUrl) + '" target="_blank" rel="noopener">' + esc(cleanUrl) + '</a>';
+      }
+      return esc(part);
+    }).join('');
   }
   function sharedFooter(backHref, backLabel) {
     return '<footer class="page-footer"><div class="page-footer-inner">' +
@@ -432,9 +330,9 @@ Got it — here's the full `productions/index.html` to paste:
   var parts = pathname.split('/').filter(Boolean);
   var isCategory = parts[1] === 'category';
   if (isCategory) {
-    var catSlug = parts[2] || '';
+    var catSlug = parts[2]||'';
     var cat = CATEGORIES[catSlug];
-    if (!cat) { window.location.href = '/'; }
+    if (!cat) { window.location.href='/'; }
     else {
       document.title = cat.name + ' — IDILI Live & Theatricals';
       document.getElementById('page-content').innerHTML =
@@ -456,124 +354,90 @@ Got it — here's the full `productions/index.html` to paste:
             '<div class="prod-grid" id="prod-grid"><div class="empty-state">Loading&hellip;</div></div>' +
           '</div>' +
         '</div></section>' +
-        sharedFooter('/', 'Back to IDILI');
-      document.getElementById('prod-prev').addEventListener('click', function() {
-        document.getElementById('prod-scroll-wrap').scrollBy({ left: -370, behavior: 'smooth' });
-      });
-      document.getElementById('prod-next').addEventListener('click', function() {
-        document.getElementById('prod-scroll-wrap').scrollBy({ left:  370, behavior: 'smooth' });
-      });
-      fetch('/content.json', { cache: 'no-store' })
-        .then(function(r) { return r.json(); })
-        .then(function(d) {
-          var filtered = (d.productions || []).filter(function(p) {
-            var tag = (p.tag || '').toLowerCase();
-            return cat.tags.some(function(t) { return tag.includes(t.toLowerCase()); });
-          });
-          var grid = document.getElementById('prod-grid');
-          if (!filtered.length) { grid.innerHTML = '<div class="empty-state">No productions found.</div>'; return; }
-          grid.innerHTML = filtered.map(function(p) {
-            var pos = PROD_HERO_POSITIONS[p.slug] || 'center top';
-            return '<a class="prod-card" href="' + esc(p.slug ? '/productions/' + p.slug : '#') + '">' +
-              '<img src="' + esc(p.thumbnail || p.image) + '" alt="' + esc(p.title) + '" loading="lazy" style="object-position:' + pos + '" />' +
-              '<div class="prod-overlay">' +
-                '<span class="prod-tag-sm">' + esc(p.tag) + '</span>' +
-                '<h2 class="prod-name">' + esc(p.title) + '</h2>' +
-                '<p class="prod-desc-sm">' + esc(p.description) + '</p>' +
-              '</div></a>';
-          }).join('');
-        })
-        .catch(function() {
-          var g = document.getElementById('prod-grid');
-          if (g) g.innerHTML = '<div class="empty-state">Unable to load. Please try again.</div>';
-        });
+        sharedFooter('/','Back to IDILI');
+      document.getElementById('prod-prev').addEventListener('click',function(){ document.getElementById('prod-scroll-wrap').scrollBy({left:-370,behavior:'smooth'}); });
+      document.getElementById('prod-next').addEventListener('click',function(){ document.getElementById('prod-scroll-wrap').scrollBy({left:370,behavior:'smooth'}); });
+      fetch('/content.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+        var filtered=(d.productions||[]).filter(function(p){ var tag=(p.tag||'').toLowerCase(); return cat.tags.some(function(t){return tag.includes(t.toLowerCase());}); });
+        var grid=document.getElementById('prod-grid');
+        if (!filtered.length){grid.innerHTML='<div class="empty-state">No productions found.</div>';return;}
+        grid.innerHTML=filtered.map(function(p){
+          var pos=PROD_HERO_POSITIONS[p.slug]||'center top';
+          return '<a class="prod-card" href="'+esc(p.slug?'/productions/'+p.slug:'#')+'">' +
+            '<img src="'+esc(p.thumbnail||p.image)+'" alt="'+esc(p.title)+'" loading="lazy" style="object-position:'+pos+'" />' +
+            '<div class="prod-overlay"><span class="prod-tag-sm">'+esc(p.tag)+'</span><h2 class="prod-name">'+esc(p.title)+'</h2><p class="prod-desc-sm">'+esc(p.description)+'</p></div></a>';
+        }).join('');
+      }).catch(function(){ var g=document.getElementById('prod-grid'); if(g) g.innerHTML='<div class="empty-state">Unable to load. Please try again.</div>'; });
     }
   } else {
-    var slug = parts[parts.length - 1] || '';
-    fetch('/content.json', { cache: 'no-store' })
-      .then(function(r) { return r.json(); })
-      .then(function(d) {
-        var prod = null;
-        (d.productions || []).forEach(function(p) { if (p.slug === slug) prod = p; });
-        if (!prod) {
-          document.getElementById('page-content').innerHTML =
-            '<div style="text-align:center;padding:160px 48px 80px;">' +
-              '<p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);margin-bottom:24px;">404</p>' +
-              '<h1 style="font-family:var(--serif);font-size:48px;color:var(--white);font-weight:700;margin-bottom:16px;">Production not found</h1>' +
-              '<a href="/" style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;border:1px solid rgba(201,185,154,0.4);padding:12px 28px;color:var(--sand);">Back to home</a>' +
-            '</div>' + sharedFooter('/', 'Back to IDILI');
-          return;
-        }
-        document.title = prod.title + ' — IDILI Live & Theatricals';
-        var cat = catFromTag(prod.tag);
-        var backHref = '/productions/category/' + cat.slug;
-        var heroPos = PROD_HERO_POSITIONS[prod.slug] || 'center top';
-        var heroHtml =
-          '<section class="prod-hero">' +
-            '<img class="prod-hero-img" src="' + esc(prod.image) + '" alt="' + esc(prod.title) + '" style="object-position:' + heroPos + '" />' +
-            '<a href="' + esc(backHref) + '" class="prod-back-detail">' +
-              '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 12l-4-4 4-4"/></svg>' +
-              esc(cat.label) +
-            '</a>' +
-            '<div class="prod-hero-overlay">' +
-              '<p class="prod-tag-detail">' + esc(prod.tag) + '</p>' +
-              '<h1 class="prod-title-detail">' + esc(prod.title) + '</h1>' +
-            '</div>' +
-          '</section>';
-        var bodyHtml = '<section class="prod-body">';
-        if (prod.long_description && prod.long_description.trim())
-          bodyHtml += '<p class="section-label">Full Story</p><p class="prod-long-desc">' + esc(prod.long_description) + '</p>';
-        bodyHtml += '</section>';
-        var gallery = prod.gallery || [];
-        var galleryHtml = '';
-        if (gallery.length) {
-          galleryHtml = '<section class="prod-gallery"><div class="prod-gallery-inner">' +
-            '<p class="prod-gallery-label">Gallery</p>' +
-            '<div class="prod-gallery-grid">' +
-            gallery.map(function(item, idx) {
-              var src    = (typeof item === 'string') ? item : (item.image || item);
-              var credit = (typeof item === 'object' && item.credit) ? item.credit : '';
-              return '<div class="gallery-item" data-src="' + esc(src) + '" data-credit="' + esc(credit) + '">' +
-                '<img src="' + esc(src) + '" alt="' + esc(prod.title) + ' photo ' + (idx+1) + '" loading="lazy" />' +
-                (credit ? '<span class="gallery-credit">' + esc(credit) + '</span>' : '') +
-              '</div>';
-            }).join('') +
-            '</div></div></section>';
-        }
-        document.getElementById('page-content').innerHTML =
-          heroHtml + bodyHtml + galleryHtml + sharedFooter(backHref, 'Back to ' + cat.label);
-        if (gallery.length) {
-          var lb = document.getElementById('lightbox');
-          var lbImg = document.getElementById('lightbox-img');
-          var lbCredit = document.getElementById('lightbox-credit');
-          document.querySelectorAll('.gallery-item').forEach(function(item) {
-            item.addEventListener('click', function() {
-              lbImg.src = item.getAttribute('data-src');
-              var cr = item.getAttribute('data-credit') || '';
-              lbCredit.textContent = cr;
-              lbCredit.style.display = cr ? '' : 'none';
-              lb.classList.add('open');
-            });
+    var slug=parts[parts.length-1]||'';
+    fetch('/content.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
+      var prod=null;
+      (d.productions||[]).forEach(function(p){if(p.slug===slug) prod=p;});
+      if (!prod){
+        document.getElementById('page-content').innerHTML=
+          '<div style="text-align:center;padding:160px 48px 80px;">' +
+            '<p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--taupe);margin-bottom:24px;">404</p>' +
+            '<h1 style="font-family:var(--serif);font-size:48px;color:var(--white);font-weight:700;margin-bottom:16px;">Production not found</h1>' +
+            '<a href="/" style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;border:1px solid rgba(201,185,154,0.4);padding:12px 28px;color:var(--sand);">Back to home</a>' +
+          '</div>'+sharedFooter('/','Back to IDILI');
+        return;
+      }
+      document.title=prod.title+' — IDILI Live & Theatricals';
+      var cat=catFromTag(prod.tag);
+      var backHref='/productions/category/'+cat.slug;
+      var heroPos=PROD_HERO_POSITIONS[prod.slug]||'center top';
+      var heroHtml=
+        '<section class="prod-hero">' +
+          '<img class="prod-hero-img" src="'+esc(prod.image)+'" alt="'+esc(prod.title)+'" style="object-position:'+heroPos+'" />' +
+          '<a href="'+esc(backHref)+'" class="prod-back-detail"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 12l-4-4 4-4"/></svg>'+esc(cat.label)+'</a>' +
+          '<div class="prod-hero-overlay"><p class="prod-tag-detail">'+esc(prod.tag)+'</p><h1 class="prod-title-detail">'+esc(prod.title)+'</h1></div>' +
+        '</section>';
+      var bodyHtml='<section class="prod-body">';
+      if (prod.long_description&&prod.long_description.trim())
+        bodyHtml+='<p class="section-label">Full Story</p><p class="prod-long-desc">'+renderText(prod.long_description)+'</p>';
+      bodyHtml+='</section>';
+      var gallery=prod.gallery||[];
+      var galleryHtml='';
+      if (gallery.length) {
+        galleryHtml='<section class="prod-gallery"><div class="prod-gallery-inner"><p class="prod-gallery-label">Gallery</p><div class="prod-gallery-grid">'+
+          gallery.map(function(item,idx){
+            var src=(typeof item==='string')?item:(item.image||item);
+            var credit=(typeof item==='object'&&item.credit)?item.credit:'';
+            return '<div class="gallery-item" data-src="'+esc(src)+'" data-credit="'+esc(credit)+'">' +
+              '<img src="'+esc(src)+'" alt="'+esc(prod.title)+' photo '+(idx+1)+'" loading="lazy" />' +
+              (credit?'<span class="gallery-credit">'+esc(credit)+'</span>':'')+
+            '</div>';
+          }).join('')+
+        '</div></div></section>';
+      }
+      document.getElementById('page-content').innerHTML=heroHtml+bodyHtml+galleryHtml+sharedFooter(backHref,'Back to '+cat.label);
+      if (gallery.length) {
+        var lb=document.getElementById('lightbox');
+        var lbImg=document.getElementById('lightbox-img');
+        var lbCredit=document.getElementById('lightbox-credit');
+        document.querySelectorAll('.gallery-item').forEach(function(item){
+          item.addEventListener('click',function(){
+            lbImg.src=item.getAttribute('data-src');
+            var cr=item.getAttribute('data-credit')||'';
+            lbCredit.textContent=cr; lbCredit.style.display=cr?'':'none';
+            lb.classList.add('open');
           });
-          document.getElementById('lightbox-close').addEventListener('click', function() { lb.classList.remove('open'); });
-          lb.addEventListener('click', function(e) { if (e.target === lb) lb.classList.remove('open'); });
-          document.addEventListener('keydown', function(e) { if (e.key === 'Escape') lb.classList.remove('open'); });
-        }
-      })
-      .catch(function() {
-        document.getElementById('page-content').innerHTML =
-          '<div style="text-align:center;padding:160px 48px;"><p style="color:var(--sand);">Unable to load content.</p></div>';
-      });
-  }
-  var navH = document.getElementById('nav-hamburger');
-  var navM = document.getElementById('nav-mobile');
-  if (navH && navM) {
-    navH.addEventListener('click', function() { navH.classList.toggle('open'); navM.classList.toggle('open'); });
-    navM.querySelectorAll('a').forEach(function(l) {
-      l.addEventListener('click', function() { navH.classList.remove('open'); navM.classList.remove('open'); });
+        });
+        document.getElementById('lightbox-close').addEventListener('click',function(){lb.classList.remove('open');});
+        lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('open');});
+        document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});
+      }
+    }).catch(function(){
+      document.getElementById('page-content').innerHTML='<div style="text-align:center;padding:160px 48px;"><p style="color:var(--sand);">Unable to load content.</p></div>';
     });
+  }
+  var navH=document.getElementById('nav-hamburger');
+  var navM=document.getElementById('nav-mobile');
+  if(navH&&navM){
+    navH.addEventListener('click',function(){navH.classList.toggle('open');navM.classList.toggle('open');});
+    navM.querySelectorAll('a').forEach(function(l){l.addEventListener('click',function(){navH.classList.remove('open');navM.classList.remove('open');});});
   }
 </script>
 </body>
 </html>
-```
