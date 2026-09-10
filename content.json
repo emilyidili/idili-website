@@ -91,14 +91,15 @@
       "tag": "Opera & Classical",
       "title": "Cecilia Bartoli",
       "description": "Global superstar Italian mezzo-soprano",
-      "image": "/images/cecilia-bartoli.jpeg",
+      "image": "/images/cecilia_bartoli_c_kristian_schuller_decca_sw.jpg__1420x696_q85_crop_subject_location-667-530_subsampling-2_upscale.jpg",
       "slug": "cecilia-bartoli",
       "long_description": "The mezzo-soprano Cecilia Bartoli is one of the world’s leading classical artists with an outstanding and ongoing stage career that, so far, spans more than 35 years. Her work is inspired by her passion for re-discovering little-known music, and her profound interest in historically-informed performance practice. Her large-scale projects, which embrace various art forms, have brought her international recognition and led to prestigious managerial positions in Salzburg and Monte Carlo. ",
       "gallery": [
         "/images/ausschnitt-for-ariodante-decca-classics-©-uli-weber.jpg",
         "/images/cecilia-bartoli-©fabrice-demessence.jpg",
         "/images/orfeo_ed_euridice_cl_218-c-salzburger-festspiele-monika-rittershaus.jpg"
-      ]
+      ],
+      "thumbnail": "/images/cecilia-bartoli.jpeg"
     },
     {
       "tag": "Opera & Classical",
