@@ -45,7 +45,7 @@
         "/images/elf_mattcrockett_mc2_5016_rt1.jpg",
         "/images/elf_mattcrockett_mc2_2656_rt2-1-.jpg"
       ],
-      "hero_position": "center top"
+      "hero_position": "center 50%"
     },
     {
       "tag": "Theatrical",
@@ -53,7 +53,7 @@
       "description": "20th anniversary UK tour of the famous award-winning rock musical ",
       "image": "/images/rent-2.webp",
       "slug": "rent-the-musical",
-      "long_description": "A tour of an acclaimed, 20th anniversary revival production of the multi-award-winning rock musical Rent was produced by Idili from 2016 to 2017.\n\nDescribed as an “exhilarating, landmark rock opera,” Rent returned to the London stage at Victoria’s St James Theatre, telling the thrilling story of a group of impoverished young artists struggling to survive in New York City’s East Village in the thriving days of Bohemian excess. \n\nInspired by Puccini’s classic opera La Bohème, Rent features unforgettable music and lyrics by Jonathan Larson including the much-loved songs Seasons of Love, Take Me or Leave Me and La Vie Bohème. Winner of four Tony Awards, six Drama Desk Awards and the prestigious Pulitzer Prize for Drama, it ran on Broadway for an astonishing 5,123 performances during its 12-year run. It is amongst the top 20 highest grossing Broadway musicals ever.\n\nDirected by Bruce Guthrie, Idili’s 20th anniversary production of Rent starred Ross Hunter (We Will Rock You, The Book of Mormon) as Roger Davis, Billy Cullum (Matilda, Charlie and the Chocolate Factory) as Mark Cohen, Ryan O’Gorman (Les Misérables, The Phantom of the Opera) as Tom Collins, Shanay Holmes (Thriller Live, The Bodyguard) as Joanne Jefferson, Layton Williams (Billy Elliot, Thriller Live) as Angel Schunard, Philippa Stefani (In The Heights, High Society) as Mimi Marquez and Lucie Jones (American Psycho, Les Misérables) as Maureen Johnson. Several of the cast members subsequently had feature roles in West End productions and on television shows.",
+      "long_description": "A tour of an acclaimed, 20th anniversary revival production of the multi-award-winning rock musical Rent was produced by IDILI from 2016 to 2017.\n\nDescribed as an “exhilarating, landmark rock opera,” Rent returned to the London stage at Victoria’s St James Theatre, telling the thrilling story of a group of impoverished young artists struggling to survive in New York City’s East Village in the thriving days of Bohemian excess. \n\nInspired by Puccini’s classic opera La Bohème, Rent features unforgettable music and lyrics by Jonathan Larson including the much-loved songs Seasons of Love, Take Me or Leave Me and La Vie Bohème. Winner of four Tony Awards, six Drama Desk Awards and the prestigious Pulitzer Prize for Drama, it ran on Broadway for an astonishing 5,123 performances during its 12-year run. It is amongst the top 20 highest grossing Broadway musicals ever.\n\nDirected by Bruce Guthrie, Idili’s 20th anniversary production of Rent starred Ross Hunter (We Will Rock You, The Book of Mormon) as Roger Davis, Billy Cullum (Matilda, Charlie and the Chocolate Factory) as Mark Cohen, Ryan O’Gorman (Les Misérables, The Phantom of the Opera) as Tom Collins, Shanay Holmes (Thriller Live, The Bodyguard) as Joanne Jefferson, Layton Williams (Billy Elliot, Thriller Live) as Angel Schunard, Philippa Stefani (In The Heights, High Society) as Mimi Marquez and Lucie Jones (American Psycho, Les Misérables) as Maureen Johnson. Several of the cast members subsequently had feature roles in West End productions and on television shows.",
       "gallery": [
         "/images/screenshot-2023-02-08-at-11.02.06.webp",
         "/images/rent-the-musical-1.webp",
@@ -148,7 +148,7 @@
       "description": "Andrew Lloyd Webber’s record-breaking musical at the Opera de Monte-Carlo",
       "image": "/images/cats1.jpg",
       "slug": "CATS",
-      "long_description": "Andrew Lloyd Webber’s record-breaking musical CATS headed to Opera de Monte-Carlo for a completely sold-out 2 week run in December 2025.\n\nAdapted from TS Eliot’s ‘Old Possum’s Book of Practical Cats’, this \"groundbreaking musical\" (Daily Express) comes together in a sparkling fusion of music, dance and verse. On just one special night of the year, all Jellicle cats meet at the Jellicle Ball where Old Deuteronomy, their wise and benevolent leader, makes the Jellicle choice and announces which of them will go up to The Heaviside Layer and be reborn into a whole new Jellicle life. \n\nWith \"timeless music, spectacular sets and a superb cast\" (Daily Mirror), breathtaking choreography and of course the unforgettable ‘Memory’, CATS is a magical musical like no other.",
+      "long_description": "Working in collaboration with the Opera de Monte-Carlo, IDILI presented Andrew Lloyd Webber’s record-breaking musical CATS at the famous Salle Garnier in Monaco for a completely sold-out 2 week run in December 2025.\n\nAdapted from TS Eliot’s ‘Old Possum’s Book of Practical Cats’, this \"groundbreaking musical\" (Daily Express) comes together in a sparkling fusion of music, dance and verse. On just one special night of the year, all Jellicle cats meet at the Jellicle Ball where Old Deuteronomy, their wise and benevolent leader, makes the Jellicle choice and announces which of them will go up to The Heaviside Layer and be reborn into a whole new Jellicle life. \n\nWith \"timeless music, spectacular sets and a superb cast\" (Daily Mirror), breathtaking choreography and of course the unforgettable ‘Memory’, CATS is a magical musical like no other.",
       "gallery": [
         "/images/cats2.jpg",
         "/images/cats3.jpg",
@@ -166,7 +166,8 @@
         "/images/pretty_2-9008.jpg",
         "/images/screenshot-2026-08-03-at-10.18.18.png",
         "/images/pretty_2-8763.jpg"
-      ]
+      ],
+      "hero_position": "center top"
     },
     {
       "tag": "Theatrical",
