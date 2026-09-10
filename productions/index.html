@@ -73,10 +73,7 @@
     }
     .cat-back:hover { opacity: 1; }
     .cat-back svg { width: 14px; height: 14px; }
-    .cat-num-display {
-      font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase;
-      color: var(--taupe); margin-bottom: 16px;
-    }
+    .cat-num-display { font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--taupe); margin-bottom: 16px; }
     .cat-bar-display { width: 36px; height: 2px; border-radius: 2px; margin-bottom: 24px; }
     .cat-title {
       font-family: var(--serif);
@@ -130,11 +127,7 @@
     .prod-card:hover .prod-desc-sm { opacity: 1; transform: translateY(0); }
     .empty-state { text-align: center; padding: 80px 24px; color: var(--taupe); font-size: 15px; }
     .prod-hero { position: relative; height: 70vh; min-height: 420px; overflow: hidden; }
-    .prod-hero-img {
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: center top;
-      filter: brightness(0.88);
-    }
+    .prod-hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: brightness(0.88); }
     .prod-hero-overlay {
       position: absolute; inset: 0;
       background: linear-gradient(to top, rgba(26,23,20,0.82) 0%, rgba(26,23,20,0.06) 50%);
@@ -162,17 +155,10 @@
       margin-bottom: 40px; opacity: 0.7;
     }
     .section-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--sand); opacity: 0.5; }
-    .prod-long-desc {
-      font-size: 17px; font-weight: 300; color: var(--cream);
-      line-height: 1.85; white-space: pre-wrap;
-    }
+    .prod-long-desc { font-size: 17px; font-weight: 300; color: var(--cream); line-height: 1.85; white-space: pre-wrap; }
     .prod-long-desc a { color: var(--sand); text-decoration: underline; opacity: 0.85; }
     .prod-long-desc a:hover { opacity: 1; }
-    .prod-gallery {
-      background: rgba(255,255,255,0.02);
-      border-top: 1px solid rgba(201,185,154,0.1);
-      padding: 72px 48px 96px;
-    }
+    .prod-gallery { background: rgba(255,255,255,0.02); border-top: 1px solid rgba(201,185,154,0.1); padding: 72px 48px 96px; }
     .prod-gallery-inner { max-width: 1200px; margin: 0 auto; }
     .prod-gallery-label {
       font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase;
@@ -182,11 +168,7 @@
     .prod-gallery-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--sand); opacity: 0.5; }
     .prod-gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
     .gallery-item { overflow: hidden; aspect-ratio: 4/3; cursor: pointer; position: relative; }
-    .gallery-item img {
-      width: 100%; height: 100%; object-fit: cover;
-      transition: transform 0.6s ease, filter 0.4s ease;
-      filter: brightness(0.85) saturate(0.9);
-    }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease, filter 0.4s ease; filter: brightness(0.85) saturate(0.9); }
     .gallery-item:hover img { transform: scale(1.04); filter: brightness(1) saturate(1); }
     .gallery-credit {
       position: absolute; bottom: 0; left: 0; right: 0;
@@ -196,23 +178,12 @@
       opacity: 0; transition: opacity 0.3s; pointer-events: none;
     }
     .gallery-item:hover .gallery-credit { opacity: 1; }
-    .lightbox {
-      display: none; position: fixed; inset: 0; z-index: 200;
-      background: rgba(10,10,10,0.95);
-      align-items: center; justify-content: center; cursor: zoom-out;
-    }
+    .lightbox { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(10,10,10,0.95); align-items: center; justify-content: center; cursor: zoom-out; }
     .lightbox.open { display: flex; }
     .lightbox img { max-width: 90vw; max-height: 88vh; width: auto; height: auto; object-fit: contain; cursor: default; }
-    .lightbox-close {
-      position: absolute; top: 24px; right: 32px;
-      font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--sand); cursor: pointer; opacity: 0.7; transition: opacity 0.2s;
-    }
+    .lightbox-close { position: absolute; top: 24px; right: 32px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sand); cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
     .lightbox-close:hover { opacity: 1; }
-    .lightbox-credit {
-      position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
-      font-size: 10px; letter-spacing: 0.1em; color: var(--sand); opacity: 0.7;
-    }
+    .lightbox-credit { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); font-size: 10px; letter-spacing: 0.1em; color: var(--sand); opacity: 0.7; }
     .page-footer { background: var(--black); border-top: 1px solid rgba(201,185,154,0.1); padding: 36px 48px; }
     .page-footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
     .footer-logo img { height: 52px; width: auto; display: block; opacity: 0.85; transition: opacity 0.3s; }
@@ -287,9 +258,17 @@
     'mamma-mia-the-party': 'center 45%',
     'cecilia-bartoli':     'center 45%'
   };
+
+  // Hardcoded per-slug text replacements (for links that can't be added via CMS)
+  var PROD_TEXT_REPLACEMENTS = {
+    'les-grandes-voix': [
+      { find: 'please visit the website.', replace: 'please visit the <a href="https://lesgrandesvoix.fr/" target="_blank" rel="noopener">website</a>.' }
+    ]
+  };
+
   var CATEGORIES = {
-    'theatrical':  { num:'01', name:'Theatrical',                   color:'#E82020', tags:['Theatrical','Musical Theatre','Musical'],            desc:'From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.' },
-    'classical':   { num:'02', name:'Opera & Classical',            color:'#009990', tags:['Opera','Classical'],                                 desc:"International tours and concert presentations with the world's finest operatic voices and orchestras." },
+    'theatrical':  { num:'01', name:'Theatrical',                      color:'#E82020', tags:['Theatrical','Musical Theatre','Musical'],              desc:'From West End premieres to record-breaking anniversary tours, we produce theatrical experiences that define their era.' },
+    'classical':   { num:'02', name:'Opera & Classical',               color:'#009990', tags:['Opera','Classical'],                                   desc:"International tours and concert presentations with the world's finest operatic voices and orchestras." },
     'exhibitions': { num:'03', name:'Exhibitions & Other Experiences', color:'#0075BC', tags:['Exhibition','Immersive','Exhibitions & Other Events'], desc:'Landmark cultural exhibitions and immersive experiences that bring iconic artists and stories to life for new and existing audiences.' }
   };
   var TAG_TO_CAT = [
@@ -298,26 +277,32 @@
     { keys:['exhibition','immersive','exhibitions'],   slug:'exhibitions', label:'Exhibitions & Other Experiences' }
   ];
   function catFromTag(tag) {
-    var t = (tag||'').toLowerCase();
+    var t=(tag||'').toLowerCase();
     for (var i=0;i<TAG_TO_CAT.length;i++) for (var j=0;j<TAG_TO_CAT[i].keys.length;j++) if (t.includes(TAG_TO_CAT[i].keys[j])) return TAG_TO_CAT[i];
     return { slug:'theatrical', label:'Productions' };
   }
   function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-  // Converts plain text to HTML, turning URLs into clickable links
-  function renderText(text) {
-    var parts = (text||'').split(/(https?:\/\/\S+)/g);
-    return parts.map(function(part, i) {
-      if (i % 2 === 1) {
-        var cleanUrl = part.replace(/[.,;)]+$/, ''); // strip trailing punctuation
-        return '<a href="' + esc(cleanUrl) + '" target="_blank" rel="noopener">' + esc(cleanUrl) + '</a>';
+
+  // Render plain text as HTML, auto-linking URLs
+  function renderText(text, slug) {
+    var parts=(text||'').split(/(https?:\/\/\S+)/g);
+    var html=parts.map(function(part,i){
+      if (i%2===1) {
+        var clean=part.replace(/[.,;)]+$/,'');
+        return '<a href="'+esc(clean)+'" target="_blank" rel="noopener">'+esc(clean)+'</a>';
       }
       return esc(part);
     }).join('');
+    // Apply any hardcoded slug-specific replacements
+    var replacements=PROD_TEXT_REPLACEMENTS[slug]||[];
+    replacements.forEach(function(r){ html=html.split(esc(r.find)).join(r.replace); });
+    return html;
   }
-  function sharedFooter(backHref, backLabel) {
+
+  function sharedFooter(backHref,backLabel) {
     return '<footer class="page-footer"><div class="page-footer-inner">' +
       '<a href="/" class="footer-logo"><img src="/idili-logo.png" alt="IDILI" /></a>' +
-      '<a href="' + esc(backHref) + '" class="footer-back-link">&#8592; ' + esc(backLabel) + '</a>' +
+      '<a href="'+esc(backHref)+'" class="footer-back-link">&#8592; '+esc(backLabel)+'</a>' +
       '<span class="footer-copy">&copy; 2025 IDILI Live &amp; Theatricals Ltd</span>' +
       '</div></footer>' +
       '<div class="footer-legal"><div class="footer-legal-inner">' +
@@ -326,22 +311,24 @@
       '<a href="/cookie-policy.html" target="_blank" rel="noopener">Cookie Policy</a>' +
       '</div></div>';
   }
-  var pathname = window.location.pathname.replace(/\/$/, '');
-  var parts = pathname.split('/').filter(Boolean);
-  var isCategory = parts[1] === 'category';
+
+  var pathname=window.location.pathname.replace(/\/$/, '');
+  var parts=pathname.split('/').filter(Boolean);
+  var isCategory=parts[1]==='category';
+
   if (isCategory) {
-    var catSlug = parts[2]||'';
-    var cat = CATEGORIES[catSlug];
+    var catSlug=parts[2]||'';
+    var cat=CATEGORIES[catSlug];
     if (!cat) { window.location.href='/'; }
     else {
-      document.title = cat.name + ' — IDILI Live & Theatricals';
-      document.getElementById('page-content').innerHTML =
+      document.title=cat.name+' — IDILI Live & Theatricals';
+      document.getElementById('page-content').innerHTML=
         '<section class="cat-header"><div class="cat-header-inner">' +
           '<a href="/" class="cat-back"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 12l-4-4 4-4"/></svg>Back to all work</a>' +
-          '<p class="cat-num-display">' + esc(cat.num) + '</p>' +
-          '<div class="cat-bar-display" style="background:' + cat.color + '"></div>' +
-          '<h1 class="cat-title">' + esc(cat.name) + '</h1>' +
-          '<p class="cat-subtitle">' + esc(cat.desc) + '</p>' +
+          '<p class="cat-num-display">'+esc(cat.num)+'</p>' +
+          '<div class="cat-bar-display" style="background:'+cat.color+'"></div>' +
+          '<h1 class="cat-title">'+esc(cat.name)+'</h1>' +
+          '<p class="cat-subtitle">'+esc(cat.desc)+'</p>' +
         '</div></section>' +
         '<section class="cat-productions"><div class="cat-productions-inner">' +
           '<div style="display:flex;align-items:center;justify-content:flex-end;margin-bottom:20px;">' +
@@ -358,7 +345,10 @@
       document.getElementById('prod-prev').addEventListener('click',function(){ document.getElementById('prod-scroll-wrap').scrollBy({left:-370,behavior:'smooth'}); });
       document.getElementById('prod-next').addEventListener('click',function(){ document.getElementById('prod-scroll-wrap').scrollBy({left:370,behavior:'smooth'}); });
       fetch('/content.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
-        var filtered=(d.productions||[]).filter(function(p){ var tag=(p.tag||'').toLowerCase(); return cat.tags.some(function(t){return tag.includes(t.toLowerCase());}); });
+        var filtered=(d.productions||[]).filter(function(p){
+          var tag=(p.tag||'').toLowerCase();
+          return cat.tags.some(function(t){return tag.includes(t.toLowerCase());});
+        });
         var grid=document.getElementById('prod-grid');
         if (!filtered.length){grid.innerHTML='<div class="empty-state">No productions found.</div>';return;}
         grid.innerHTML=filtered.map(function(p){
@@ -367,7 +357,10 @@
             '<img src="'+esc(p.thumbnail||p.image)+'" alt="'+esc(p.title)+'" loading="lazy" style="object-position:'+pos+'" />' +
             '<div class="prod-overlay"><span class="prod-tag-sm">'+esc(p.tag)+'</span><h2 class="prod-name">'+esc(p.title)+'</h2><p class="prod-desc-sm">'+esc(p.description)+'</p></div></a>';
         }).join('');
-      }).catch(function(){ var g=document.getElementById('prod-grid'); if(g) g.innerHTML='<div class="empty-state">Unable to load. Please try again.</div>'; });
+      }).catch(function(){
+        var g=document.getElementById('prod-grid');
+        if (g) g.innerHTML='<div class="empty-state">Unable to load. Please try again.</div>';
+      });
     }
   } else {
     var slug=parts[parts.length-1]||'';
@@ -395,11 +388,11 @@
         '</section>';
       var bodyHtml='<section class="prod-body">';
       if (prod.long_description&&prod.long_description.trim())
-        bodyHtml+='<p class="section-label">Full Story</p><p class="prod-long-desc">'+renderText(prod.long_description)+'</p>';
+        bodyHtml+='<p class="section-label">Full Story</p><p class="prod-long-desc">'+renderText(prod.long_description,prod.slug)+'</p>';
       bodyHtml+='</section>';
       var gallery=prod.gallery||[];
       var galleryHtml='';
-      if (gallery.length) {
+      if (gallery.length){
         galleryHtml='<section class="prod-gallery"><div class="prod-gallery-inner"><p class="prod-gallery-label">Gallery</p><div class="prod-gallery-grid">'+
           gallery.map(function(item,idx){
             var src=(typeof item==='string')?item:(item.image||item);
@@ -412,7 +405,7 @@
         '</div></div></section>';
       }
       document.getElementById('page-content').innerHTML=heroHtml+bodyHtml+galleryHtml+sharedFooter(backHref,'Back to '+cat.label);
-      if (gallery.length) {
+      if (gallery.length){
         var lb=document.getElementById('lightbox');
         var lbImg=document.getElementById('lightbox-img');
         var lbCredit=document.getElementById('lightbox-credit');
