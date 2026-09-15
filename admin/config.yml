@@ -93,9 +93,22 @@ collections:
                 name: "hero_position"
                 widget: "select"
                 required: false
-                hint: "Controls which part of the header image is shown. Leave blank to use the default (top)."
+                hint: "Controls which part of the header image is shown on desktop. Leave blank to use the default (top)."
                 options:
                   - { label: "Top", value: "center top" }
+                  - { label: "Top Right", value: "right top" }
+                  - { label: "Upper", value: "center 25%" }
+                  - { label: "Centre", value: "center 50%" }
+                  - { label: "Lower", value: "center 75%" }
+                  - { label: "Bottom", value: "center bottom" }
+              - label: "Mobile Image Position"
+                name: "hero_position_mobile"
+                widget: "select"
+                required: false
+                hint: "Controls which part of the header image is shown on mobile. Leave blank to use the desktop position."
+                options:
+                  - { label: "Top", value: "center top" }
+                  - { label: "Top Right", value: "right top" }
                   - { label: "Upper", value: "center 25%" }
                   - { label: "Centre", value: "center 50%" }
                   - { label: "Lower", value: "center 75%" }
