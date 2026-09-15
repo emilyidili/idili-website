@@ -254,6 +254,12 @@
       "role": "Managing Director, Céleste Productions"
     },
     {
+      "bio": "Jeanne Coussy graduated from Sciences Po Paris in 2008 and from the ESCP Business School/Ca’ Foscari University of Venice in 2009. Following professional experience at the Opéra National de Paris, the Théâtre National de Chaillot and the Ministry of Culture and Communication, she joined Céleste Productions – Les Grandes Voix as an Administrator. \n\nOn a personal level, she holds a diploma in violin, chamber music, musical analysis and music theory from the Conservatoire à Rayonnement Régional de Tours and has taken part in numerous amateur concerts, notably at the Philharmonie de Paris and the Berlin Philharmonie.",
+      "name": "Jeanne Coussy ",
+      "photo": "/images/jeanne.png",
+      "role": "Administrator, Céleste Productions"
+    },
+    {
       "name": "Emily Brett",
       "role": "Marketing Director",
       "photo": "/images/screenshot-2026-06-22-at-12.01.18.png",
@@ -282,12 +288,6 @@
       "role": "Finance",
       "name": "Mandy Manaka",
       "photo": "/images/mandy.jpeg"
-    },
-    {
-      "bio": "Jeanne Coussy graduated from Sciences Po Paris in 2008 and from the ESCP Business School/Ca’ Foscari University of Venice in 2009. Following professional experience at the Opéra National de Paris, the Théâtre National de Chaillot and the Ministry of Culture and Communication, she joined Céleste Productions – Les Grandes Voix as an Administrator. \n\nOn a personal level, she holds a diploma in violin, chamber music, musical analysis and music theory from the Conservatoire à Rayonnement Régional de Tours and has taken part in numerous amateur concerts, notably at the Philharmonie de Paris and the Berlin Philharmonie.",
-      "name": "Jeanne Coussy ",
-      "photo": "/images/jeanne.png",
-      "role": "Administrator"
     }
   ],
   "venues": [
