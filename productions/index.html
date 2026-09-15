@@ -376,7 +376,7 @@
     'frida-kahlo':               'center 15%'
   };
 
-  // Mobile-specific overrides (screens < 768px)
+  // Mobile-specific overrides (screens < 768px) — CMS field takes priority over these
   var PROD_HERO_POSITIONS_MOBILE = {
     'pretty-yende':        'center top',
     'bryns-christmas':     'center top',
@@ -521,7 +521,7 @@
             var href = p.slug ? '/productions/' + p.slug : '#';
             var cardImg = p.thumbnail || p.image;
             var isMob = window.innerWidth < 768;
-            var cardPos = (isMob && PROD_HERO_POSITIONS_MOBILE[p.slug]) || p.hero_position || PROD_HERO_POSITIONS[p.slug] || 'center top';
+            var cardPos = (isMob && (p.hero_position_mobile || PROD_HERO_POSITIONS_MOBILE[p.slug])) || p.hero_position || PROD_HERO_POSITIONS[p.slug] || 'center top';
             return '<a class="prod-card" href="' + esc(href) + '">' +
               '<img src="' + esc(cardImg) + '" alt="' + esc(p.title) + '" loading="lazy" style="object-position:' + cardPos + '" />' +
               '<div class="prod-overlay">' +
@@ -562,7 +562,7 @@
         var cat = catFromTag(prod.tag);
         var backHref = '/productions/category/' + cat.slug;
         var isMob = window.innerWidth < 768;
-        var heroPos = (isMob && PROD_HERO_POSITIONS_MOBILE[prod.slug]) || prod.hero_position || PROD_HERO_POSITIONS[prod.slug] || 'center top';
+        var heroPos = (isMob && (prod.hero_position_mobile || PROD_HERO_POSITIONS_MOBILE[prod.slug])) || prod.hero_position || PROD_HERO_POSITIONS[prod.slug] || 'center top';
         var heroHtml =
           '<section class="prod-hero">' +
             '<img class="prod-hero-img" src="' + esc(prod.image) + '" alt="' + esc(prod.title) + '" style="object-position:' + heroPos + '" />' +
