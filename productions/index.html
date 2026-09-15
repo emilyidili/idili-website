@@ -376,6 +376,14 @@
     'frida-kahlo':               'center 15%'
   };
 
+  // Mobile-specific overrides (screens < 768px)
+  var PROD_HERO_POSITIONS_MOBILE = {
+    'pretty-yende':        'center top',
+    'bryns-christmas':     'center top',
+    'sandi-toksvig':       'center top',
+    'frida-kahlo':         'center top'
+  };
+
   var PROD_TEXT_REPLACEMENTS = {
     'les-grandes-voix': [
       { find: 'please visit the website.', replace: 'please visit the <a href="https://lesgrandesvoix.fr/" target="_blank" rel="noopener">website</a>.' }
@@ -512,7 +520,8 @@
           grid.innerHTML = filtered.map(function(p) {
             var href = p.slug ? '/productions/' + p.slug : '#';
             var cardImg = p.thumbnail || p.image;
-            var cardPos = p.hero_position || PROD_HERO_POSITIONS[p.slug] || 'center top';
+            var isMob = window.innerWidth < 768;
+            var cardPos = (isMob && PROD_HERO_POSITIONS_MOBILE[p.slug]) || p.hero_position || PROD_HERO_POSITIONS[p.slug] || 'center top';
             return '<a class="prod-card" href="' + esc(href) + '">' +
               '<img src="' + esc(cardImg) + '" alt="' + esc(p.title) + '" loading="lazy" style="object-position:' + cardPos + '" />' +
               '<div class="prod-overlay">' +
@@ -552,7 +561,8 @@
         document.title = prod.title + ' — IDILI Live & Theatricals';
         var cat = catFromTag(prod.tag);
         var backHref = '/productions/category/' + cat.slug;
-        var heroPos = prod.hero_position || PROD_HERO_POSITIONS[prod.slug] || 'center top';
+        var isMob = window.innerWidth < 768;
+        var heroPos = (isMob && PROD_HERO_POSITIONS_MOBILE[prod.slug]) || prod.hero_position || PROD_HERO_POSITIONS[prod.slug] || 'center top';
         var heroHtml =
           '<section class="prod-hero">' +
             '<img class="prod-hero-img" src="' + esc(prod.image) + '" alt="' + esc(prod.title) + '" style="object-position:' + heroPos + '" />' +
