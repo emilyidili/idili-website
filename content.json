@@ -22,6 +22,20 @@
   "productions": [
     {
       "tag": "Theatrical",
+      "title": "Club NVRLND",
+      "long_description": "Peter Pan is throwing London’s greatest night out: a pop-filled theatrical adventure soundtracked by the songs you grew up with — and never grew out of!\nLeave your worries at the door and lose yourself on the dancefloor in a nostalgia-fuelled world of music and mischief, featuring the biggest 2000s anthems from Britney, Lady Gaga, Kylie, Rihanna, Coldplay and many more!\nWhen runaway bride Wendy Darling, played by Diana Vickers (X Factor, The Rise and Fall of Little Voice, The Rocky Horror Show), stumbles back into Peter’s world, she’s forced to question everything she thought she wanted. Offered the chance to rewrite her story, Wendy’s thrown back into a world of intoxicating fun and reckless adventure.\nFresh from a sold-out run at the Edinburgh Festival, Club NVRLND lands at The Vaults Waterloo for a strictly limited season, with RuPaul’s Drag Race UK star Le Fil returning as Tiger Lily. Written by Olivier Award-winner Jack Holden (Cruise, KENREX), with concept and direction by Steven Kunis (Hir, Straight White Men), this high-energy nightclub musical is an irreverent, immersive party where fairy dust is in the air, the drinks flow and the night is always young.\n\nGet tickets now from www.clubnvrlnd.com",
+      "slug": "club_nvrlnd",
+      "description": "A pop-filled theatrical adventure based on the story of Peter Pan.",
+      "image": "/images/club-nvrlnd-edfringe2025-image-by-mihaela-bodlovic-177-.jpg",
+      "gallery": [
+        "/images/cn26_meta_updatedcopy_1920x1080-1-.jpg",
+        "/images/clubnvrlnd-preview-set-image-by-mihaela-bodlovic-7-.jpg",
+        "/images/clubnvrlnd-preview-set-image-by-mihaela-bodlovic-3-.jpg"
+      ],
+      "hero_position": "center bottom"
+    },
+    {
+      "tag": "Theatrical",
       "title": "Mamma Mia! The Party",
       "description": "London & Stockholm. An immersive ABBA-themed theatrical dining experience that redefined the genre.",
       "image": "/images/mmtp.jpg",
@@ -62,34 +76,31 @@
       "thumbnail": "/images/rent-2.webp"
     },
     {
-      "slug": "abba-super-troupers-the-exhibition",
-      "thumbnail": "/images/abba-super-troupers-7.jpg",
-      "hero_position": "center 50%",
+      "tag": "Theatrical",
+      "title": "CATS",
+      "description": "Andrew Lloyd Webber’s record-breaking musical at the Opera de Monte-Carlo",
+      "image": "/images/cats1.jpg",
+      "slug": "CATS",
+      "long_description": "Working in collaboration with the Opera de Monte-Carlo, IDILI presented Andrew Lloyd Webber’s record-breaking musical CATS at the famous Salle Garnier in Monaco for a completely sold-out 2 week run in December 2025.\n\nAdapted from TS Eliot’s ‘Old Possum’s Book of Practical Cats’, this \"groundbreaking musical\" (Daily Express) comes together in a sparkling fusion of music, dance and verse. On just one special night of the year, all Jellicle cats meet at the Jellicle Ball where Old Deuteronomy, their wise and benevolent leader, makes the Jellicle choice and announces which of them will go up to The Heaviside Layer and be reborn into a whole new Jellicle life. \n\nWith \"timeless music, spectacular sets and a superb cast\" (Daily Mirror), breathtaking choreography and of course the unforgettable ‘Memory’, CATS is a magical musical like no other.",
       "gallery": [
-        "/images/06-installation-view-abba-super-troupers-on-display-at-southbank-centre-credit-victor-frankowski.webp",
-        "/images/04-installation-view-abba-super-troupers-on-display-at-southbank-centre-credit-victor-frankowski.webp",
-        "/images/03-björn-ulvaeus-opens-abba_-super-troupers-at-southbank-centre-credit-victor-frankowski.webp"
-      ],
-      "title": "ABBA: Super Troupers The Exhibition",
-      "long_description": "IDILI presented ABBA: Super Troupers The Exhibition during its London run at The Southbank Centre in 2017/18. The exhibition proved so popular that its run at the Southbank Centre was extended to The O2.\n\nThe immersive exhibition brought to life the world of chart-topping Swedish pop sensation ABBA (Agnetha Fältskog, Björn Ulvaeus, Benny Andersson, and Anni-Frid Lyngstad) in a visitor experience that charted their music, lyrics, creative process and influence as one of the most iconic pop bands of the modern age.\n\nABBA: Super Troupers The Exhibition managed to transform the traditional exhibition experience into an insightful take on the group’s story. Incorporating lyrics, costumes, instruments, experiential backdrops of the key events and locations that defined and shaped the band, album artwork, photography, film and more, the exhibition went truly behind-the-scenes to examine the heavy-weight influence of one of the most enduring acts of all time.",
-      "tag": "Exhibitions & Other Events",
-      "image": "/images/abba.webp",
-      "description": "The official ABBA exhibition, presented in London."
+        "/images/cats2.jpg",
+        "/images/cats3.jpg",
+        "/images/cats1.jpg"
+      ]
     },
     {
-      "slug": "sandi-toksvig",
-      "thumbnail": "/images/sandi-toksvig_0050b_photo-by-steve-ullathorne.jpg",
-      "hero_position": "center 50%",
+      "tag": "Theatrical",
+      "title": "Phantom Of The Opera",
+      "description": "The legendary long-running musical in Monte Carlo for a sold-out run",
+      "slug": "phantom-of-the-opera",
+      "long_description": "The Opéra de Monte-Carlo presented a sold out, new staging of The Phantom of the Opera, co-produced with IDILI Live and Broadway Italia SRL, in December 2023. Since its opening in 1986, this record-breaking musical has played all over the world: to over 145 million people, in 183 cities, in 17 languages and has received over 70 major theatre awards, including seven Tonys and four Olivier Awards. \n\nRecognised throughout the world as one of the best Phantoms, Olivier and Tony nominee Ramin Karimloo took on the role of The Phantom in Monaco, having previously played the role in London’s West End, Korea and in the 25th Anniversary Concert at the Royal Albert Hall.  ",
       "gallery": [
-        "/images/sandi-toksvig-one-night-only-credit-piers-allardyce-1.jpg",
-        "/images/screenshot-2026-08-03-at-10.10.25.png",
-        "/images/sandi-toksvig-one-night-only-credit-piers-allardyce-2.jpg"
+        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-52-.jpg",
+        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-94-.jpg",
+        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-31-.jpg"
       ],
-      "title": "Sandi Toksvig & The QI Elves",
-      "long_description": "In partnership with QI and Sandi Toksvig, the internationally renowned and much-loved comedian, broadcaster, writer and campaigner, IDILI brought One Night Only, a new live theatrical comedy extravaganza, for two nights only in November 2024 at the Theatre Royal Drury Lane, London.\n\nInspired by her hosting of the successful television franchise QI, One Night Only was a theatre-themed evening of comedy and curiosity in which Sandi shared little known facts about the world of theatre from actors to performances, stories and songs – giving the audience a sneak peak at what really goes on behind the scenes!\n\nThe Times said “This QI experiment is an enjoyable show and well worth repeating.”\n\nSandi Toksvig said, “I’ve been hosting QI for nearly 10 years and the best thing about doing it is performing for the audience in the room - people still queue for hours to be in the studio because it’s so much fun.  I’m thrilled to have brought facts and the Elves to the West End for a proper live extravaganza.  We called it One Night Only because each night was different and unique - and, unlike television, it could only be watched once!”",
-      "tag": "Exhibitions & Other Events",
-      "image": "/images/sandi-toksvig-one-night-only-credit-stephen-pover-.jpg",
-      "description": "Sandi Toksvig for One Night Only"
+      "image": "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-77-.jpg",
+      "thumbnail": "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-77-.jpg"
     },
     {
       "tag": "Opera & Classical",
@@ -119,46 +130,6 @@
       ]
     },
     {
-      "tag": "Exhibitions & Other Events",
-      "title": "Monet's Garden",
-      "description": "A 360-degree journey immersive art experience through the history and works of Claude Monet.",
-      "image": "/images/screenshot-2026-06-11-at-15.40.24.png",
-      "slug": "monets-garden",
-      "long_description": "\"A colourful installation and an intense sound landscape turn Monet's masterpieces into a grand spectacle of his work.\"  - Berliner Morgenpost\n\nMonet’s Garden - The Immersive Experience was opened by IDILI in Stockholm in October 2023 following successful appearances in New York, Vienna and Hamburg. Due to popular demand it was extended until March 2024, and welcomed over 100,000 visitors during its Swedish run.\n\nMonet’s Garden is an immersive art experience that give visitors a 360-degree journey through the history and works of one of the greatest artists of the past century, Claude Monet. \n\nThis unique exhibition concept is staged with state-of-the-art multi-media technology, which allows visitors to immerse themselves completely inside the world of Claude Monet and some of his most famous artworks. Elaborate installations and projections, combined with a musical soundscape, create rushing worlds of colour and light making the paintings come alive in a way never seen before.",
-      "gallery": [
-        "/images/biggy-x-monet-s-garden-14.jpg",
-        "/images/biggy-x-monet-s-garden-13.jpg",
-        "/images/biggy-x-monet-s-garden-15.jpg"
-      ]
-    },
-    {
-      "tag": "Exhibitions & Other Events",
-      "title": "Viva Frida Kahlo!",
-      "description": "A sensory journey through iconic Mexican artist Frida Khalo's world and art.",
-      "image": "/images/frida_10_1080x1080.jpg",
-      "slug": "viva-frida-kahlo",
-      "long_description": "Viva Frida Kahlo! is a unique staging of the world-famous works by legendary Mexican artist Frida Kahlo. After successful residencies in Zurich, Brussels, Munich, Berlin, Hamburg and Vienna, IDILI, in partnership with Julius AB, brought Viva Frida Kahlo!  for its Scandinavian debut at Amiralen in Malmo in February and ran until June 2025.\n\nViva Frida Kahlo! takes visitors on a sensory journey through Frida’s world and art, by bringing her paintings to life using the latest technology to project onto walls up to 24 metres long and 5.5 metres high, as well as onto the floor of the exhibition hall. In addition, visitors can also enjoy a virtual reality experience that takes them inside some of the artists’ most famous and well-loved works, as they journey through the symbolism and dreams of Frida Kahlo, and becoming part of her world.",
-      "gallery": [
-        "/images/frida_10_1080x1080.jpg",
-        "/images/viva_frida_kahlo-immersive_experience_hamburg_mxa6129.jpg",
-        "/images/frida_6_1080x1080.jpg"
-      ],
-      "hero_position": "center 25%"
-    },
-    {
-      "tag": "Theatrical",
-      "title": "CATS",
-      "description": "Andrew Lloyd Webber’s record-breaking musical at the Opera de Monte-Carlo",
-      "image": "/images/cats1.jpg",
-      "slug": "CATS",
-      "long_description": "Working in collaboration with the Opera de Monte-Carlo, IDILI presented Andrew Lloyd Webber’s record-breaking musical CATS at the famous Salle Garnier in Monaco for a completely sold-out 2 week run in December 2025.\n\nAdapted from TS Eliot’s ‘Old Possum’s Book of Practical Cats’, this \"groundbreaking musical\" (Daily Express) comes together in a sparkling fusion of music, dance and verse. On just one special night of the year, all Jellicle cats meet at the Jellicle Ball where Old Deuteronomy, their wise and benevolent leader, makes the Jellicle choice and announces which of them will go up to The Heaviside Layer and be reborn into a whole new Jellicle life. \n\nWith \"timeless music, spectacular sets and a superb cast\" (Daily Mirror), breathtaking choreography and of course the unforgettable ‘Memory’, CATS is a magical musical like no other.",
-      "gallery": [
-        "/images/cats2.jpg",
-        "/images/cats3.jpg",
-        "/images/cats1.jpg"
-      ]
-    },
-    {
       "slug": "pretty-yende",
       "thumbnail": "/images/pretty_2-5989.jpg",
       "hero_position": "center top",
@@ -173,20 +144,6 @@
       "tag": "Opera & Classical",
       "image": "/images/pretty_2-9008.jpg",
       "description": "Leading South African soprano"
-    },
-    {
-      "tag": "Theatrical",
-      "title": "Phantom Of The Opera",
-      "description": "The legendary long-running musical in Monte Carlo for a sold-out run",
-      "slug": "phantom-of-the-opera",
-      "long_description": "The Opéra de Monte-Carlo presented a sold out, new staging of The Phantom of the Opera, co-produced with IDILI Live and Broadway Italia SRL, in December 2023. Since its opening in 1986, this record-breaking musical has played all over the world: to over 145 million people, in 183 cities, in 17 languages and has received over 70 major theatre awards, including seven Tonys and four Olivier Awards. \n\nRecognised throughout the world as one of the best Phantoms, Olivier and Tony nominee Ramin Karimloo took on the role of The Phantom in Monaco, having previously played the role in London’s West End, Korea and in the 25th Anniversary Concert at the Royal Albert Hall.  ",
-      "gallery": [
-        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-52-.jpg",
-        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-94-.jpg",
-        "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-31-.jpg"
-      ],
-      "image": "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-77-.jpg",
-      "thumbnail": "/images/the-phantom-of-the-opera-monte-carlo©omc-marco-borrelli-77-.jpg"
     },
     {
       "slug": "bryn_terfel",
@@ -219,18 +176,61 @@
       "description": "Operatic superstar"
     },
     {
-      "tag": "Theatrical",
-      "title": "Club NVRLND",
-      "long_description": "Peter Pan is throwing London’s greatest night out: a pop-filled theatrical adventure soundtracked by the songs you grew up with — and never grew out of!\nLeave your worries at the door and lose yourself on the dancefloor in a nostalgia-fuelled world of music and mischief, featuring the biggest 2000s anthems from Britney, Lady Gaga, Kylie, Rihanna, Coldplay and many more!\nWhen runaway bride Wendy Darling, played by Diana Vickers (X Factor, The Rise and Fall of Little Voice, The Rocky Horror Show), stumbles back into Peter’s world, she’s forced to question everything she thought she wanted. Offered the chance to rewrite her story, Wendy’s thrown back into a world of intoxicating fun and reckless adventure.\nFresh from a sold-out run at the Edinburgh Festival, Club NVRLND lands at The Vaults Waterloo for a strictly limited season, with RuPaul’s Drag Race UK star Le Fil returning as Tiger Lily. Written by Olivier Award-winner Jack Holden (Cruise, KENREX), with concept and direction by Steven Kunis (Hir, Straight White Men), this high-energy nightclub musical is an irreverent, immersive party where fairy dust is in the air, the drinks flow and the night is always young.\n\nGet tickets now from www.clubnvrlnd.com",
-      "slug": "club_nvrlnd",
-      "description": "A pop-filled theatrical adventure based on the story of Peter Pan.",
-      "image": "/images/club-nvrlnd-edfringe2025-image-by-mihaela-bodlovic-177-.jpg",
+      "slug": "abba-super-troupers-the-exhibition",
+      "thumbnail": "/images/abba-super-troupers-7.jpg",
+      "hero_position": "center 50%",
       "gallery": [
-        "/images/cn26_meta_updatedcopy_1920x1080-1-.jpg",
-        "/images/clubnvrlnd-preview-set-image-by-mihaela-bodlovic-7-.jpg",
-        "/images/clubnvrlnd-preview-set-image-by-mihaela-bodlovic-3-.jpg"
+        "/images/06-installation-view-abba-super-troupers-on-display-at-southbank-centre-credit-victor-frankowski.webp",
+        "/images/04-installation-view-abba-super-troupers-on-display-at-southbank-centre-credit-victor-frankowski.webp",
+        "/images/03-björn-ulvaeus-opens-abba_-super-troupers-at-southbank-centre-credit-victor-frankowski.webp"
       ],
-      "hero_position": "center bottom"
+      "title": "ABBA: Super Troupers The Exhibition",
+      "long_description": "IDILI presented ABBA: Super Troupers The Exhibition during its London run at The Southbank Centre in 2017/18. The exhibition proved so popular that its run at the Southbank Centre was extended to The O2.\n\nThe immersive exhibition brought to life the world of chart-topping Swedish pop sensation ABBA (Agnetha Fältskog, Björn Ulvaeus, Benny Andersson, and Anni-Frid Lyngstad) in a visitor experience that charted their music, lyrics, creative process and influence as one of the most iconic pop bands of the modern age.\n\nABBA: Super Troupers The Exhibition managed to transform the traditional exhibition experience into an insightful take on the group’s story. Incorporating lyrics, costumes, instruments, experiential backdrops of the key events and locations that defined and shaped the band, album artwork, photography, film and more, the exhibition went truly behind-the-scenes to examine the heavy-weight influence of one of the most enduring acts of all time.",
+      "tag": "Exhibitions & Other Events",
+      "image": "/images/abba.webp",
+      "description": "The official ABBA exhibition, presented in London."
+    },
+    {
+      "slug": "sandi-toksvig",
+      "thumbnail": "/images/sandi-toksvig_0050b_photo-by-steve-ullathorne.jpg",
+      "hero_position": "center 50%",
+      "gallery": [
+        "/images/sandi-toksvig-one-night-only-credit-piers-allardyce-1.jpg",
+        "/images/screenshot-2026-08-03-at-10.10.25.png",
+        "/images/sandi-toksvig-one-night-only-credit-piers-allardyce-2.jpg"
+      ],
+      "title": "Sandi Toksvig & The QI Elves",
+      "long_description": "In partnership with QI and Sandi Toksvig, the internationally renowned and much-loved comedian, broadcaster, writer and campaigner, IDILI brought One Night Only, a new live theatrical comedy extravaganza, for two nights only in November 2024 at the Theatre Royal Drury Lane, London.\n\nInspired by her hosting of the successful television franchise QI, One Night Only was a theatre-themed evening of comedy and curiosity in which Sandi shared little known facts about the world of theatre from actors to performances, stories and songs – giving the audience a sneak peak at what really goes on behind the scenes!\n\nThe Times said “This QI experiment is an enjoyable show and well worth repeating.”\n\nSandi Toksvig said, “I’ve been hosting QI for nearly 10 years and the best thing about doing it is performing for the audience in the room - people still queue for hours to be in the studio because it’s so much fun.  I’m thrilled to have brought facts and the Elves to the West End for a proper live extravaganza.  We called it One Night Only because each night was different and unique - and, unlike television, it could only be watched once!”",
+      "tag": "Exhibitions & Other Events",
+      "image": "/images/sandi-toksvig-one-night-only-credit-stephen-pover-.jpg",
+      "description": "Sandi Toksvig for One Night Only"
+    },
+    {
+      "tag": "Exhibitions & Other Events",
+      "title": "Monet's Garden",
+      "description": "A 360-degree journey immersive art experience through the history and works of Claude Monet.",
+      "image": "/images/screenshot-2026-06-11-at-15.40.24.png",
+      "slug": "monets-garden",
+      "long_description": "\"A colourful installation and an intense sound landscape turn Monet's masterpieces into a grand spectacle of his work.\"  - Berliner Morgenpost\n\nMonet’s Garden - The Immersive Experience was opened by IDILI in Stockholm in October 2023 following successful appearances in New York, Vienna and Hamburg. Due to popular demand it was extended until March 2024, and welcomed over 100,000 visitors during its Swedish run.\n\nMonet’s Garden is an immersive art experience that give visitors a 360-degree journey through the history and works of one of the greatest artists of the past century, Claude Monet. \n\nThis unique exhibition concept is staged with state-of-the-art multi-media technology, which allows visitors to immerse themselves completely inside the world of Claude Monet and some of his most famous artworks. Elaborate installations and projections, combined with a musical soundscape, create rushing worlds of colour and light making the paintings come alive in a way never seen before.",
+      "gallery": [
+        "/images/biggy-x-monet-s-garden-14.jpg",
+        "/images/biggy-x-monet-s-garden-13.jpg",
+        "/images/biggy-x-monet-s-garden-15.jpg"
+      ]
+    },
+    {
+      "tag": "Exhibitions & Other Events",
+      "title": "Viva Frida Kahlo!",
+      "description": "A sensory journey through iconic Mexican artist Frida Khalo's world and art.",
+      "image": "/images/frida_10_1080x1080.jpg",
+      "slug": "viva-frida-kahlo",
+      "long_description": "Viva Frida Kahlo! is a unique staging of the world-famous works by legendary Mexican artist Frida Kahlo. After successful residencies in Zurich, Brussels, Munich, Berlin, Hamburg and Vienna, IDILI, in partnership with Julius AB, brought Viva Frida Kahlo!  for its Scandinavian debut at Amiralen in Malmo in February and ran until June 2025.\n\nViva Frida Kahlo! takes visitors on a sensory journey through Frida’s world and art, by bringing her paintings to life using the latest technology to project onto walls up to 24 metres long and 5.5 metres high, as well as onto the floor of the exhibition hall. In addition, visitors can also enjoy a virtual reality experience that takes them inside some of the artists’ most famous and well-loved works, as they journey through the symbolism and dreams of Frida Kahlo, and becoming part of her world.",
+      "gallery": [
+        "/images/frida_10_1080x1080.jpg",
+        "/images/viva_frida_kahlo-immersive_experience_hamburg_mxa6129.jpg",
+        "/images/frida_6_1080x1080.jpg"
+      ],
+      "hero_position": "center 25%"
     }
   ],
   "about": {
