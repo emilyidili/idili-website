@@ -262,11 +262,6 @@
       "bio": "Suzi has extensive global experience across industry leading brands and organisations in the retail, leisure, sports, music and entertainment sectors. Having begun her career in the sports sector with roles at TaylorMade adidas Golf and Surrey County Cricket Club, Suzi made the move into music and entertainment with AEG Europe, where she held various senior positions across the marketing and sponsorship functions for their UK venue portfolio, including The O2, the Ovo Arena Wembley and the Ovo Hydro. During her time at AEG Europe, Suzi was responsible for delivering ticketing and sponsorship revenues for hundreds of events including the Barclays ATP World Finals, The Sundance London Film Festival, Country 2 Country and many other diverse music, comedy and entertainment acts. In 2012, she launched The O2’s first permanent tourist attraction, Up at The O2, which is now regularly listed amongst the top 10 things to do in London. Since leaving AEG Europe in 2017, Suzi has worked on a variety of projects including the launch of ICON Outlet at The O2, Mamma Mia! The Party, ABBA Super Troupers the Exhibition, Sandi Toksvig Live, Van Gogh Alive and London’s first permanent digital immersive art experience, Frameless. "
     },
     {
-      "name": "Michael Peck",
-      "role": "Commercial Operations Director",
-      "photo": "/images/michael.jpeg"
-    },
-    {
       "photo": "/images/frederique.png",
       "name": "Frédérique Gerbelle",
       "bio": "Following private piano studies and law studies at Paris Nanterre University, then devoting part of her early career to event marketing, Frédérique Gerbelle specialized in the production of musical events. \n\nShe joined Céleste Productions in 1993 and worked with Jean-Pierre Le Pavec on the series “Les Grandes Voix“ and “Les Grands Solistes“, the management of which she took over a few years later. She has been committed to developing long-term and active collaborations with international artists (such as Itzhak Perlman, Fazil Say, Daniil Trifonov, Maxim Vengerov, Roberto Alagna, Cecilia Bartoli, Natalie Dessay, Joyce DiDonato, Juan Diego Flórez, Jonas Kaufmann, Anna Netrebko, Bryn Terfel, Rolando Villazón), prestigious concert halls in France and abroad (the Théâtre des Champs-Elysées in Paris, Victoria Hall in Geneva, Wigmore Hall in London) and the major classical music recording labels. \n\nShe also collaborates with the Festival de Paris and the Radio France’s annual 14 July concert under the Eiffel Tour.",
@@ -283,6 +278,11 @@
       "role": "Marketing Director",
       "photo": "/images/screenshot-2026-06-22-at-12.01.18.png",
       "bio": "Emily is a seasoned live entertainment and events professional with over 25 years of experience spanning music, sport, and large-scale live productions. She has held senior commercial and marketing roles across some of the UK’s most respected entertainment organisations and now leads her own consultancy, Brett Inc, which she founded in 2014.\n\nThrough Brett Inc, Emily has delivered marketing, sponsorship, and live event production services for an impressive roster of global clients including AEG Presents, AEG Global Partnerships, The O2, OVO Arena Wembley, Formula E, London 2012 Olympic & Paralympic Games, Lloyd Webber Theatres, Eventim UK, and Nordoff Robbins. Her work brings together strategic insight, creative excellence, and operational precision to produce world-class live experiences and meaningful brand collaborations.\n\nHer earlier career included key roles in entertainment and sponsorship management for London 2012, Nordoff Robbins, and Peace One Day, as well as commercial and licensing positions within Sanctuary Group, Bravado International, and 2waytraffic International (formerly Celador)."
+    },
+    {
+      "name": "Michael Peck",
+      "role": "Commercial Operations Director",
+      "photo": "/images/michael.jpeg"
     },
     {
       "name": "Jonathan Fleming",
