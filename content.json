@@ -226,10 +226,11 @@
       "description": "A pop-filled theatrical adventure based on the story of Peter Pan.",
       "image": "/images/club-nvrlnd-edfringe2025-image-by-mihaela-bodlovic-177-.jpg",
       "gallery": [
-        "/images/cn26_meta_updatedcopy_1080x1080.jpg",
+        "/images/cn26_meta_updatedcopy_1920x1080-1-.jpg",
         "/images/clubnvrlnd-preview-set-image-by-mihaela-bodlovic-7-.jpg",
         "/images/clubnvrlnd-preview-set-image-by-mihaela-bodlovic-3-.jpg"
-      ]
+      ],
+      "hero_position": "center bottom"
     }
   ],
   "about": {
@@ -259,6 +260,11 @@
       "role": "Group Managing Director",
       "photo": "/images/suzi.jpeg",
       "bio": "Suzi has extensive global experience across industry leading brands and organisations in the retail, leisure, sports, music and entertainment sectors. Having begun her career in the sports sector with roles at TaylorMade adidas Golf and Surrey County Cricket Club, Suzi made the move into music and entertainment with AEG Europe, where she held various senior positions across the marketing and sponsorship functions for their UK venue portfolio, including The O2, the Ovo Arena Wembley and the Ovo Hydro. During her time at AEG Europe, Suzi was responsible for delivering ticketing and sponsorship revenues for hundreds of events including the Barclays ATP World Finals, The Sundance London Film Festival, Country 2 Country and many other diverse music, comedy and entertainment acts. In 2012, she launched The O2’s first permanent tourist attraction, Up at The O2, which is now regularly listed amongst the top 10 things to do in London. Since leaving AEG Europe in 2017, Suzi has worked on a variety of projects including the launch of ICON Outlet at The O2, Mamma Mia! The Party, ABBA Super Troupers the Exhibition, Sandi Toksvig Live, Van Gogh Alive and London’s first permanent digital immersive art experience, Frameless. "
+    },
+    {
+      "name": "Michael Peck",
+      "role": "Commercial Operations Director",
+      "photo": "/images/michael.jpeg"
     },
     {
       "photo": "/images/frederique.png",
@@ -301,11 +307,6 @@
       "role": "Finance",
       "name": "Mandy Manaka",
       "photo": "/images/mandy.jpeg"
-    },
-    {
-      "name": "Michael Peck",
-      "role": "Commercial Operations Director",
-      "photo": "/images/michael.jpeg"
     }
   ],
   "venues": [
