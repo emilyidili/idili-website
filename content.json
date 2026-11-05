@@ -298,16 +298,16 @@
       "bio": "After training as an Opera singer in Paris, Alice Binick transitioned to arts administration, starting her career with Les Grandes Voix. In 2014, she moved to London and took on the role of Event Manager at the English National Opera. In 2017, she worked as a consultant on U-Live’s production of Norma, starring Cecilia Bartoli. She then ventured into running her own pub in Central London for a few years before returning to classical music as an Orchestra Manager in 2022. Alice joined IDILI Live as a full time Concerts Manager in 2024 following her consultancy role on Lise Davidsen’s Christmas tour in Norway in 2023."
     },
     {
-      "bio": "Mandy Manaka joined IDILI as an Accounts and Finance Manager in 2023, shortly after relocating to London. She brings extensive knowledge and practical experience gained across different industries and international operations.\n\nPrior to this, she worked within the global logistics sector, specialising in accounts payable and supporting international airline and customs operations across multiple countries. Her experience spans financial reconciliations, cash-flow forecasting, budgeting, audit support, and team leadership. She also worked on an international finance project in Portland, Oregon, supporting the transition following a global implementation of Oracle.",
-      "role": "Finance",
-      "name": "Mandy Manaka",
-      "photo": "/images/mandy.jpeg"
-    },
-    {
       "name": "Sarah Brooks",
       "photo": "/images/sarah-brooks.jpg",
       "bio": "Sarah is an accomplished Management Consultant and Chartered Accountant with over two decades of experience driving financial transformation, IT strategy, and executive growth.\n\n\nAs the founder of a successful independent consultancy for the past eight years, born out of high demand from a powerful professional network, she now partners with, high-growth businesses, and executive leaders to scale operations and unlock commercial value. Sarah’s impressive client portfolio includes industry giants such as Compass Group Plc, Private Equity Houses, and the immersive global entertainment venture  Mamma Mia! The Party.",
       "role": "Finance Consultant"
+    },
+    {
+      "bio": "Mandy Manaka joined IDILI as an Accounts and Finance Manager in 2023, shortly after relocating to London. She brings extensive knowledge and practical experience gained across different industries and international operations.\n\nPrior to this, she worked within the global logistics sector, specialising in accounts payable and supporting international airline and customs operations across multiple countries. Her experience spans financial reconciliations, cash-flow forecasting, budgeting, audit support, and team leadership. She also worked on an international finance project in Portland, Oregon, supporting the transition following a global implementation of Oracle.",
+      "role": "Finance",
+      "name": "Mandy Manaka",
+      "photo": "/images/mandy.jpeg"
     }
   ],
   "venues": [
