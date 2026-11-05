@@ -302,6 +302,12 @@
       "role": "Finance",
       "name": "Mandy Manaka",
       "photo": "/images/mandy.jpeg"
+    },
+    {
+      "name": "Sarah Brooks",
+      "photo": "/images/sarah-brooks.jpg",
+      "bio": "Sarah is an accomplished Management Consultant and Chartered Accountant with over two decades of experience driving financial transformation, IT strategy, and executive growth.\n\n\nAs the founder of a successful independent consultancy for the past eight years, born out of high demand from a powerful professional network, she now partners with, high-growth businesses, and executive leaders to scale operations and unlock commercial value. Sarah’s impressive client portfolio includes industry giants such as Compass Group Plc, Private Equity Houses, and the immersive global entertainment venture  Mamma Mia! The Party.",
+      "role": "Finance Consultant"
     }
   ],
   "venues": [
