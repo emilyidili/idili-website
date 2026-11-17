@@ -308,6 +308,12 @@
       "role": "Finance",
       "name": "Mandy Manaka",
       "photo": "/images/mandy.jpeg"
+    },
+    {
+      "name": "Howard Earley",
+      "role": "Venue Research Director",
+      "bio": "Howard is a chartered accountant (ACA, CA(SA)) and CFO/CEO with more than 40 years of experience leading profitable growth and financial restructuring across telecoms, energy and technology businesses in the UK, Africa and the Middle East. He now runs Tuinhuis Ltd, providing fractional and interim finance leadership, after serving as Group CFO of Quintica Group from 2020 to 2024.\n\nHoward joined IDILI Live in 2025 and his current role involves sourcing venues for the Groups future requirements.",
+      "photo": "/images/howard-earley.jpeg"
     }
   ],
   "venues": [
